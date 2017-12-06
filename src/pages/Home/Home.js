@@ -1,5 +1,10 @@
+import Example from '@/components/Example/Example.vue'
+
 export default {
-	name: 'Home',
+  name: 'Home',
+  components: {
+    Example
+  },
 	data() {
 		return {
 			title: 'CofeeMap Homepage',
