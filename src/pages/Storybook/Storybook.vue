@@ -3,7 +3,8 @@
 <template>
 	<div>
 		<h2>{{ title }}</h2>
-        <Example />
+        <Icon name="heart"/>
+        <Icon name="twitter"/>
 	</div>
 </template>
 

@@ -1,9 +1,9 @@
-import Example from '@/components/Example/Example.vue'
+import Icon from '../../components/Icon/Icon';
 
 export default {
   name: 'storybook',
   components: {
-    Example
+    Icon
   },
 	data() {
 		return {
