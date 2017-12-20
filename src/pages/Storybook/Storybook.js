@@ -1,9 +1,11 @@
 import Icon from '../../components/Icon/Icon';
+import VisualRating from '../../components/VisualRating/VisualRating';
 
 export default {
   name: 'storybook',
   components: {
-    Icon
+		Icon, 
+		VisualRating,
   },
 	data() {
 		return {

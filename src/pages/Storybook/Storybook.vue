@@ -3,8 +3,10 @@
 <template>
 	<div>
 		<h2>{{ title }}</h2>
-        <Icon name="heart"/>
-        <Icon name="twitter"/>
+        <icon name="heart"/>
+        <icon name="twitter"/>
+        <visual-rating :value="4" />
+        <visual-rating :value="3" />
 	</div>
 </template>
 
