@@ -1,9 +1,11 @@
 import Example from '@/components/Example/Example.vue'
+import ButtonGeneral from '@/components/ButtonGeneral/ButtonGeneral.vue'
 
 export default {
   name: 'Home',
   components: {
-    Example
+		Example,
+		ButtonGeneral
   },
 	data() {
 		return {
