@@ -1,4 +1,4 @@
-<script src="./ButtonGeneral.js"></script>
+<script src="./ButtonMore.js"></script>
 
 //html
 <template>
@@ -10,13 +10,13 @@
 //css
 <style scoped>
     .button {
-        width: 60%;
-        padding: 10px 20px;
-        color: #7573d2;
+        width: 10%;
+        padding: 5px 8px;
+        background-color: #7573d2;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 12px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: white;
+        color: white;
         border: none;
         border-radius: 25px;
     }
