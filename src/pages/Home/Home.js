@@ -1,11 +1,16 @@
 import Example from '@/components/Example/Example.vue'
 import ButtonGeneral from '@/components/ButtonGeneral/ButtonGeneral.vue'
+import FilterButton from'@/components/FilterButton/FilterButton.vue'
+import ButtonIcon from'@/components/ButtonIcon/ButtonIcon.vue'
 
 export default {
   name: 'Home',
   components: {
 		Example,
-		ButtonGeneral
+		ButtonGeneral,
+		FilterButton,
+		ButtonIcon,
+
   },
 	data() {
 		return {
