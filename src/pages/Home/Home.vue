@@ -5,8 +5,12 @@
 		<h2>{{ title }} <span>{{ subtitle }}</span></h2>
     <Example />
     <ButtonGeneral />
+<<<<<<< HEAD
     <FilterButton />
     <ButtonIcon />
+=======
+    <ButtonMore />
+>>>>>>> c6936d64c8860f8b3fec5bbd4791fb78853453c5
 	</div>
 </template>
 
