@@ -7,6 +7,7 @@
         <icon name="twitter"/>
         <visual-rating :value="4" />
         <visual-rating :value="3" />
+        <input-dropdown />
 	</div>
 </template>
 
