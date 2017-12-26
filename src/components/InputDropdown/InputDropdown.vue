@@ -12,18 +12,12 @@
 
 export default {
     name: 'InputDropdown',
-    props: ['compact'],
-    components: {
-        
-    },
-    data() {
-    	return {
-			compact:false,
-		}
-    },
-    methods: {
-        
-    }       
+    props: {
+		compact: {
+			type: Boolean,
+			default: false,
+		},
+	},
 }
 </script>
 
