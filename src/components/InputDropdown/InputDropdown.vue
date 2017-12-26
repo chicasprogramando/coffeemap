@@ -1,5 +1,5 @@
 <template>
-    <div class="select">
+    <div class="select" v-bind:class="{ compact: compact }">
         <select>
             <option value="">Palermo</option>
 
@@ -12,14 +12,14 @@
 
 export default {
     name: 'InputDropdown',
-    props: [],
+    props: ['compact'],
     components: {
         
     },
     data() {
-        return {
-           
-        }
+    	return {
+			compact:false,
+		}
     },
     methods: {
         
@@ -34,6 +34,11 @@ export default {
 	width: 320px;
 	margin-bottom: 15px;
 	background: blueviolet;
+}
+
+.select.compact {
+	background: white;
+	width: initial;
 }
 
 .select select {
@@ -54,6 +59,11 @@ export default {
     border-bottom:2px solid white;
 
 }
+.select.compact select {
+	color:blueviolet;
+	width: initial;
+	padding-right: 35px;
+}
 
 
 .select__arrow {
@@ -67,6 +77,9 @@ export default {
 	border-style: solid;
 	border-color: white transparent transparent transparent;
     
+}
+.select.compact .select__arrow {
+	border-color:blueviolet transparent transparent transparent;
 }
 
     
