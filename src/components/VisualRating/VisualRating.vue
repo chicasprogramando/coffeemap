@@ -1,31 +1,31 @@
 <template>
-    <div>
+    <div :class="$style.container">
         <icon 
-            v-for="n in iconMax" 
-            :name="iconName" 
+            v-for="n in max" 
+            :name="name" 
             :key="n"
             :class="opacityClass(n)"
+            :size="size"
+            :color="color"
         />
     </div>
 </template>
 
 <script>
+import VueTypes from 'vue-types';
 import Icon from '../Icon/Icon';
-
-const MAX = 5;
-const ICON_NAME = 'heart';
 
 export default {
     name: 'VisualRating',
-    props: ['value'],
+    props: {
+        value: VueTypes.number.isRequired,
+        color: VueTypes.string.def('blueviolet'),
+        size: VueTypes.number.def(20),
+        name: VueTypes.string.def('heart'),
+        max: VueTypes.number.def(5),
+    },
     components: {
         Icon,
-    },
-    data() {
-        return {
-            iconName: ICON_NAME,
-            iconMax: MAX,
-        }
     },
     methods: {
         isGreater(n) {
@@ -48,6 +48,12 @@ export default {
 </script>
 
 <style module>
+    .container {
+        display: flex;
+    }
+    .icon {
+        display: inline;
+    }
     .opacity50 {
         opacity: 0.5;
     }
