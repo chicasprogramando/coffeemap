@@ -6,6 +6,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// For the moment we will use this, then we will use the state
+Vue.prototype.$getCoffees = null
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

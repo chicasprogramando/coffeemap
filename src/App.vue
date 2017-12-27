@@ -20,8 +20,8 @@ export default {
 
     api.getPosts()
     .then(data => {
-      console.log(data)
       this.$getCoffees = data  // this is fake data
+      console.log(this.$getCoffees)
     })
     .catch(e => console.error(e))
   },
