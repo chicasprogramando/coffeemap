@@ -10,12 +10,18 @@ import api from '@/api'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      coffees: null
+    } 
+  },
   created() {
     console.log('APP CREATED')
 
     api.getPosts()
     .then(data => {
       console.log(data)
+      this.$getCoffees = data  // this is fake data
     })
     .catch(e => console.error(e))
   },

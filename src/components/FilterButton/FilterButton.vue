@@ -27,7 +27,6 @@ export default {
       labelName: LABEL_NAME
     };
   },
-
   methods: {
     changeStatus: function() {
       this.isActive = !this.isActive;

@@ -5,6 +5,9 @@ import Storybook from '@/pages/Storybook/Storybook.vue'
 
 Vue.use(Router)
 
+// For the moment we will use this, then we will use the state
+Vue.prototype.$getCoffees = null
+
 export default new Router({
   routes: [
     {
