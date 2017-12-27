@@ -1,7 +1,10 @@
 <template>
-    <div  class="initial " v-on:click="changeStatus" :class="{ active: isActive }">
-        <icon :name="iconName"/>
-        <label class="initialLabel" :class="{ labelActive: isActive }">{{labelName}}</label>
+    <div  class="initial " v-on:click="changeStatus"  :class="{ active: isActive }">
+        <div class="center">
+          <icon  v-if="isActive" color="blueviolet"  :name="iconName"/>
+          <icon  v-else color="white" :name="iconName"/>
+          <label class="initialLabel" :class="{ labelActive: isActive }">{{labelName}}</label>
+        </div>
     </div>
 </template>
 
@@ -9,7 +12,7 @@
 import Icon from "../Icon/Icon";
 
 let ICON_NAME = "wifi";
-const LABEL_NAME = "Wifi";
+let LABEL_NAME = "Wifi";
 
 export default {
   name: "FilterButton",
@@ -28,38 +31,34 @@ export default {
   methods: {
     changeStatus: function() {
       this.isActive = !this.isActive;
-      if (this.isActive == false) {
-          ICON_NAME = "wifi"
-          console.log(ICON_NAME)
-      }else{
-          ICON_NAME = "wifi_active"
-           console.log(ICON_NAME)
-      } 
     }
   }
 };
 </script>
 <style scoped>
+
 .initial {
-  border-radius: 100px;
-  border: 5px solid white;
   width: 150px;
   height: 150px;
   margin: auto;
   padding: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
 }
 .initialLabel {
   display: block;
   font-weight: bold;
   color:white;
 }
-
 .active {
   background-color: white;
 }
 .labelActive{
-    display:block;
     color:blueviolet;
 }
-
+.center{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
 </style>

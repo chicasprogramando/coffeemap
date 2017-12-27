@@ -1,6 +1,6 @@
 <template>
     <div class="squareButton">
-        <icon :name="iconName"/>
+        <icon color="white" :name="iconName"/>
     </div>
 </template>
 
