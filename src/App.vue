@@ -1,13 +1,27 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
+import api from '@/api'
+
 export default {
-  name: 'app'
+  name: 'app',
+  created() {
+    console.log('APP CREATED')
+
+    api.getPosts()
+    .then(data => {
+      console.log(data)
+    })
+    .catch(e => console.error(e))
+  },
+  mounted() {
+    console.log('APP MOUNTED')
+  }
 }
 </script>
 
