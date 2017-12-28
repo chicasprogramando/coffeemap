@@ -1,11 +1,20 @@
-<script src="./ButtonMore.js"></script>
-
 //html
 <template>
-    <button class="button">
-        {{ buttonTag }}
-    </button>
+    <button-general button-text="buttonText" text-color="#fff" bg-color="#7573d2"></button-general>
 </template>
+
+<script>
+import ButtonGeneral from '../ButtonGeneral/ButtonGeneral.vue';
+
+export default {
+    name: 'ButtonMore',
+    props: ['buttonText'],
+    components: {
+        ButtonGeneral,
+    }
+}
+</script>
+
 
 //css
 <style scoped>

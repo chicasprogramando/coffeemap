@@ -1,7 +1,15 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view />
+
+    <router-link to="/">Home</router-link>
+
+    <router-link to="/cafe/1">Cafe 1</router-link>
+    <router-link to="/cafe/2">Cafe 2</router-link>
+
+    <router-link to="/storybook">StoryBook</router-link>
+
+    <router-view :key="$route.fullPath"/>
   </div>
 </template>
 

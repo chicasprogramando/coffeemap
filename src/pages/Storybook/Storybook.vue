@@ -38,6 +38,11 @@
             <div><input-dropdown /></div>
             <div><input-dropdown :compact="true"/></div>
         </div>
+
+        <div class="component"><h2>ButtonGeneral</h2><ButtonGeneral button-text="HOLA" size="large"/></div>
+        <div class="component"><h2>ButtonMore</h2><ButtonMore button-text="Ver más"/></div>
+        <div class="component"><h2>FilterButton</h2><FilterButton /></div>
+        <div class="component"><h2>ButtonIcon</h2><ButtonIcon /></div>
 	</div>
 </template>
 
@@ -50,6 +55,7 @@ h2 {
 }
 .component {
     padding: 16px;
+    background-color: #666;
 }
 span {
     display: block;

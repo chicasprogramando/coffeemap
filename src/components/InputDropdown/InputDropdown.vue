@@ -1,8 +1,10 @@
 <template>
     <div class="select" v-bind:class="{ compact: compact }">
-        <select>
-            <option value="">Palermo</option>
-
+        <select v-model="selected">
+            <option 
+				v-for="neighborhood in neighborhoods" 
+				:key="neighborhood.value"
+				:value="neighborhood.value">{{ neighborhood.label }}</option>
         </select>
         <div class="select__arrow"></div>
     </div>
@@ -18,6 +20,17 @@ export default {
 			default: false,
 		},
 	},
+	data(){
+		return {
+			selected: 'palermo',
+			neighborhoods: [
+				{value: 'palermo', label: 'Palermo'},
+				{value: 'belgrano', label: 'Belgrano'},
+				{value: 'nunez', label: 'Nuñez'},
+				{value: 'recoleta', label: 'Recoleta'},
+			],
+		}
+	}
 }
 </script>
 

@@ -45,9 +45,6 @@ export default {
     }
   },
   computed: {
-    src() {
-      return require(`../../assets/icons/${this.name}.svg`);
-    },
     hasCircle() {
       return !!this.circle;
     },
