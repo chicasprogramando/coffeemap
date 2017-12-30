@@ -36,12 +36,16 @@
         <div class="component">
             <h2>Input Dropdown</h2>
             <div><input-dropdown /></div>
-            <div><input-dropdown :compact="true"/></div>
+            <div><input-dropdown :compact="true" /></div>
         </div>
 
         <div class="component"><h2>ButtonGeneral</h2><ButtonGeneral button-text="HOLA" size="large"/></div>
         <div class="component"><h2>ButtonMore</h2><ButtonMore button-text="Ver más"/></div>
-        <div class="component"><h2>FilterButton</h2><FilterButton /></div>
+        <div class="component"><h2>FilterButton</h2>
+        <FilterButton name="wifi" button-text="Wifi" />
+        <FilterButton name="food" button-text="Cocina" />
+        <FilterButton name="bag" button-text="Take away" />
+        <FilterButton name="laptop" button-text="Coworking" /></div>
         <div class="component"><h2>ButtonIcon</h2><ButtonIcon /></div>
 	</div>
 </template>
