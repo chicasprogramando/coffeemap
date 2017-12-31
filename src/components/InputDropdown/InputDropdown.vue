@@ -1,12 +1,13 @@
 <template>
-    <div class="select" v-bind:class="{ compact: compact }">
-        <select v-model="selected">
+    <div :class="[$style.container, compact && $style.compact]">
+        <select v-model="selected" :class="$style.select">
             <option 
 				v-for="neighborhood in neighborhoods" 
 				:key="neighborhood.value"
-				:value="neighborhood.value">{{ neighborhood.label }}</option>
+				:value="neighborhood.value">{{ neighborhood.label }}
+			</option>
         </select>
-        <div class="select__arrow"></div>
+        <div :class="$style.select__arrow"></div>
     </div>
 </template>
 
@@ -34,8 +35,9 @@ export default {
 }
 </script>
 
-<style scoped>
-.select {
+<style module lang="scss">
+
+.container {
 	position: relative;
 	display: inline-block;
 	width: 320px;
@@ -43,12 +45,8 @@ export default {
 	background: blueviolet;
 }
 
-.select.compact {
-	background: white;
-	width: initial;
-}
 
-.select select {
+.select {
 	display: inline-block;
 	width: 100%;
 	padding: 10px 15px;
@@ -64,12 +62,6 @@ export default {
     height: 60px;
     font-size: 20px;
     border-bottom:2px solid white;
-
-}
-.select.compact select {
-	color:blueviolet;
-	width: initial;
-	padding-right: 35px;
 }
 
 
@@ -83,11 +75,19 @@ export default {
 	border-width: 8px 5px 0 5px;
 	border-style: solid;
 	border-color: white transparent transparent transparent;
-    
-}
-.select.compact .select__arrow {
-	border-color:blueviolet transparent transparent transparent;
 }
 
+.compact {
+	background: white;
+	width: initial;
+	.select {
+		color:blueviolet;
+		width: initial;
+		padding-right: 35px;
+	}
+	.select__arrow {
+		border-color:blueviolet transparent transparent transparent;
+	}
+}
     
 </style>
