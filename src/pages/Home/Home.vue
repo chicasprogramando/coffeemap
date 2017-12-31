@@ -37,8 +37,6 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container {
-}
 .modal {
     background: #CCC;
     width: 300px;
