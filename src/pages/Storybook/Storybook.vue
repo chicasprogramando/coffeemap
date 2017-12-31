@@ -11,6 +11,9 @@
             <icon name="wifi"/>
             <icon name="twitter"/>
             <icon name="filter"/>
+            <icon name="food"/>
+            <icon name="bag"/>
+            <icon name="laptop"/>
 
             <h3>With color</h3>
             <icon name="heart" color="#C00"/>
