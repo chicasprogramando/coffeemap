@@ -9,6 +9,8 @@
 
     <router-link to="/storybook">StoryBook</router-link>
 
+    <router-link to="/custom-map">CustomMap</router-link>
+
     <router-view :key="$route.fullPath"/>
   </div>
 </template>

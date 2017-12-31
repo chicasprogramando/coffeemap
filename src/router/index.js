@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home/Home.vue'
 import Storybook from '@/pages/Storybook/Storybook.vue'
+import CustomMap from '@/pages/CustomMap/CustomMap.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/storybook',
       name: 'storybook',
       component: Storybook
+    },
+    {
+      path: '/custom-map',
+      name: 'custom-map',
+      component: CustomMap
     }
   ]
 })
