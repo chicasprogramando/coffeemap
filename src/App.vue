@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import api from '@/api'
+// import api from '@/api'
 
 export default {
   name: 'app',
@@ -28,12 +28,12 @@ export default {
   created() {
     console.log('APP CREATED')
 
-    api.getPosts()
+    /* api.getPosts()
     .then(data => {
-      this.$getCoffees = data  // this is fake data
+      this.$getCoffees = data
       console.log(this.$getCoffees)
     })
-    .catch(e => console.error(e))
+    .catch(e => console.error(e)) */
   },
   mounted() {
     console.log('APP MOUNTED')

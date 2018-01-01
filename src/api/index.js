@@ -1,4 +1,4 @@
-const apiURL = 'https://jsonplaceholder.typicode.com' // this is not the final url
+// const apiURL = 'https://jsonplaceholder.typicode.com' // this is only and example url
 
 const makeRequest = endpoint => {
   const customHeaders = new Headers({
@@ -7,7 +7,7 @@ const makeRequest = endpoint => {
   })
 
   return new Promise((resolve, reject) => {
-    fetch(apiURL + endpoint, {
+    fetch(endpoint, {
       headers: customHeaders,
       mode: 'cors',
       method: 'GET'
@@ -21,7 +21,7 @@ const makeRequest = endpoint => {
 }
 
 const getPosts = () => {
-  return makeRequest('/posts')
+  return makeRequest('./static/data/coffees.json')
 }
 
 const api = {

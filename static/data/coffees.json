@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Example Coffee #1",
+    "raiting": 4,
+    "wifi": true,
+    "pets": true,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Palermo",
+    "coworking": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 2,
+    "name": "Example Coffee #2",
+    "raiting": 4,
+    "wifi": true,
+    "pets": false,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Palermo",
+    "coworking": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 3,
+    "name": "Example Coffee #3",
+    "raiting": 5,
+    "wifi": true,
+    "pets": true,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Recoleta",
+    "coworking": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 4,
+    "name": "Example Coffee #4",
+    "raiting": 2,
+    "wifi": true,
+    "pets": true,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Caballito",
+    "coworking": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 5,
+    "name": "Example Coffee #5",
+    "raiting": 3,
+    "wifi": false,
+    "pets": false,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Recoleta",
+    "coworking": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 6,
+    "name": "Example Coffee #6",
+    "raiting": 2,
+    "wifi": true,
+    "pets": true,
+    "position": {"lat": 10.0, "lng": 10.0},
+    "zone": "Palermo",
+    "coworking": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  }
+]
