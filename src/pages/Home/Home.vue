@@ -1,41 +1,16 @@
+<script src="./Home.js"></script>
+
 <template>
 	<div class="container">
         <template v-if="isModalOpen">
 	    <div class="modal">
-
             <button-general button-text="CLOSE" @buttonClick="closeModal"/>
             <h1>Modal {{$route.params.id}}</h1>
         </div>
         </template>
 	</div>
 </template>
-<script>
-import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral.vue';
 
-export default {
-    name: 'Home',
-    components: {
-        ButtonGeneral,
-    },
-    created(){
-        console.log(this.$route)
-    },
-    computed: {
-        isModalOpen() {
-            return this.$route.name === 'cafe'
-            }
-    },
-    methods: {
-        openModal() {
-            this.isModalOpen = true;
-        },
-        closeModal() {
-            this.$router.push('/')
-        }
-    }
-};
-</script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .modal {
     background: #CCC;

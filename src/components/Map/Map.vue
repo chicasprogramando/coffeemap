@@ -1,9 +1,10 @@
 <template>
 	<div>
+    <h1>MAP</h1>
     <gmap-map
         :center="center"
         :zoom="zoom"
-        :class="$style.wrapper-map"
+        :class="$style.wrapperMap"
     >
         <gmap-marker
           :key="index"
@@ -52,7 +53,7 @@ export default {
 </script>
 
 <style module>
-.wrapper-map {
+.wrapperMap {
   width: 800px; 
   height: 600px;
 }
