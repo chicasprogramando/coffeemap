@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Example Coffee #1",
+    "name": "MediaMonks Buenos Aires",
     "raiting": 4,
     "wifi": true,
     "pets": true,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.586347, "lng": -58.431469},
     "zone": "Palermo",
     "coworking": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -16,7 +16,7 @@
     "raiting": 4,
     "wifi": true,
     "pets": false,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.584139, "lng": -58.425218},
     "zone": "Palermo",
     "coworking": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -27,7 +27,7 @@
     "raiting": 5,
     "wifi": true,
     "pets": true,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.588202, "lng": -58.423308},
     "zone": "Recoleta",
     "coworking": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -38,7 +38,7 @@
     "raiting": 2,
     "wifi": true,
     "pets": true,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.584899, "lng": -58.439316},
     "zone": "Caballito",
     "coworking": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -49,7 +49,7 @@
     "raiting": 3,
     "wifi": false,
     "pets": false,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.592859, "lng": -58.436687},
     "zone": "Recoleta",
     "coworking": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -60,7 +60,7 @@
     "raiting": 2,
     "wifi": true,
     "pets": true,
-    "position": {"lat": 10.0, "lng": 10.0},
+    "position": {"lat": -34.594201, "lng": -58.421323},
     "zone": "Palermo",
     "coworking": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
