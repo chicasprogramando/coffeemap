@@ -7,6 +7,7 @@
         :zoom="15" 
         :center="{lat: -34.586347, lng: -58.431469}" 
         />
+        <VisualCafeDetail />
 	</div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<div>
-    <h1>MAP</h1>
+    <p>Click some marker and check the console...</p>
     <gmap-map
         :center="center"
         :zoom="zoom"
@@ -29,12 +29,12 @@ export default {
   },
   data() {
 		return {
-			coffees: null
+      coffees: null,
 		};
 	},
   methods: {
     handlerMarker(coffee) {
-			console.log(`You clicked: ${coffee.name}`)
+      console.log(`You clicked: ${coffee.name}`)
 		}
   },
   computed: {
