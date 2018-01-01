@@ -18,16 +18,17 @@
 </template>
 
 <script>
+import VueTypes from 'vue-types';
 import api from '@/api'
 
 export default {
   name: "mapWrapper",
   props: {
+    center: VueTypes.object.isRequired,
+    zoom: VueTypes.number.def(10),
   },
   data() {
 		return {
-			center: {lat: -34.586347, lng: -58.431469}, // TODO: Get from prop
-			zoom: 15, // TODO: Get from prop
 			coffees: null
 		};
 	},
