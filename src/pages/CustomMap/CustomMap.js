@@ -4,7 +4,7 @@ import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail
 export default {
 	name: 'customMap',
 	components: {
-		Map,
+		MapWrapper: Map,
 		VisualCafeDetail
 	},
 	data() {
