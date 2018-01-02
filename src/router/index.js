@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home/Home.vue'
 import Storybook from '@/pages/Storybook/Storybook.vue'
 import CustomMap from '@/pages/CustomMap/CustomMap.vue'
+import VisualIntro from '@/pages/VisualIntro/VisualIntro.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/custom-map',
       name: 'custom-map',
       component: CustomMap
+    },
+    {
+      path:'/visual-intro',
+      name: 'visual-intro',
+      component: VisualIntro
     }
   ]
 })
