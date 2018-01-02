@@ -5,6 +5,7 @@ import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral.vue'
 import ButtonMore from '../../components/ButtonMore/ButtonMore.vue'
 import FilterButton from'../../components/FilterButton/FilterButton.vue'
 import ButtonIcon from'../../components/ButtonIcon/ButtonIcon.vue'
+import InputRadio from'../../components/InputRadio/InputRadio.vue'
 export default {
   name: 'storybook',
   components: {
@@ -15,6 +16,7 @@ export default {
 		ButtonMore,
 		FilterButton,
 		ButtonIcon,
+		InputRadio
   },
 	data() {
 		return {

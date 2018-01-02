@@ -50,6 +50,8 @@
         <FilterButton name="bag" button-text="Take away" />
         <FilterButton name="laptop" button-text="Coworking" /></div>
         <div class="component"><h2>ButtonIcon</h2><ButtonIcon /></div>
+        <div class="component"><h2>InputRadio</h2><InputRadio /></div>
+
 	</div>
 </template>
 
