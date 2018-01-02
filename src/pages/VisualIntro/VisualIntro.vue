@@ -45,18 +45,28 @@ export default {
     background-color: blueviolet;
     color:white;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 80px;
     padding-right: 25px;
     padding-left:25px;
+    margin-top: 40px;
 }
 .button{
     text-align: center;
     padding-top: 30px;
 }
 
-span{font-weight: bold;
+span{
+    font-weight: bold;
     
+}
+h2{
+    padding-bottom:40px;
+}
+.bienvenidos{
+    font-size:20px;
+    margin-bottom: -20px;
+
 }
 .buttonWidth{
     min-width:300px;
@@ -64,13 +74,10 @@ span{font-weight: bold;
     font-weight: 150;
 }
 .dropdownWidth{
-    min-width: 250px;
+    min-width: 270px;
 }
-.bienvenidos{
-    font-size:20px;
-    margin-bottom: -20px;
 
-}
+
 
 </style>
 
