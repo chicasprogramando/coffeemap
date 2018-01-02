@@ -2,19 +2,19 @@
     <div class="input-group">
         <div class="input-group-radio">
             <div class="radio-btn radio-btn-primary">
-                <input type="radio" name="routingType3" value="poco" id="poco">
+                <input type="radio" name="rate" value="poco" id="poco">
                 <label for="poco">Poco</label>
             </div>
         </div>
         <div class="input-group-radio">
             <div class="radio-btn radio-btn-primary">
-                <input type="radio" checked name="routingType3" value="masomenos" id="masomenos">
+                <input type="radio" checked name="rate" value="masomenos" id="masomenos">
                 <label for="masomenos"> Más o menos</label>
             </div>
         </div>
         <div class="input-group-radio">
             <div class="radio-btn radio-btn-primary">
-                <input type="radio" name="routingType3" value="mucho" id="mucho">
+                <input type="radio" name="rate" value="mucho" id="mucho">
                 <label for="mucho">Mucho</label>
             </div>
         </div>
