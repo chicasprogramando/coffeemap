@@ -25,23 +25,16 @@
 export default {
     name: 'Input-radio',
     props: {
-
     },
     components: {
-
-    },
-    data() {
-    
     },
     methods: {
-
     }
 }
 </script>
 
 
 <style scoped>
-    
     .input-group-radio {
         position: relative;
         white-space: nowrap;
