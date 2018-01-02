@@ -45,11 +45,11 @@ export default {
     background-color: blueviolet;
     color:white;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 60px;
     padding-right: 25px;
     padding-left:25px;
-    margin-top: 40px;
+    
 }
 .button{
     text-align: center;
