@@ -4,9 +4,10 @@
             v-for="n in max" 
             :name="name" 
             :key="n"
-            :class="opacityClass(n)"
+            :class="[opacityClass(n),$style.padding]"
             :size="size"
             :color="color"
+            
         />
     </div>
 </template>
@@ -20,7 +21,7 @@ export default {
     props: {
         value: VueTypes.number.isRequired,
         color: VueTypes.string.def('blueviolet'),
-        size: VueTypes.number.def(20),
+        size: VueTypes.number.def(15),
         name: VueTypes.string.def('heart'),
         max: VueTypes.number.def(5),
     },
@@ -53,8 +54,13 @@ export default {
     }
     .icon {
         display: inline;
+        
     }
     .opacity50 {
         opacity: 0.5;
+        
+    }
+    .padding{
+        padding:1px;
     }
 </style>
