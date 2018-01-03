@@ -39,6 +39,7 @@
     width: 320px;
     height: 250px;
     border-radius: 30px;
+    overflow: hidden;
     
 }
 .imagen{
