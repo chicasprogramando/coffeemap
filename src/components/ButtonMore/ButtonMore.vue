@@ -1,6 +1,6 @@
 //html
 <template>
-    <button-general button-text="Ver más" text-color="#fff" bg-color="#7573d2"></button-general>
+    <button-general :button-text="buttonText" text-color="#fff" bg-color="#7573d2"></button-general>
 </template>
 
 <script>
