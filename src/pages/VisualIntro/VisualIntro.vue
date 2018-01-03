@@ -33,9 +33,6 @@ export default {
         InputDropdown,
         ButtonGeneral
     }
-
-
-  
 }
 </script>
 
