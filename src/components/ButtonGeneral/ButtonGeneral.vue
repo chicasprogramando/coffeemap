@@ -18,8 +18,7 @@ export default {
     },
     methods: {
         handleClick(){
-            console.log('CLICK');
-            this.$emit('buttonClick');
+            this.$emit('click');
         }
     },
     computed: {

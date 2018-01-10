@@ -14,6 +14,7 @@
           @click="handlerMarker(coffee)"
         ></gmap-marker>
     </gmap-map>
+    <router-view :key="$route.fullPath"/>
 	</div>
 </template>
 
@@ -34,13 +35,14 @@ export default {
 	},
   methods: {
     handlerMarker(coffee) {
-      console.log(`You clicked: ${coffee.name}`)
-		}
+      console.log(`You clicked: ${coffee.name}`);
+      this.$emit('coffeClick', coffee);
+		},
   },
   computed: {
     getCoffees() {
       return this.coffees;
-    }
+    },
   },
   mounted() {
     api.getPosts()

@@ -15,12 +15,12 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: VisualIntro
     },
     {
-      path: '/cafe/:id',
-      name: 'cafe',
-      component: Home
+      path: '/filter',
+      name: 'filter',
+      component: VisualIntroStep2
     },
     {
       path: '/storybook',
@@ -28,19 +28,16 @@ export default new Router({
       component: Storybook
     },
     {
-      path: '/custom-map',
-      name: 'custom-map',
-      component: CustomMap
+      path: '/map',
+      name: 'map',
+      component: CustomMap,
+      // children: [
+      //   {
+      //     path: '/coffe/:id',
+      //     name: 'coffee',
+      //     component: VisualIntro
+      //   },
+      // ]
     },
-    {
-      path:'/visual-intro',
-      name: 'visual-intro',
-      component: VisualIntro
-    },
-    {
-      path:'/visual-introstep2',
-      name: 'visual-introstep2',
-      component: VisualIntroStep2
-    }
-  ]
-})
+  ],
+});

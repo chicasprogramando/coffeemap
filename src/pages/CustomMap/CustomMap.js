@@ -9,7 +9,13 @@ export default {
 	},
 	data() {
 		return {
-			title: 'CustomMap'
+			title: 'CustomMap',
+			coffee: null,
 		};
-	}
+	},
+	methods: {
+		handleCoffeClick(coffee) {
+			this.coffee = coffee;
+		},
+	},
 };
