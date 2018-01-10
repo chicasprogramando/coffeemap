@@ -21,7 +21,7 @@ const makeRequest = endpoint => {
 }
 
 const getPosts = () => {
-  return makeRequest('./static/data/coffees.json')
+  return makeRequest('../static/data/coffees.json')
 }
 
 const api = {

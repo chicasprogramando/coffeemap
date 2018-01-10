@@ -31,13 +31,12 @@ export default new Router({
       path: '/map',
       name: 'map',
       component: CustomMap,
-      // children: [
-      //   {
-      //     path: '/coffe/:id',
-      //     name: 'coffee',
-      //     component: VisualIntro
-      //   },
-      // ]
+      children: [
+        {
+          path: '/coffee/:id',
+          name: 'coffee',
+        },
+      ]
     },
   ],
 });

@@ -8,8 +8,9 @@
         :center="{lat: -34.586347, lng: -58.431469}" 
         @coffeClick="handleCoffeClick"
         />
-        <VisualCafeDetail :coffee="coffee"/>
-	</div>
+        <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
+    </div>
+    
 </template>
 
 <style scoped>
