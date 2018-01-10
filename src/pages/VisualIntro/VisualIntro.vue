@@ -8,11 +8,11 @@
             <h1>#CoffeeMap</h1>
         </div>
         <div>
-            <p>Hecho por <span>ChicasProgramandoEnCafes</span></p>
+            <p>Hecho por <span :class="$style.negrita">ChicasProgramandoEnCafes</span></p>
         </div>
 
         <div>
-            <h2>Elegi la zona que </br>te quede más cerca</h2>
+            <h2 :class="$style.h2">Elegi la zona que </br>te quede más cerca</h2>
         </div>
         <div :class="$style.dropdowm">
             <input-dropdown :class="$style.dropdownWidth"></input-dropdown>
@@ -56,11 +56,11 @@ export default {
     padding-top: 30px;
 }
 
-span{
+.negrita{
     font-weight: bold;
     
 }
-h2{
+.h2{
     padding-bottom:40px;
 }
 .bienvenidos{

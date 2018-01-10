@@ -5,7 +5,7 @@
          <div :class="$style.columnas">
             <div :class="$style.informacion">
                 <p :class="$style.nombre">Cafetería con</br>nombre largo</p>
-                <p><span :class="$style.horario">10-20hs</span> <span>Abierto</span></p>
+                <p><span :class="$style.horario">10-20hs</span> <span :class="$style.green">Abierto</span></p>
                 <p :class="$style.direccion">Humboldt 1542</br>+más datos sobre dirección</p>
             </div>
             <div :class="$style.rating-button">
@@ -63,7 +63,7 @@
 .rating-button{
     width:100px;
 }
-span{
+.green{
     color:green;
 }
 .direccion{
