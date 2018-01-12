@@ -5,26 +5,26 @@
          <div :class="$style.iconitos">
             <div :class="$style.iconitoWrapper">
                 <div :class="$style.iconitoStyle">
-                    <icon name="wifi" size="50"/>
+                    <icon name="wifi" :size="50"/>
                     <span>WIFI</span>                    
                 </div>
             </div> 
               <div :class="$style.iconitoWrapper">
                   <div :class="$style.iconitoStyle">
-                    <icon name="food" size="50"/>
+                    <icon name="food" :size="50"/>
                      <span>Cocina</span>                    
             </div>
               </div>
 
             <div :class="$style.iconitoWrapper">
                 <div :class="$style.iconitoStyle">
-                 <icon name="bag" size="50"/>
+                 <icon name="bag" :size="50"/>
                   <span>Take Away</span> 
                   </div>                   
              </div>
                <div :class="$style.iconitoWrapper">
             <div :class="$style.iconitoStyle">
-                  <icon name="laptop" size="50"/>
+                  <icon name="laptop" :size="50"/>
                  <span>Coworking</span>    
             </div>                
 
