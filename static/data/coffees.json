@@ -1,8 +1,9 @@
 [
   {
     "id": 1,
-    "name": "MediaMonks Buenos Aires",
-    "raiting": 4,
+    "name": "LAB Café",
+    "rating": 4,
+    "address": "Humboldt 1542",
     "wifi": true,
     "pets": true,
     "position": {"lat": -34.586347, "lng": -58.431469},
@@ -11,11 +12,13 @@
     "telephone": 999999,
     "website": "www.example.com", 
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+
   },
   {
     "id": 2,
-    "name": "Example Coffee #2",
-    "raiting": 4,
+    "name": "Lobo Café",
+    "rating": 4,
+    "address": "Honduras 4730",
     "wifi": true,
     "pets": false,
     "position": {"lat": -34.584139, "lng": -58.425218},
@@ -27,8 +30,9 @@
   },
   {
     "id": 3,
-    "name": "Example Coffee #3",
-    "raiting": 5,
+    "name": "Delicious Café",
+    "rating": 5,
+    "address": "Laprida 2015",
     "wifi": true,
     "pets": true,
     "position": {"lat": -34.588202, "lng": -58.423308},
@@ -40,8 +44,9 @@
   },
   {
     "id": 4,
-    "name": "Example Coffee #4",
-    "raiting": 2,
+    "name": "Tienda del Café",
+    "rating": 2,
+    "address": "Av. Díaz Vélez 5298",
     "wifi": true,
     "pets": true,
     "position": {"lat": -34.584899, "lng": -58.439316},
@@ -53,8 +58,9 @@
   },
   {
     "id": 5,
-    "name": "Example Coffee #5",
-    "raiting": 3,
+    "name": "Del Bosco Café",
+    "rating": 3,
+    "address": "Santa Fe 2653",
     "wifi": false,
     "pets": false,
     "position": {"lat": -34.592859, "lng": -58.436687},
@@ -66,8 +72,9 @@
   },
   {
     "id": 6,
-    "name": "Example Coffee #6",
-    "raiting": 2,
+    "name": "Full City Coffee House",
+    "rating": 2,
+    "address": "Thames 1535",
     "wifi": true,
     "pets": true,
     "position": {"lat": -34.594201, "lng": -58.421323},

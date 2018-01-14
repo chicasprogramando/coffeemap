@@ -4,7 +4,7 @@
     <pre>
       {{coffee}}
     </pre>
-    <VisualSliderItem :name="coffee.name" :web="coffee.website" :rating="coffee.raiting"/>
+    <VisualSliderItem :name="coffee.name" :web="coffee.website" :rating="coffee.rating"/>
 	</div>
 </template>
 
