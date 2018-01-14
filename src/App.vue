@@ -11,6 +11,9 @@
 
     <router-link to="/custom-map">CustomMap</router-link>
     <router-link to="/visual-intro">VisualIntro</router-link>
+    <router-link to="/visual-introstep2">VisualIntroStep2</router-link>
+
+
 
     <router-view :key="$route.fullPath"/>
   </div>

@@ -66,7 +66,6 @@ h2 {
 }
 .component {
     padding: 16px;
-    background-color: #666;
 }
 span {
     display: block;

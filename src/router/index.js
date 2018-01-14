@@ -4,6 +4,8 @@ import Home from '@/pages/Home/Home.vue'
 import Storybook from '@/pages/Storybook/Storybook.vue'
 import CustomMap from '@/pages/CustomMap/CustomMap.vue'
 import VisualIntro from '@/pages/VisualIntro/VisualIntro.vue'
+import VisualIntroStep2 from '@/pages/VisualIntroStep2/VisualIntroStep2.vue'
+
 
 Vue.use(Router)
 
@@ -34,6 +36,11 @@ export default new Router({
       path:'/visual-intro',
       name: 'visual-intro',
       component: VisualIntro
+    },
+    {
+      path:'/visual-introstep2',
+      name: 'visual-introstep2',
+      component: VisualIntroStep2
     }
   ]
 })
