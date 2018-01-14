@@ -11,7 +11,7 @@
     "zone": "Palermo",
     "coworking": false,
     "telephone": 999999,
-    "website": "www.example.com", 
+    "website": "www.labcafe.com.ar", 
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 
   },
@@ -27,7 +27,7 @@
     "zone": "Palermo",
     "coworking": true,
     "telephone": 999999,
-    "website": "www.example.com",
+    "website": "www.lobo.cafe",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
@@ -42,7 +42,7 @@
     "zone": "Recoleta",
     "coworking": false,
     "telephone": 999999,
-    "website": "www.example.com",
+    "website": "facebook.com/Delicious.cafe.ar",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
@@ -57,7 +57,7 @@
     "zone": "Caballito",
     "coworking": false,
     "telephone": 999999,
-    "website": "www.example.com",
+    "website": "www.tiendadecafe.com.ar",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
@@ -72,7 +72,7 @@
     "zone": "Recoleta",
     "coworking": false,
     "telephone": 999999,
-    "website": "www.example.com",
+    "website": "facebook.com/cafedelbosco",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
@@ -87,7 +87,7 @@
     "zone": "Palermo",
     "coworking": true,
     "telephone": 999999,
-    "website": "www.example.com",
+    "website": "facebook.com/fullcitycoffeehouse",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   }
 ]
