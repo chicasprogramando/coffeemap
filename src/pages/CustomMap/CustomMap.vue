@@ -6,9 +6,11 @@
         <MapWrapper 
         :zoom="15" 
         :center="{lat: -34.586347, lng: -58.431469}" 
+        @coffeClick="handleCoffeClick"
         />
-        <VisualCafeDetail />
-	</div>
+        <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
+    </div>
+    
 </template>
 
 <style scoped>

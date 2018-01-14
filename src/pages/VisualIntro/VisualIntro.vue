@@ -18,13 +18,13 @@
             <input-dropdown :class="$style.dropdownWidth"></input-dropdown>
         </div>
         <div :class="$style.button">
-            <button-general :class="$style.buttonWidth" button-text="Comenzar" size="large"></button-general>
+            <button-general :class="$style.buttonWidth" button-text="Comenzar" size="large" @click="handleClick"></button-general>
         </div>
     </div>
 </template>
 
 <script>
-import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral'
+import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral';
 import InputDropdown from '../../components/InputDropdown/InputDropdown';
 
 export default {
@@ -32,8 +32,13 @@ export default {
     components:{
         InputDropdown,
         ButtonGeneral
-    }
-}
+    },
+    methods: {
+        handleClick() {
+            this.$router.push('/filter');
+        },
+    },
+};
 </script>
 
 <style module>

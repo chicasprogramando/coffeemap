@@ -9,7 +9,14 @@ export default {
 	},
 	data() {
 		return {
-			title: 'CustomMap'
+			title: 'CustomMap',
+			coffee: null,
 		};
-	}
+	},
+	methods: {
+		handleCoffeClick(coffee) {
+			this.coffee = coffee;
+			this.$router.push({name: 'coffee', params:{id: coffee.id}});
+		},
+	},
 };

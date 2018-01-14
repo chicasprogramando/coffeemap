@@ -1,21 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-
-    <router-link to="/">Home</router-link>
-
-    <router-link to="/cafe/1">Cafe 1</router-link>
-    <router-link to="/cafe/2">Cafe 2</router-link>
-
-    <router-link to="/storybook">StoryBook</router-link>
-
-    <router-link to="/custom-map">CustomMap</router-link>
-    <router-link to="/visual-intro">VisualIntro</router-link>
-    <router-link to="/visual-introstep2">VisualIntroStep2</router-link>
-
-
-
-    <router-view :key="$route.fullPath"/>
+    <router-view/>
   </div>
 </template>
 
@@ -30,7 +15,7 @@ export default {
     } 
   },
   created() {
-    console.log('APP CREATED')
+    console.log('APP CREATED');
 
     /* api.getPosts()
     .then(data => {
@@ -50,7 +35,9 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }
 </style>
