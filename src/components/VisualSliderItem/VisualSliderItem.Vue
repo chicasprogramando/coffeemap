@@ -96,7 +96,7 @@
 }
 .rating{
     margin-top: 15px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     margin-right:20px;
 }
 .vermas{
