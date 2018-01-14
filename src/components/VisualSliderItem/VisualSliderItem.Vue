@@ -6,7 +6,7 @@
             <div :class="$style.informacion">
                 <p :class="$style.nombre">{{name}}</p>
                 <p><span :class="$style.horario">10-20hs</span> <span :class="$style.green">Abierto</span></p>
-                <p :class="$style.direccion">Humboldt 1542<br /><span>{{web}}</span></p>
+                <p :class="$style.direccion">{{address}}<br /><span>{{web}}</span></p>
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="rating"></visual-rating>
@@ -31,6 +31,7 @@
         name: VueTypes.string,
         web: VueTypes.string,
         rating: VueTypes.number,
+        address: VueTypes.string,
     },
 
     }
