@@ -95,7 +95,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3px;
+  margin: 1px;
 }
 .svg {
   width: 100%;

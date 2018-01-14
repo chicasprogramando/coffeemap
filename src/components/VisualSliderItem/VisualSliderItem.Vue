@@ -4,12 +4,12 @@
         </div>
          <div :class="$style.columnas">
             <div :class="$style.informacion">
-                <p :class="$style.nombre">Cafetería con<br />nombre largo</p>
+                <p :class="$style.nombre">{{name}}</p>
                 <p><span :class="$style.horario">10-20hs</span> <span :class="$style.green">Abierto</span></p>
-                <p :class="$style.direccion">Humboldt 1542<br />+más datos sobre dirección</p>
+                <p :class="$style.direccion">Humboldt 1542<br /><span>{{web}}</span></p>
             </div>
             <div :class="$style['rating-button']">
-                <visual-rating :class="$style.rating" :value="0"></visual-rating>
+                <visual-rating :class="$style.rating" :value="rating"></visual-rating>
                 <button-more :class="$style.vermas" button-text="Ver más"></button-more>
             </div>
         </div>    
@@ -17,14 +17,21 @@
 </template>
 
 <script>
+  import VueTypes from 'vue-types';
   import ButtonMore from '../ButtonMore/ButtonMore.vue';
   import VisualRating from '../VisualRating/VisualRating.vue';
+  
   export default {
     name: "VisualSliderItem",
     components:{
         VisualRating,
         ButtonMore,
-    }
+    },
+    props:{
+        name: VueTypes.string,
+        web: VueTypes.string,
+        rating: VueTypes.number,
+    },
 
     }
 
