@@ -106,4 +106,3 @@ export default {
   margin-left: 105px;
 }
 </style>
-
