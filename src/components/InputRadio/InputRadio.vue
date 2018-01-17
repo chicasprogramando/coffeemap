@@ -35,7 +35,12 @@ export default {
 
 
 <style scoped>
+    .input-group{
+        width: 80%;
+        margin: 0 auto;
+    }
     .input-group-radio {
+        
         position: relative;
         white-space: nowrap;
         display: table-cell;

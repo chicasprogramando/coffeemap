@@ -29,6 +29,12 @@
             </div>                
 
             </div>
+            <div :class="$style.wrapperCuantoPagar">
+              <p :class="$style.likeText">Cuánto querés gastar?</p>
+              <div :class="$style.wrapperRadio">
+                <InputRadio :class="$style.inputRadio" ></InputRadio>
+              </div>
+            </div>
         </div>
              <div :class="$style.button">
             <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
@@ -42,13 +48,15 @@
 import AppHeader from "../../components/AppHeader/AppHeader"
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
 import Icon from "../../components/Icon/Icon"
+import InputRadio from "../../components/InputRadio/InputRadio.vue"
 
 export default {
   name: "VisualIntroStep2",
   components: {
     AppHeader,
     ButtonGeneral,
-    Icon
+    Icon,
+    InputRadio
   },
   methods: {
     handleClick() {
@@ -63,18 +71,24 @@ export default {
   font-weight: bold;
   font-size: 25px;
   margin: 0 auto;
-  max-width: 45%;
+  max-width: 60%;
   color: white;
   margin-bottom: 10%;
+  text-align: center;
 }
 
 .background {
   background-color: #8882da;
+  height: 100%;
+  width: 100%;
+  padding: 25px 0px;
 }
 
 .iconitos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: white;
   padding: 0 48px 40px;
 }
@@ -102,7 +116,24 @@ export default {
   fill: white;
 }
 
+.wrapperCuantoPagar {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+}
+
+.wrapperRadio {
+  
+}
+
+.inputRadio {
+
+}
+
 .button {
-  margin-left: 105px;
+  text-align: center;
 }
 </style>
