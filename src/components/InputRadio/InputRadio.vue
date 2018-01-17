@@ -36,23 +36,16 @@ export default {
 
 <style scoped>
     .input-group{
-        width: 80%;
-        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .input-group-radio {
-        
-        position: relative;
-        white-space: nowrap;
-        display: table-cell;
-    }
-
-    .input-group-radio .radio-btn {
-        margin-left: -1px
-    }
-
+   
     .radio-btn label {
         height: 46px;
-        width: 120px;
+        margin: auto;
+        max-width: 160px;
         border-radius: 70px;
         border: 1px solid rgb(255, 255, 255);
         font-family: sans-serif;
@@ -61,10 +54,11 @@ export default {
         line-height: 3em;
         cursor: pointer;
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px 30px;
         text-align: center;
         white-space: nowrap;
         color: rgb(240, 240, 240);
+
     }
 
     .radio-btn:hover label {

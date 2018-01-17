@@ -29,14 +29,15 @@
             </div>                
 
             </div>
-            <div :class="$style.wrapperCuantoPagar">
-              <p :class="$style.likeText">Cuánto querés gastar?</p>
+            
+        </div>
+        <div :class="$style.wrapperCuantoPagar">
+              <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
               <div :class="$style.wrapperRadio">
                 <InputRadio :class="$style.inputRadio" ></InputRadio>
               </div>
-            </div>
         </div>
-             <div :class="$style.button">
+        <div :class="$style.button">
             <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
         </div>
     </div>
@@ -116,22 +117,30 @@ export default {
   fill: white;
 }
 
+.likeTextCuantoPagar {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 auto;
+  max-width: 60%;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 .wrapperCuantoPagar {
   width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 25px;
   padding-top: 50px;
   border-top: 1px solid rgba(255,255,255,0.3);
   text-align: center;
 }
 
 .wrapperRadio {
-  
+  width: 100%;
+  margin: 50px auto;
 }
 
-.inputRadio {
-
-}
 
 .button {
   text-align: center;
