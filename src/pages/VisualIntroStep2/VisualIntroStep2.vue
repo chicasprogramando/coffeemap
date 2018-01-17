@@ -1,54 +1,29 @@
 <template>
-    <div :class="$style.background">
-        <app-header></app-header>
-        <p :class="$style.likeText">Y te gustaría que tenga...</p>
-         <div :class="$style.iconitos">
-            <div :class="$style.iconitoWrapper">
-                <div :class="$style.iconitoStyle">
-                    <icon name="wifi" :size="50"/>
-                    <span>WIFI</span>                    
-                </div>
-            </div> 
-              <div :class="$style.iconitoWrapper">
-                  <div :class="$style.iconitoStyle">
-                    <icon name="food" :size="50"/>
-                     <span>Cocina</span>                    
-            </div>
-              </div>
-
-            <div :class="$style.iconitoWrapper">
-                <div :class="$style.iconitoStyle">
-                 <icon name="bag" :size="50"/>
-                  <span>Take Away</span> 
-                  </div>                   
-             </div>
-               <div :class="$style.iconitoWrapper">
-            <div :class="$style.iconitoStyle">
-                  <icon name="laptop" :size="50"/>
-                 <span>Coworking</span>    
-            </div>                
-
-            </div>
-            
-        </div>
-        <div :class="$style.wrapperCuantoPagar">
-              <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
-              <div :class="$style.wrapperRadio">
-                <InputRadio :class="$style.inputRadio" ></InputRadio>
-              </div>
-        </div>
-        <div :class="$style.button">
-            <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
-        </div>
+  <div :class="$style.background">
+    <app-header></app-header>
+    <p :class="$style.likeText">Y te gustaría que tenga...</p>
+    <div :class="$style.miniIcons">
+      <IconWithToggle name="wifi" iconName="wifi" :iconSize="50"/>
+      <IconWithToggle name="Cocina" iconName="food" :iconSize="50"/>
+      <IconWithToggle name="Take Away" iconName="bag" :iconSize="50"/>
+      <IconWithToggle name="Co Working" iconName="laptop" :iconSize="50"/>
     </div>
-       
-
+    <div :class="$style.wrapperCuantoPagar">
+      <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
+      <div :class="$style.wrapperRadio">
+        <InputRadio :class="$style.inputRadio" ></InputRadio>
+      </div>
+    </div>
+    <div :class="$style.button">
+      <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+    </div>
+  </div>
 </template>
 
 <script>
 import AppHeader from "../../components/AppHeader/AppHeader"
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
-import Icon from "../../components/Icon/Icon"
+import IconWithToggle from "../../components/IconWithToggle/IconWithToggle"
 import InputRadio from "../../components/InputRadio/InputRadio.vue"
 
 export default {
@@ -56,7 +31,7 @@ export default {
   components: {
     AppHeader,
     ButtonGeneral,
-    Icon,
+    IconWithToggle,
     InputRadio
   },
   methods: {
@@ -85,36 +60,13 @@ export default {
   padding: 25px 0px;
 }
 
-.iconitos {
+.miniIcons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: white;
   padding: 0 48px 40px;
-}
-
-.iconitoWrapper {
-  flex: 0 0 50%;
-  height: auto;
-  color: white;
-}
-
-.iconitoStyle {
-  width: 100px;
-  height: 100px;
-  border: 2px solid white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 14px;
-  margin: 0 auto 15px;
-}
-
-.iconitoStyle svg path {
-  fill: white;
 }
 
 .likeTextCuantoPagar {
@@ -132,7 +84,7 @@ export default {
   margin: 0 auto;
   margin-top: 25px;
   padding-top: 50px;
-  border-top: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
@@ -140,7 +92,6 @@ export default {
   width: 100%;
   margin: 50px auto;
 }
-
 
 .button {
   text-align: center;
