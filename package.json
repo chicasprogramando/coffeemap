@@ -18,7 +18,8 @@
     "vue-router": "^3.0.1",
     "vue-style-loader": "^3.0.3",
     "vue-types": "^1.1.1",
-    "vue2-google-maps": "^0.8.4"
+    "vue2-google-maps": "^0.8.4",
+    "vue2-leaflet": "0.0.58"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

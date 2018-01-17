@@ -1,36 +1,38 @@
 <template>
 	<div>
     <p>Click some marker and check the console...</p>
-    <gmap-map
-        :center="center"
-        :zoom="zoom"
-        :class="$style.wrapperMap"
-    >
-        <gmap-marker
-          :key="index"
-          v-for="(coffee, index) in getCoffees"
-          :position="coffee.position"
-          :clickable="true"
-          @click="handlerMarker(coffee)"
-        ></gmap-marker>
-    </gmap-map>
+    <div :class="$style.wrapperMap">
+      <v-map :zoom="zoom" :center="center">
+        <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
+        <v-marker v-for="(coffee, index) in getCoffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="handlerMarker(coffee)"/>
+      </v-map>
+    </div>
     <router-view :key="$route.fullPath"/>
 	</div>
 </template>
 
 <script>
 import VueTypes from 'vue-types';
-import api from '@/api'
+import api from '@/api';
+import Vue2Leaflet from 'vue2-leaflet';
 
+// Build icon assets.
 export default {
   name: "mapWrapper",
   props: {
     center: VueTypes.object.isRequired,
-    zoom: VueTypes.number.def(10),
+    zoom: VueTypes.number.def(15),
+  },
+  components:{
+    'v-map': Vue2Leaflet.Map,
+    'v-tilelayer': Vue2Leaflet.TileLayer,
+    'v-marker': Vue2Leaflet.Marker,
+    'v-icondefault': Vue2Leaflet.IconDefault,
   },
   data() {
 		return {
       coffees: null,
+      iconPath: "../src/assets/icons/coffee.png",
 		};
 	},
   methods: {
@@ -38,6 +40,13 @@ export default {
       console.log(`You clicked: ${coffee.name}`);
       this.$emit('coffeClick', coffee);
 		},
+    icon () {
+      return L.icon({
+        iconUrl: this.iconPath,
+        iconSize: [32, 32],
+        iconAnchor: [0, 0]
+      })
+    }
   },
   computed: {
     getCoffees() {
@@ -45,6 +54,7 @@ export default {
     },
   },
   mounted() {
+
     api.getPosts()
 		.then(data => {
 			this.$getCoffees = data // Set globally
@@ -56,8 +66,9 @@ export default {
 </script>
 
 <style module>
+
 .wrapperMap {
-  width: 500px; 
+  width: 500px;
   height: 500px;
 }
 </style>
