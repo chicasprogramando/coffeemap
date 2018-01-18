@@ -3052,6 +3052,10 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
+leaflet@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.3.0.tgz#2bffd8b1a5a4d3048d6ed9d0a13c61a895da6be8"
+
 load-json-file@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
@@ -5393,6 +5397,12 @@ vue2-google-maps@^0.8.4:
     babel-plugin-transform-runtime "^6.15.0"
     babel-runtime "^5.8.0"
     marker-clusterer-plus "^2.1.4"
+
+vue2-leaflet@0.0.58:
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/vue2-leaflet/-/vue2-leaflet-0.0.58.tgz#acfd0f7530292c60893a0b5b3cf648f06de530d1"
+  dependencies:
+    leaflet "^1.2.0"
 
 vue@^2.5.2:
   version "2.5.9"
