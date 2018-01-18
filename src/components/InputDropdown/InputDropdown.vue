@@ -1,6 +1,6 @@
 <template>
     <div :class="[$style.container, compact && $style.compact]">
-        <select v-model="selected" :class="$style.select">
+        <select :value="location" :class="$style.select" @input="handleInput($event.target.value)">
             <option 
 				v-for="neighborhood in neighborhoods" 
 				:key="neighborhood.value"
@@ -12,18 +12,16 @@
 </template>
 
 <script>
+import VueTypes from 'vue-types';
 
 export default {
     name: 'InputDropdown',
     props: {
-		compact: {
-			type: Boolean,
-			default: false,
-		},
+		compact: VueTypes.bool.def(false),
+		location : VueTypes.string.isRequired,
 	},
 	data(){
 		return {
-			selected: 'palermo',
 			neighborhoods: [
 				{value: 'palermo', label: 'Palermo'},
 				{value: 'belgrano', label: 'Belgrano'},
@@ -31,8 +29,13 @@ export default {
 				{value: 'recoleta', label: 'Recoleta'},
 			],
 		}
-	}
-}
+	},
+	methods:{
+		handleInput(value){
+			this.$emit('input', value);
+		},
+	},
+};
 </script>
 
 <style module lang="scss">
