@@ -12,10 +12,10 @@
         </div>
 
         <div>
-            <h2 :class="$style.h2">Elegi la zona que </br>te quede más cerca</h2>
+            <h2 :class="$style.h2">Elegi la zona que <br />te quede más cerca</h2>
         </div>
         <div :class="$style.dropdowm">
-            <input-dropdown :class="$style.dropdownWidth"></input-dropdown>
+            <input-dropdown :class="$style.dropdownWidth" :location="state.location" @input="handleInput"></input-dropdown>
         </div>
         <div :class="$style.button">
             <button-general :class="$style.buttonWidth" button-text="Comenzar" size="large" @click="handleClick"></button-general>
@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import VueTypes from 'vue-types';
 import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral';
 import InputDropdown from '../../components/InputDropdown/InputDropdown';
 
@@ -33,11 +34,22 @@ export default {
         InputDropdown,
         ButtonGeneral
     },
+    props: {
+        state: VueTypes.any.isRequired,
+        allMethods: VueTypes.any.isRequired,
+    },
+    mounted(){
+        console.log(this.allMethods());
+    },
     methods: {
         handleClick() {
             this.$router.push('/filter');
         },
+        handleInput(value){
+            this.allMethods().changeLocation(value);
+        },
     },
+
 };
 </script>
 

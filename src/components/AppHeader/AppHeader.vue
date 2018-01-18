@@ -14,19 +14,21 @@ export default {
 }
 </script>
 
-<style module>
+<style module lang="postcss">
+@import '../../styles/variables.css';
+/* @value colors: '../../styles/variables.css';
+ @value purplecoffee, fontsize from colors; */
+
 .headerContainer{
     padding: 35px 40px;
     text-align: center;
-    background-color: #8882da;
-
-   
+    background-color: purplecoffee; 
 }
 .headerText{
 
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: fontsize;
     margin: 0;
 
 }

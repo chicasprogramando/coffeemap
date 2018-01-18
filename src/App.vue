@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view :state="state" :all-methods="allMethods"/>
   </div>
 </template>
 
@@ -11,8 +11,13 @@ export default {
   name: 'app',
   data() {
     return {
-      coffees: null
-    } 
+      coffees: null,
+      state: {
+        location: 'nunez',
+        filters: [],
+        cost: 0,
+      },
+    };
   },
   created() {
     console.log('APP CREATED');
@@ -23,6 +28,24 @@ export default {
       console.log(this.$getCoffees)
     })
     .catch(e => console.error(e)) */
+  },
+  methods:{
+    changeLocation(location) {
+      this.state.location = location;
+    },
+    changeFilter(filter) {
+      this.state.filter = filter;
+    },
+    changeCost(cost) {
+      this.state.cost = cost;
+    },
+    allMethods() {
+      return {
+        changeLocation: this.changeLocation,
+        changeFilter: this.changeFilter,
+        changeCost: this.changeCost,
+      };
+    },
   },
   mounted() {
     console.log('APP MOUNTED')
