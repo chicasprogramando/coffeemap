@@ -40,9 +40,14 @@ export default {
 .container {
 	position: relative;
 	display: inline-block;
-	width: 320px;
+	
+	// width: 320px;
+	// Width should be controlled by outer container, depending on the page its used in
+
 	margin-bottom: 15px;
-	background: blueviolet;
+
+	// background: blueviolet;
+	// Color should be set by a prop (maybe set this color as a default)
 }
 
 
