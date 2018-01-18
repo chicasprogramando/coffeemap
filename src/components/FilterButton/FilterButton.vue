@@ -1,10 +1,8 @@
 <template>
     <div  :class="[$style.initial, status]" v-on:click="changeStatus">
-
-          <icon  v-if="isActive" color="blueviolet"  :name="name"/>
-          <icon  v-else color="white" :name="name"/>
+          <icon  v-if="isActive" color="blueviolet"  :name="name" :size="iconSize"/>
+          <icon  v-else color="white" :name="name" :size="iconSize"/>
           <label :class="[$style.initialLabel, labelStatus]">{{ buttonText }}</label>
-
     </div>
 </template>
 
@@ -16,7 +14,8 @@ export default {
   name: "FilterButton",
   props: {
     name: VueTypes.string.isRequired,
-    buttonText: VueTypes.string.isRequired
+    buttonText: VueTypes.string.isRequired,
+    iconSize: VueTypes.number.def(100)
   },
   components: {
     Icon
@@ -47,8 +46,9 @@ export default {
 </script>
 <style module>
   .initial {
-    width: 150px;
-    height: 150px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
     margin: auto;
     padding:15px;
     border: 5px solid white;

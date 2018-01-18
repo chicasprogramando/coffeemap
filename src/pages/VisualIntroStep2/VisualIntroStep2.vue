@@ -3,10 +3,10 @@
     <app-header></app-header>
     <p :class="$style.likeText">Y te gustaría que tenga...</p>
     <div :class="$style.miniIcons">
-      <IconWithToggle name="wifi" iconName="wifi" :iconSize="50"/>
-      <IconWithToggle name="Cocina" iconName="food" :iconSize="50"/>
-      <IconWithToggle name="Take Away" iconName="bag" :iconSize="50"/>
-      <IconWithToggle name="Co Working" iconName="laptop" :iconSize="50"/>
+      <FilterButton name="wifi" button-text="Wifi" :iconSize="50"/>
+      <FilterButton name="food" button-text="Cocina" :iconSize="50"/>
+      <FilterButton name="bag" button-text="Take away" :iconSize="50"/>
+      <FilterButton name="laptop" button-text="Coworking" :iconSize="50"/>
     </div>
     <div :class="$style.wrapperCuantoPagar">
       <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
@@ -23,7 +23,7 @@
 <script>
 import AppHeader from "../../components/AppHeader/AppHeader"
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
-import IconWithToggle from "../../components/IconWithToggle/IconWithToggle"
+import FilterButton from "../../components/FilterButton/FilterButton"
 import InputRadio from "../../components/InputRadio/InputRadio.vue"
 
 export default {
@@ -31,7 +31,7 @@ export default {
   components: {
     AppHeader,
     ButtonGeneral,
-    IconWithToggle,
+    FilterButton,
     InputRadio
   },
   methods: {
@@ -54,7 +54,7 @@ export default {
 }
 
 .background {
-  background-color: #8882da;
+  background-color: blueviolet;
   height: 100%;
   width: 100%;
   padding: 25px 0px;
