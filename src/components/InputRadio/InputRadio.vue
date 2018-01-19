@@ -62,8 +62,7 @@ export default {
     }
 
     .radio-btn:hover label {
-        border-color: rgb(173, 173, 173);
-        color:rgb(173, 173, 173);
+       
     }
 
     .input-group-radio input[type="radio"]:empty {

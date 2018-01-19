@@ -9,10 +9,11 @@
       <FilterButton name="laptop" button-text="Coworking" :iconSize="50"/>
     </div>
     <div :class="$style.wrapperCuantoPagar">
-      <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
-      <div :class="$style.wrapperRadio">
+      <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
+      <!--<div :class="$style.wrapperRadio">
         <InputRadio :class="$style.inputRadio" ></InputRadio>
-      </div>
+      </div>-->
+      <RangeSlider/>
     </div>
     <div :class="$style.button">
       <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
@@ -25,6 +26,8 @@ import AppHeader from "../../components/AppHeader/AppHeader"
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
 import FilterButton from "../../components/FilterButton/FilterButton"
 import InputRadio from "../../components/InputRadio/InputRadio.vue"
+import RangeSlider from "../../components/RangeSlider/RangeSlider.vue"
+
 
 export default {
   name: "VisualIntroStep2",
@@ -32,7 +35,8 @@ export default {
     AppHeader,
     ButtonGeneral,
     FilterButton,
-    InputRadio
+    InputRadio,
+    RangeSlider
   },
   methods: {
     handleClick() {
@@ -83,15 +87,12 @@ export default {
   width: 100%;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 50px;
   padding-top: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
-.wrapperRadio {
-  width: 100%;
-  margin: 50px auto;
-}
 
 .button {
   text-align: center;
