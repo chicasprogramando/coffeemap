@@ -1,18 +1,19 @@
 <template>
+  <div :class="$style.wrapper">
     <div :class="$style.container">
 
         <div>
-            <p :class="$style.bienvenidos">Bienvenidos a</p>
+            <p :class="$style.welcome">Bienvenidos a</p>
         </div>
         <div>
             <h1>#CoffeeMap</h1>
         </div>
         <div>
-            <p>Hecho por <span :class="$style.negrita">ChicasProgramandoEnCafes</span></p>
+            <p>Hecho por <span :class="$style.bold">ChicasProgramandoEnCafes</span></p>
         </div>
 
         <div>
-            <h2 :class="$style.h2">Elegi la zona que <br />te quede más cerca</h2>
+            <h2 :class="$style.chooseText">Elegi la zona que <br />te quede más cerca</h2>
         </div>
         <div :class="$style.dropdowm">
             <input-dropdown :class="$style.dropdownWidth" :location="state.location" @input="handleInput"></input-dropdown>
@@ -20,7 +21,8 @@
         <div :class="$style.button">
             <button-general :class="$style.buttonWidth" button-text="Comenzar" size="large" @click="handleClick"></button-general>
         </div>
-    </div>
+     </div>
+  </div>
 </template>
 
 <script>
@@ -54,15 +56,22 @@ export default {
 </script>
 
 <style module>
-.container{
-    width:320px;
+
+.wrapper {    
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blueviolet;
-    color:white;
+}
+.container{
+    width: 100%;   
+    max-width: 400px;
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 60px;
-    padding-right: 25px;
-    padding-left:25px;
+    margin: 10vw 5vw;
+    color:white; 
+
     
 }
 .button{
@@ -70,25 +79,25 @@ export default {
     padding-top: 30px;
 }
 
-.negrita{
+.bold{
     font-weight: bold;
     
 }
-.h2{
+.chooseText{
     padding-bottom:40px;
 }
-.bienvenidos{
+.welcome{
     font-size:20px;
     margin-bottom: -20px;
 
 }
 .buttonWidth{
-    min-width:300px;
+    width:100%;
     font-size:18px;
-    font-weight: 150;
+    
 }
 .dropdownWidth{
-    min-width: 270px;
+    width: 100%;
 }
 
 
