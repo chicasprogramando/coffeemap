@@ -43,6 +43,7 @@
 </script>
 
 <style module>
+@import "../../styles/variables.css";
 .slider{
     background-color: white;
     width: 320px;
@@ -85,7 +86,7 @@
     margin-right: 5px;
 }
 .nombre{
-    color:blueviolet;
+    color:purplecoffee;
     font-size:20px;
     font-weight:bold ;
     line-height: 22px;
