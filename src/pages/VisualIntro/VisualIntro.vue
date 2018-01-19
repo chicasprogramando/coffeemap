@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style module>
+@import "../../styles/variables.css";
 
 .wrapper {    
     min-height: 100%;
@@ -63,7 +64,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: purplecoffee;
 }
 .container{
     width: 100%;   
