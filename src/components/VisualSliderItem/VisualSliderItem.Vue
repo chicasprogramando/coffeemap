@@ -1,18 +1,18 @@
 <template>
     <div :class="$style.slider">
-        <div :class="$style.imagen">Imagen
+        <div :class="$style.image">Imagen
         </div>
-         <div :class="$style.columnas">
-            <div :class="$style.informacion">
+         <div :class="$style.columns">
+            <div :class="$style.info">
                 <p :class="$style.nombre">{{name}}</p>
                 <p>
-                <span :class="$style.horario">{{businessHours[0]}}-{{businessHours[1]}}hs</span>
+                <span :class="$style.time">{{businessHours[0]}}-{{businessHours[1]}}hs</span>
                 <span :class="$style.green">Abierto</span></p>
-                <p :class="$style.direccion">{{address}}<br /><span>{{web}}</span></p>
+                <p :class="$style.address">{{address}}<br /><span>{{web}}</span></p>
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="rating"></visual-rating>
-                <button-more :class="$style.vermas" button-text="Ver más"></button-more>
+                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7573d2" text-color="#fff"></button-general>
             </div>
         </div>    
     </div>
@@ -20,14 +20,14 @@
 
 <script>
   import VueTypes from 'vue-types';
-  import ButtonMore from '../ButtonMore/ButtonMore.vue';
+  import ButtonGeneral from '../ButtonGeneral/ButtonGeneral.vue';
   import VisualRating from '../VisualRating/VisualRating.vue';
   
   export default {
     name: "VisualSliderItem",
     components:{
         VisualRating,
-        ButtonMore,
+        ButtonGeneral,
     },
     props:{
         name: VueTypes.string,
@@ -51,22 +51,19 @@
     overflow: hidden;
     
 }
-.imagen{
+.image{
     background-image: url('../../assets/cafevisualslideitem.jpg');
     height:80px;
     
 }
-.informacion{
+.info{
     line-height: 17px;
     padding-left: 15px;
-
-}
-
-.informacion{
     width:220px;
 
 }
-.columnas{
+
+.columns{
     display:flex;
     flex-direction: row;
     justify-content:center;
@@ -77,11 +74,11 @@
 .green{
     color:green;
 }
-.direccion{
+.address{
     color:grey;
     font-size:13px;
 }
-.horario{
+.time{
     font-weight: bold;
     color:black;
     font-size:13px;
@@ -97,9 +94,9 @@
 .rating{
     margin-top: 15px;
     margin-bottom: 70px;
-    margin-right:20px;
+    margin-right:30px;
 }
-.vermas{
+.seemore{
     width:80px;
     margin-right:20px;
 }
