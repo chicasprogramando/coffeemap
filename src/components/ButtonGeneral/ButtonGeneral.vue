@@ -40,20 +40,21 @@ export default {
 };
 </script>
 
-<style module>
+<style module lang="postcss">
+@import "../../styles/variables.css";
     .button {
-        font-weight: bold;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         border: none;
         border-radius: 25px;
+        cursor: pointer;
     }
     .smallButton {
         padding: 5px 8px;
-        font-size: 12px;
+        font-size: fs-s;
     }
     .largeButton {
         padding: 10px 20px;    
-        font-size: 24px;
+        font-size: fs-m;
     }
 </style>
 

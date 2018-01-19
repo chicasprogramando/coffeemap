@@ -25,11 +25,9 @@ export default {
     background-color: purplecoffee; 
 }
 .headerText{
-
     font-weight: bold;
     color: white;
-    font-size: fontsize;
+    font-size: fs-m;
     margin: 0;
-
 }
 </style>
