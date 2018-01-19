@@ -16,10 +16,11 @@
       <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50"/>
     </div>
     <div :class="$style.wrapperCuantoPagar">
-      <p :class="$style.likeTextCuantoPagar">Cuánto querés gastar?</p>
-      <div :class="$style.wrapperRadio">
-        <InputRadio :class="$style.inputRadio"></InputRadio>
-      </div>
+      <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
+      <!--<div :class="$style.wrapperRadio">
+        <InputRadio :class="$style.inputRadio" ></InputRadio>
+      </div>-->
+      <RangeSlider/>
     </div>
     <div :class="$style.button">
       <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
@@ -28,10 +29,12 @@
 </template>
 
 <script>
-import AppHeader from "../../components/AppHeader/AppHeader";
-import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
-import FilterButton from "../../components/FilterButton/FilterButton";
-import InputRadio from "../../components/InputRadio/InputRadio.vue";
+import AppHeader from "../../components/AppHeader/AppHeader"
+import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
+import FilterButton from "../../components/FilterButton/FilterButton"
+import InputRadio from "../../components/InputRadio/InputRadio.vue"
+import RangeSlider from "../../components/RangeSlider/RangeSlider.vue"
+
 
 export default {
   name: "VisualIntroStep2",
@@ -39,7 +42,8 @@ export default {
     AppHeader,
     ButtonGeneral,
     FilterButton,
-    InputRadio
+    InputRadio,
+    RangeSlider
   },
   data() {
     return {
@@ -129,10 +133,6 @@ body {
   text-align: center;
 }
 
-.wrapperRadio {
-  width: 100%;
-  margin: 50px auto;
-}
 
 .button {
   text-align: center;
