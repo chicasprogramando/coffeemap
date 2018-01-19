@@ -43,7 +43,6 @@ export default {
 .container {
 	position: relative;
 	display: inline-block;
-	width: 320px;
 	margin-bottom: 15px;
 	background: blueviolet;
 }
