@@ -1,8 +1,8 @@
 <template>
-  <div :class="$style.background">
+<div :class="$style.wrapper">
+  <div :class="$style.container">
     <app-header></app-header>
     <p :class="$style.title">Y te gustaría que tenga...</p>
-
     <div v-if="is320()" :class="$style.miniIcons">
       <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35"/>
       <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35"/>
@@ -20,21 +20,21 @@
       <!--<div :class="$style.wrapperRadio">
         <InputRadio :class="$style.inputRadio" ></InputRadio>
       </div>-->
-      <RangeSlider/>
     </div>
+    <RangeSlider/>
     <div :class="$style.button">
       <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
-import AppHeader from "../../components/AppHeader/AppHeader"
-import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral"
-import FilterButton from "../../components/FilterButton/FilterButton"
-import InputRadio from "../../components/InputRadio/InputRadio.vue"
-import RangeSlider from "../../components/RangeSlider/RangeSlider.vue"
-
+import AppHeader from "../../components/AppHeader/AppHeader";
+import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
+import FilterButton from "../../components/FilterButton/FilterButton";
+import InputRadio from "../../components/InputRadio/InputRadio.vue";
+import RangeSlider from "../../components/RangeSlider/RangeSlider.vue";
 
 export default {
   name: "VisualIntroStep2",
@@ -74,7 +74,7 @@ export default {
     is320(windowWidth) {
       if (this.windowWidth <= 320) {
         return true;
-      } 
+      }
     }
   },
   beforeDestroy() {
@@ -89,58 +89,84 @@ export default {
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  min-height: 100%;
   width: 100%;
-  height: 100%;
   background-color: purplecoffee;
 }
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 10vw 5vh;
+  color: white;
+}
+
 .title {
   font-weight: bold;
   font-size: fs-l;
-  margin: 0 auto;
-  max-width: 60%;
+  margin: 1vw;
   color: white;
-  margin-bottom: 10%;
   text-align: center;
 }
 
 .miniIcons {
+  width: 100%;
+  max-width: 600px;
+  margin: 2vw auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100%;
   color: white;
-  padding: 0 48px 40px;
 }
 
 .likeTextCuantoPagar {
   font-weight: bold;
   font-size: fs-l;
   margin: 0 auto;
-  max-width: 60%;
   color: white;
-  margin-bottom: 25px;
+  padding: 15px;
   text-align: center;
 }
 
 .wrapperCuantoPagar {
-  width: 100%;
+  max-width: 400px;
+  min-width: 150px;
   margin: 0 auto;
-  margin-top: fs-l;
-  padding-top: 50px;
+  padding: 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
-
 .button {
   text-align: center;
+  width: 100%;
 }
 
 .buttonWidth {
   min-width: 300px;
+  margin: 15px auto;
   font-size: fs-m;
-  font-weight: 150;
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin: 10vw 1vh;
+  }
+}
+
+@media (max-width: 615px) {
+  .miniIcons {
+    max-width: 300px;
+  }
 }
 </style>
