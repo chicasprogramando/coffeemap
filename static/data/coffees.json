@@ -4,159 +4,356 @@
     "name": "LAB Café",
     "rating": 4,
     "address": "Humboldt 1542",
-    "businessHours": [10, 20],
+    "businessHours": [
+      10,
+      20
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.586347, "lng": -58.431469 },
+    "position": {
+      "lat": -34.586347,
+      "lng": -58.431469
+    },
     "zone": "Palermo",
     "coworking": false,
     "telephone": 999999,
     "website": "www.labcafe.com.ar",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 2,
     "name": "Lobo Café",
     "rating": 3,
     "address": "Honduras 4730",
-    "businessHours": [9, 19],
+    "businessHours": [
+      9,
+      19
+    ],
     "wifi": true,
     "pets": false,
-    "position": { "lat": -34.584139, "lng": -58.425218 },
+    "position": {
+      "lat": -34.584139,
+      "lng": -58.425218
+    },
     "zone": "Palermo",
     "coworking": true,
     "telephone": 999999,
     "website": "www.lobo.cafe",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 3,
     "name": "Delicious Café",
     "rating": 5,
     "address": "Laprida 2015",
-    "businessHours": [9, 20],
+    "businessHours": [
+      9,
+      20
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.588202, "lng": -58.423308 },
+    "position": {
+      "lat": -34.588202,
+      "lng": -58.423308
+    },
     "zone": "Recoleta",
     "coworking": false,
     "telephone": 999999,
     "website": "facebook.com/Delicious.cafe.ar",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 4,
     "name": "Tienda del Café",
     "rating": 2,
     "address": "Av. Díaz Vélez 5298",
-    "businessHours": [10, 21],
+    "businessHours": [
+      10,
+      21
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.584899, "lng": -58.439316 },
+    "position": {
+      "lat": -34.584899,
+      "lng": -58.439316
+    },
     "zone": "Caballito",
     "coworking": false,
     "telephone": 999999,
     "website": "www.tiendadecafe.com.ar",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 5,
     "name": "Del Bosco Café",
     "rating": 3,
     "address": "Santa Fe 2653",
-    "businessHours": [9, 21],
+    "businessHours": [
+      9,
+      21
+    ],
     "wifi": false,
     "pets": false,
-    "position": { "lat": -34.592859, "lng": -58.436687 },
+    "position": {
+      "lat": -34.592859,
+      "lng": -58.436687
+    },
     "zone": "Recoleta",
     "coworking": false,
     "telephone": 999999,
     "website": "facebook.com/cafedelbosco",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 6,
     "name": "Full City Coffee House",
     "rating": 2,
     "address": "Thames 1535",
-    "businessHours": [10, 21],
+    "businessHours": [
+      10,
+      21
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.594201, "lng": -58.421323 },
+    "position": {
+      "lat": -34.594201,
+      "lng": -58.421323
+    },
     "zone": "Palermo",
     "coworking": true,
     "telephone": 999999,
     "website": "facebook.com/fullcitycoffeehouse",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 7,
     "name": "Café Registrado",
     "rating": 4,
     "address": "Costa Rica 5901",
-    "businessHours": [8, 20],
+    "businessHours": [
+      8,
+      20
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.580016, "lng": -58.437747 },
+    "position": {
+      "lat": -34.580016,
+      "lng": -58.437747
+    },
     "zone": "Palermo",
     "coworking": false,
     "telephone": 999999,
     "website": "http://instagram.com/caferegistrado",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 8,
     "name": "La Noire Cafe",
     "rating": 4,
     "address": "Bonpland 1173",
-    "businessHours": [9, 21],
+    "businessHours": [
+      9,
+      21
+    ],
     "wifi": true,
     "pets": true,
-    "position": { "lat": -34.587624, "lng": -58.44258 },
+    "position": {
+      "lat": -34.587624,
+      "lng": -58.44258
+    },
     "zone": "Palermo",
     "coworking": true,
     "telephone": 999999,
     "website": "https://www.instagram.com/lanoirecafe/",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 9,
     "name": "Salvaje Bakery",
     "rating": 4,
     "address": "Av. Dorrego 1829",
-    "businessHours": [10, 21],
+    "businessHours": [
+      10,
+      21
+    ],
     "wifi": false,
     "pets": true,
-    "position": { "lat": -34.580506, "lng": -58.442063 },
+    "position": {
+      "lat": -34.580506,
+      "lng": -58.442063
+    },
     "zone": "Palermo",
     "coworking": false,
     "telephone": 999999,
     "website": "https://www.instagram.com/salvajebakery/",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
   {
     "id": 10,
     "name": "Adorado Bar",
     "rating": 3,
-    "address": "Nicaragua 5856,",
-    "businessHours": [10, 21],
+    "address": "Nicaragua 5856",
+    "businessHours": [
+      10,
+      21
+    ],
     "wifi": false,
     "pets": true,
-    "position": { "lat": -34.57945, "lng": -58.436142 },
+    "position": {
+      "lat": -34.57945,
+      "lng": -58.436142
+    },
     "zone": "Palermo",
     "coworking": false,
     "telephone": 999999,
     "website": "https://www.adoradobar.com/",
-    "description":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 11,
+    "name": "Cafe del Botanico",
+    "rating": 3,
+    "address": "Bulnes 1905",
+    "businessHours": [
+      7,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.578804,
+      "lng": -58.412157
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "http://www.cafedelbotanico.com.ar//",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 12,
+    "name": "FRANCESCA",
+    "rating": 2,
+    "address": "Alto Palermo, Av. Santa Fe 3253",
+    "businessHours": [
+      10,
+      22
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.582569,
+      "lng": -58.409585
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/FrancescaRestauranteOficial/?rf=143674772476847",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 13,
+    "name": "Cafe Tabac",
+    "rating": 2,
+    "address": "Av. del Libertador 2300",
+    "businessHours": [
+      7,
+      1
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.574707,
+      "lng": -58.402712
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": " ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 14,
+    "name": "Nucha",
+    "rating": 2,
+    "address": "Jerónimo Salguero 2587",
+    "businessHours": [
+      8,
+      20
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.576161,
+      "lng": -58.408870
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "http://www.nucha.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 15,
+    "name": "COCU Boulangerie",
+    "rating": 4,
+    "address": " Malabia 1510",
+    "businessHours": [
+      9,
+      20
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.585586,
+      "lng": -58.426760
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "http://cocu.com.ar/en/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 16,
+    "name": "Lobo Cafe",
+    "rating": 3,
+    "address": "Honduras 4730",
+    "businessHours": [
+      7,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.584703,
+      "lng": -58.426372
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "http://www.lobo.cafe/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 17,
+    "name": "The Panera Rosa",
+    "rating": 3,
+    "address": "Jorge Luis Borges 1685",
+    "businessHours": [
+      7,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.581990,
+      "lng": -58.428425
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "http://www.lapanerarosa.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   }
 ]
