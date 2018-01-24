@@ -5,13 +5,14 @@
 </template>
 
 <script>
-// import api from '@/api'
+import api from '@/api'
 
 export default {
   name: 'app',
   data() {
     return {
       coffees: null,
+      neighborhoods:null,
       state: {
         location: 'nunez',
         filters: [],
@@ -19,16 +20,26 @@ export default {
       },
     };
   },
+  
   created() {
     console.log('APP CREATED');
 
-    /* api.getPosts()
+    api.getPosts()
     .then(data => {
       this.$getCoffees = data
       console.log(this.$getCoffees)
     })
-    .catch(e => console.error(e)) */
+    .catch(e => console.error(e))
+
+  api.getNeighborhoods()
+    .then(data => {
+      this.$getCoffees = data
+      console.log(this.$getneighborhoods)
+    })
+    .catch(e => console.error(e))
   },
+
+
   methods:{
     changeLocation(location) {
       this.state.location = location;

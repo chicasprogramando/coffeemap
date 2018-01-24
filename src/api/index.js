@@ -23,9 +23,14 @@ const makeRequest = endpoint => {
 const getPosts = () => {
   return makeRequest('../static/data/coffees.json')
 }
+const getNeighborhoods = () => {
+  return makeRequest('../static/data/neighborhoods.json')
+}
 
 const api = {
-  getPosts
+  getPosts,
+  getNeighborhoods,
+  
 }
 
 export default api
