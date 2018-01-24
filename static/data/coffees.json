@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "name": "LAB Café",
     "rating": 4,
@@ -354,6 +353,69 @@
     "coworking": false,
     "telephone": 999999,
     "website": "http://www.lapanerarosa.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 18,
+    "name": "Cafe Martinez",
+    "rating": 3,
+    "address": "Bulnes 1790",
+    "businessHours": [
+      7,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.588219,
+      "lng": -58.413974
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.cafemartinez.com/sucursales.html",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 19,
+    "name": "Santa Marta Café",
+    "rating": 3,
+    "address": "Soler 4499",
+    "businessHours": [
+      9,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.583019,
+      "lng": -58.423067
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/santamartacafe/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 20,
+    "name": "Crisol Palermo",
+    "rating": 3,
+    "address": "Gral. Lucio Norberto Mansilla 3799",
+    "businessHours": [
+      8,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.585378,
+      "lng": -58.415582
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.crisolweb.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   }
 ]
