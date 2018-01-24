@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "name": "Palermo",
+    "position": {
+      "lat": -34.570331,
+      "lng": -58.423291
+    }
+  },
+  {
+    "id": 2,
+    "name": "Nuñez",
+    "position": {
+      "lat": -34.541251,
+      "lng": -58.463069
+    }
+  },
+  {
+    "id": 3,
+    "name": "Recoleta",
+    "position": {
+      "lat": -34.589101,
+      "lng": -58.398317
+    }
+  },
+  {
+    "id": 4,
+    "name": "Belgrano",
+    "position": {
+      "lat": -34.556741,
+      "lng": -58.452760
+    }
+  }
+]
