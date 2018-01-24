@@ -1,8 +1,14 @@
 <template>
     <div class="range-slider">
       <div class="range-margin">
-        <input @change="rangeSlider" class="range-slider__range" type="range" value="0" min="0" max="150" id="myRange">
-        <span class="range-slider__value" id="demo">$ 0</span>
+        <input
+          class="range-slider__range"
+          type="range"
+          v-model="value"
+          min="0"
+          max="150"
+        >
+        <span class="range-slider__value">$ {{ value }}</span>
       </div>
     </div>
 </template>
@@ -12,18 +18,12 @@ export default {
   name: "RangeSlider",
   props: {},
   components: {},
-  methods: {
-    rangeSlider: function() {
-      var slider = document.getElementById("myRange");
-      var output = document.getElementById("demo");
-      var pesos = "$ ";
-      output.innerHTML = pesos + slider.value;
-
-      slider.oninput = function() {
-        output.innerHTML = pesos + this.value;
-      };
-    }
-  }
+  data(){
+    return {
+      value: 0,
+    };
+  },
+  methods: {}
 };
 </script>
 
