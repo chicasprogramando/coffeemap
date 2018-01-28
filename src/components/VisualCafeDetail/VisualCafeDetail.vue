@@ -24,10 +24,7 @@
         <icon name="facebook" color="#FFF" circle="blueviolet" :size="50"/>
       </div>
     </div>
-    <VisualSliderItem :name="coffee.name"
-    :web="coffee.website" :rating="coffee.rating"
-    :address="coffee.address"
-    :businessHours="coffee.businessHours"/>
+    
 	</div>
 </template>
 
