@@ -39,12 +39,13 @@ export default {
 </script>
 
 <style module lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .container {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 15px;
-	background: blueviolet;
+	
 }
 
 
@@ -63,7 +64,8 @@ export default {
 	-moz-appearance: none;
     height: 60px;
     font-size: 20px;
-    border-bottom:2px solid white;
+	border-bottom:2px solid white;
+	font-family: "Roboto";
 }
 
 
