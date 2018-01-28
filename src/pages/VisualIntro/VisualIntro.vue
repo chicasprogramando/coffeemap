@@ -11,7 +11,7 @@
         </div>
         <div :class="$style.downbackground">
             <span :class="$style.number">01/</span><br/>
-            <span :class="$style.chooseText">Elegi la zona que <br />te quede más cerca</span>
+            <span :class="$style.chooseText">ELEGÍ LA ZONA QUE<br />TE QUEDE MÁS CERCA</span>
             
             <div :class="$style.dropdowm">
                 <input-dropdown :class="$style.dropdown" :location="state.location" @input="handleInput"></input-dropdown>
@@ -58,6 +58,7 @@ export default {
 <style module>
 @import "../../styles/variables.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 
 
 
@@ -99,7 +100,7 @@ export default {
     padding-top: 30px;
 }
 .chooseText{
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     font-weight: bolder;
 }
@@ -107,7 +108,7 @@ export default {
     font-size:20px;
 }
 .coffemap{
-    font-weight:bolder;
+    font-weight:900;
     font-size: 45px;
 }
 .button{

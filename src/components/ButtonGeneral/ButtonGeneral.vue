@@ -15,6 +15,7 @@ export default {
         size: VueTypes.oneOf(['small', 'large']).def('small'),
         buttonText: VueTypes.string.isRequired,
         bgColor: VueTypes.string.def('#fff'),
+        fontWeight: VueTypes.string.def('bolder'),
     },
     methods: {
         handleClick(){
@@ -26,6 +27,7 @@ export default {
             return {
                 color: this.textColor,
                 backgroundColor: this.bgColor,
+                fontWeight:this.fontWeight,
             }
         },
         buttonClass() {
