@@ -33,8 +33,8 @@ export default {
 
   api.getNeighborhoods()
     .then(data => {
-      this.$getCoffees = data
-      console.log(this.$getneighborhoods)
+      this.$getNeighborhoods = data
+      console.log(this.$getNeighborhoods)
     })
     .catch(e => console.error(e))
   },

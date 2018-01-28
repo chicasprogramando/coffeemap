@@ -2,20 +2,23 @@
 
 <template>
 	<div>
-        <h2>{{ title }}</h2>
         <MapWrapper 
         :zoom="15" 
         :center="{lat: -34.586347, lng: -58.431469}" 
         @coffeClick="handleCoffeClick"
         />
+       <visualSlider/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
     </div>
     
 </template>
 
 <style scoped>
-h2 {
-    display: block;
-    font-size: 30px;
+
+.swiper-container{
+    position:absolute;
+    z-index:400;
+    bottom:20px;
+    left:20px
 }
 </style>

@@ -1,11 +1,13 @@
 import Map from '../../components/Map/Map';
+import VisualSlider from '../../components/VisualSlider/VisualSlider';
 import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail';
 
 export default {
 	name: 'customMap',
 	components: {
 		MapWrapper: Map,
-		VisualCafeDetail
+		VisualCafeDetail,
+		VisualSlider
 	},
 	data() {
 		return {

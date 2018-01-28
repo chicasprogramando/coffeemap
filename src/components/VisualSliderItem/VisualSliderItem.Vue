@@ -6,7 +6,7 @@
             <div :class="$style.info">
                 <p :class="$style.nombre">{{name}}</p>
                 <p>
-                <span :class="$style.time">{{businessHours[0]}}-{{businessHours[1]}}hs</span>
+                <!--<span :class="$style.time">{{businessHours[0]}}-{{businessHours[1]}}hs</span>-->
                 <span :class="$style.green">Abierto</span></p>
                 <p :class="$style.address">{{address}}<br /><span>{{web}}</span></p>
             </div>
@@ -34,7 +34,7 @@
         web: VueTypes.string,
         rating: VueTypes.number,
         address: VueTypes.string,
-        businessHours: VueTypes.arrayOf(Number),
+        /*businessHours: VueTypes.arrayOf(Number),*/
     },
 
     }

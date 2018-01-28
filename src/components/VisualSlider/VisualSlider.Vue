@@ -1,20 +1,18 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
-    <!-- slides -->
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-    <swiper-slide><VisualSliderItem /></swiper-slide>
-
+    <swiper-slide><VisualSliderItem/></swiper-slide>
+    <swiper-slide><VisualSliderItem/></swiper-slide>
+    <swiper-slide><VisualSliderItem/></swiper-slide>
+    <swiper-slide><VisualSliderItem/></swiper-slide>
+    <swiper-slide><VisualSliderItem/></swiper-slide>
+    <swiper-slide><VisualSliderItem/></swiper-slide>
   </swiper>
 </template>
 
 <script>
-import 'swiper/dist/css/swiper.css'
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import api from "@/api";
+import "swiper/dist/css/swiper.css";
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 import VisualSliderItem from "../VisualSliderItem/VisualSliderItem";
 
 export default {
@@ -24,24 +22,33 @@ export default {
     swiper,
     swiperSlide
   },
-   data() {
-      return {
-        swiperOption: {
-        }
-      }
+  data() {
+    return {
+      coffees: null,
+      swiperOption: {}
+    };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper;
+    },  
+  },
+  mounted() {
+    console.log("this is current swiper instance object", this.swiper);
+    this.swiper.slideTo(0, 1000, false);
+
+    api
+      .getPosts()
+      .then(data => {
+        this.$getCoffees = data;
+        console.log(this.$getCoffees);
+      })
+      .catch(e => console.error(e));
+        
+    
     },
-    computed: {
-      swiper() {
-        return this.$refs.mySwiper.swiper
-      }
-    },
-    mounted() {
-      console.log('this is current swiper instance object', this.swiper)
-      this.swiper.slideTo(3, 1000, false)
-    }
-  }
+};
 </script>
 
-<style scoped>
-
+<style module>
 </style>
