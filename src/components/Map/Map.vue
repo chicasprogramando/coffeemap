@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       coffees: null,
-      iconPath: "../src/assets/icons/coffee.png"
+      iconPath: "../src/assets/icons/coffeepurple.png"
     };
   },
   methods: {
