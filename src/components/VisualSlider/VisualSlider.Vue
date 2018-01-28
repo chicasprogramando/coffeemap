@@ -30,6 +30,7 @@ export default {
         spaceBetween: 10,
         width:1700,
         loop:true,
+        slidesOffsetBefore:10,
       }
     };
   },
