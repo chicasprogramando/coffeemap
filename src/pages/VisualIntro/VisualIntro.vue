@@ -13,7 +13,7 @@
             <span :class="$style.number">01/</span><br/>
             <span :class="$style.chooseText">ELEGÍ LA ZONA QUE<br />TE QUEDE MÁS CERCA</span>
             
-            <div :class="$style.dropdowm">
+            <div :class="$style.dropdown">
                 <input-dropdown :class="$style.dropdown" :location="state.location" @input="handleInput"></input-dropdown>
             </div>
             <div :class="$style.button">
@@ -119,6 +119,10 @@ export default {
 .dropdown{
     width: 100%;
     margin-top:15px;
+}
+
+option{
+    color:rgba(121,113,217,0.7);
 }
 </style>
 
