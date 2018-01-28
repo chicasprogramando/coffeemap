@@ -28,6 +28,8 @@ export default {
       swiperOption: {        
         slidesPerView: 5,
         spaceBetween: 10,
+        width:1700,
+        loop:true,
       }
     };
   },
