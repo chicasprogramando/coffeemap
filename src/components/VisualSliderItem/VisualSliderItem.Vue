@@ -34,6 +34,7 @@
         web: VueTypes.string,
         rating: VueTypes.number,
         address: VueTypes.string,
+        id: VueTypes.number,
         /*businessHours: VueTypes.arrayOf(Number),*/
     },
 

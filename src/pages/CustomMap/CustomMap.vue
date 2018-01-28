@@ -19,6 +19,7 @@
     position:absolute;
     z-index:400;
     bottom:20px;
-    left:20px
+    left:20px;
+    max-width:100vw;
 }
 </style>
