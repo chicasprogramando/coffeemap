@@ -20,7 +20,7 @@ export default {
     name: 'VisualRating',
     props: {
         value: VueTypes.number.isRequired,
-        color: VueTypes.string.def('blueviolet'),
+        color: VueTypes.string.def('rgb(121,113,217)'),
         size: VueTypes.number.def(15),
         name: VueTypes.string.def('heart'),
         max: VueTypes.number.def(5),
