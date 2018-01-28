@@ -19,7 +19,6 @@
     position:absolute;
     z-index:400;
     bottom:20px;
-    left:10px;
     max-width:100vw;
     cursor:grab;
 }
