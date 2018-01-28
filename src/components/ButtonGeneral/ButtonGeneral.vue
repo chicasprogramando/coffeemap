@@ -16,6 +16,7 @@ export default {
         buttonText: VueTypes.string.isRequired,
         bgColor: VueTypes.string.def('#fff'),
         fontWeight: VueTypes.string.def('bolder'),
+   
     },
     methods: {
         handleClick(){
@@ -28,6 +29,7 @@ export default {
                 color: this.textColor,
                 backgroundColor: this.bgColor,
                 fontWeight:this.fontWeight,
+                
             }
         },
         buttonClass() {
@@ -44,8 +46,11 @@ export default {
 
 <style module lang="postcss">
 @import "../../styles/variables.css";
+@import ButtonGeneral from '../../components/ButtonGeneral/ButtonGeneral';
+@import InputDropdown from '../../components/InputDropdown/InputDropdown';
+
     .button {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:"Roboto";
         border: none;
         border-radius: 25px;
         cursor: pointer;
