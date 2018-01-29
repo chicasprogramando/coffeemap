@@ -87,7 +87,7 @@
     margin-right: 5px;
 }
 .nombre{
-    color:purplecoffee;
+    color:rgb(93,87,173);
     font-size:20px;
     font-weight:bold ;
     line-height: 22px;
