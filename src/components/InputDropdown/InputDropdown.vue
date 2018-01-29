@@ -57,7 +57,6 @@ export default {
 	color:white;
     background: transparent;
 	border: 0;
-	border-radius: 0;
 	outline: 0;
 	appearance: none;
 	-webkit-appearance: none;
@@ -86,11 +85,13 @@ option{
 .compact {
 	background:white;
 	width: initial;
-	border-radius: 15%;
+	border-radius:30px;
+	
 	.select {
 		color:rgb(121, 113, 217);
 		width: initial;
 		padding-right: 35px;
+		border-bottom: 0px;
 		
 	}
 	.select__arrow {

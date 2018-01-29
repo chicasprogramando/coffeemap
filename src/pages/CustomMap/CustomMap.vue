@@ -27,7 +27,7 @@
     position: absolute;
     z-index:500;
     top:10px;
-    left:40px;
+    left:50px;
     width:50vw;
 }
 
