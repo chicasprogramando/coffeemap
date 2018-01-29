@@ -47,8 +47,8 @@
 @import "../../styles/variables.css";
 .slider{
     background-color: white;
-    width: 320px;
-    height: 250px;
+    width: 300px;
+    height: 230px;
     border-radius: 30px;
     overflow: hidden;
     
