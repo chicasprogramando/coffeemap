@@ -7,17 +7,25 @@
       <visual-rating :value="coffee.rating"/>
       <p :class="$style.subtitle">Información del lugar</p>
       <div>
-        <p :class="$style.subtitleSmall">Dirección</p>
-        <p :class="$style.information">{{coffee.address}}</p>
-        <p :class="$style.subtitleSmall">Lunes a viernes</p>
-        <p :class="$style.information">8 a 20 hs</p>
+        <p>
+          <span :class="$style.subtitleSmall">Dirección</span><br/>
+          <span :class="$style.information">{{coffee.address}}</span>
+        </p>
+        <p>
+          <span :class="$style.subtitleSmall">Lunes a viernes</span><br/>
+          <span :class="$style.information">8 a 20 hs</span>
+        </p>
       </div>
       <p :class="$style.subtitle">Información de contacto</p>
       <div>
-        <p :class="$style.subtitleSmall">Teléfono</p>
-        <p :class="$style.information">{{coffee.telephone}}</p>
-        <p :class="$style.subtitleSmall">Sitio web</p>
-        <p :class="$style.information">{{coffee.website}}</p>
+        <p>
+        <span :class="$style.subtitleSmall">Teléfono</span><br/>
+        <span :class="$style.information">{{coffee.telephone}}</span>
+        </p>
+        <p>
+        <span :class="$style.subtitleSmall">Sitio web</span><br/>
+        <span :class="$style.information">{{coffee.website}}</span>
+        </p>
       </div>
       <div :class="$style.icon">
         <icon name="twitter" color="#FFF" circle="#7971D9" :size="50"/>

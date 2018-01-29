@@ -11,6 +11,8 @@
             <icon name="wifi"/>
             <icon name="twitter"/>
             <icon name="filter"/>
+           
+
             <icon name="food"/>
             <icon name="bag"/>
             <icon name="laptop"/>
@@ -20,7 +22,7 @@
             <icon name="wifi" color="#C00"/>
             <icon name="twitter" color="#C00"/>
             <icon name="filter" color="#C00"/>
-
+            
             <h3>Variable Size</h3>
 
             <icon name="twitter" color="#F0C" :size="100" />
@@ -28,7 +30,8 @@
             <icon name="twitter" color="#F0C" :size="20" />
 
             <h3>With circle</h3>
-            <icon name="filter" color="#FFF" circle="blueviolet"/>
+            <icon name="filter" color="#FFF" circle="#7971D9"/>
+            
 
         </div>
         <div class="component">
@@ -48,7 +51,8 @@
         <FilterButton name="wifi" button-text="Wifi" />
         <FilterButton name="food" button-text="Cocina" />
         <FilterButton name="bag" button-text="Take away" />
-        <FilterButton name="laptop" button-text="Coworking" /></div>
+        <FilterButton name="laptop" button-text="Coworking" />
+        </div>
         <div class="component"><h2>ButtonIcon</h2><ButtonIcon /></div>
         <div class="component"><h2>InputRadio</h2><InputRadio /></div>
         <div class="component"><h2>VisualSliderItem</h2><VisualSliderItem /></div>

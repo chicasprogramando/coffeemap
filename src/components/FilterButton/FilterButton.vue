@@ -1,6 +1,6 @@
 <template>
     <button  :class="[$style.initial, status]" v-on:click="changeStatus" :style="defineSize">
-          <icon  v-if="isActive" color="blueviolet" :name="name" :size="iconSize"/>
+          <icon  v-if="isActive" color="#7971D9" :name="name" :size="iconSize"/>
           <icon  v-else color="white" :name="name" :size="iconSize"/>
           <label :class="[$style.initialLabel, labelStatus]">{{ buttonText }}</label>
     </button>
@@ -62,7 +62,7 @@ export default {
 }
 .initial {
   cursor: pointer;
-  background-color: blueviolet;
+  background-color: #7971D9;
   margin: 5px;
   padding: 15px;
   border: 2px solid white;
@@ -82,6 +82,6 @@ export default {
   background-color: white;
 }
 .labelActive {
-  color: blueviolet;
+  color: #7971D9;
 }
 </style>

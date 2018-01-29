@@ -28,7 +28,7 @@
     z-index:500;
     top:10px;
     left:50px;
-    width:50vw;
+    width:80vw;
 }
 
 </style>
