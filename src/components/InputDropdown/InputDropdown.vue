@@ -88,13 +88,13 @@ option{
 	width: initial;
 	border-radius: 15%;
 	.select {
-		color:blueviolet;
+		color:rgb(121, 113, 217);
 		width: initial;
 		padding-right: 35px;
 		
 	}
 	.select__arrow {
-		border-color:blueviolet transparent transparent transparent;
+		border-color:rgb(121, 113, 217) transparent transparent transparent;
 	}
 }
     

@@ -22,7 +22,7 @@ export default {
 .headerContainer{
     padding: 35px 40px;
     text-align: center;
-    background-color: purplecoffee; 
+    background-color: rgb(93,87,173); 
 }
 .headerText{
     font-weight: bold;

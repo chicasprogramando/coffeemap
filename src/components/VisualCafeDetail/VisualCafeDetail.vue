@@ -20,8 +20,8 @@
         <p :class="$style.information">{{coffee.website}}</p>
       </div>
       <div :class="$style.icon">
-        <icon name="twitter" color="#FFF" circle="blueviolet" :size="50"/>
-        <icon name="facebook" color="#FFF" circle="blueviolet" :size="50"/>
+        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50"/>
+        <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
       </div>
     </div>
     
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import VueTypes from "vue-types"
+import VueTypes from "vue-types";
 import AppHeader from "../AppHeader/AppHeader";
 import VisualRating from "../../components/VisualRating/VisualRating";
 import Icon from "../Icon/Icon";
@@ -71,12 +71,12 @@ export default {
 .coffeeName {
   font-weight: bolder;
   font-size: 15pt;
-  color: rgb(93, 93, 93);
+  color: rgb(121, 113, 217);
 }
 
 .subtitle {
   font-weight: bolder;
-  color: blueviolet;
+  color: rgb(121, 113, 217);
   font-size: 10pt;
 }
 
