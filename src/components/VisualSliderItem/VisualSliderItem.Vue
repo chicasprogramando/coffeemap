@@ -12,7 +12,7 @@
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="rating"></visual-rating>
-                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7573d2" text-color="#fff"></button-general>
+                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff"></button-general>
             </div>
         </div>    
     </div>
@@ -87,7 +87,7 @@
     margin-right: 5px;
 }
 .nombre{
-    color:rgb(93,87,173);
+    color:rgb(121,113,217);
     font-size:20px;
     font-weight:bold ;
     line-height: 22px;
