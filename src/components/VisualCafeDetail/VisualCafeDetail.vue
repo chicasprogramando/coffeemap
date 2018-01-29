@@ -64,12 +64,15 @@ export default {
 </script>
 
 <style module>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 .mobile {
   width: 320px;
 }
 .wrapper {
   padding: 30px;
   background-color: white;
+  font-family: "Roboto";
 }
 .image {
   background-image: url("../../assets/cafevisualslideitem.jpg");
@@ -78,23 +81,22 @@ export default {
 
 .coffeeName {
   font-weight: bolder;
-  font-size: 15pt;
-  color: rgb(121, 113, 217);
+  font-size: 25px;
+  color:  rgb(90, 90, 90);
 }
 
 .subtitle {
-  font-weight: bolder;
   color: rgb(121, 113, 217);
-  font-size: 10pt;
+  font-size: 20px;
 }
 
 .subtitleSmall {
-  font-size: 9pt;
+  font-size: 13px;
   color: grey;
 }
 
 .information {
-  font-size: 10pt;
+  font-size: 13px;
   font-weight: bolder;
   color: rgb(90, 90, 90);
 }
