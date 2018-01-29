@@ -80,14 +80,18 @@ export default {
 	border-style: solid;
 	border-color: white transparent transparent transparent;
 }
-
+option{
+    color:rgb(121,113,217);
+}
 .compact {
-	background: white;
+	background:white;
 	width: initial;
+	border-radius: 15%;
 	.select {
 		color:blueviolet;
 		width: initial;
 		padding-right: 35px;
+		
 	}
 	.select__arrow {
 		border-color:blueviolet transparent transparent transparent;

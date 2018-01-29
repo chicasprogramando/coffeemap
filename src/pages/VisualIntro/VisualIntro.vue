@@ -121,8 +121,5 @@ export default {
     margin-top:15px;
 }
 
-option{
-    color:rgba(121,113,217,0.7);
-}
 </style>
 

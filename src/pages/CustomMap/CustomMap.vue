@@ -9,18 +9,25 @@
         />
        <visualSlider/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
+        <input-dropdown :class="$style.seconddropdown" :compact="true" location="belgrano"></input-dropdown>
     </div>
     
 </template>
 
-<style scoped>
+<style module>
 
 .swiper-container{
     position:absolute;
     z-index:400;
     bottom:20px;
-    left:10px;
-    max-width:100vw;
-    cursor:grab;
+    left:20px
 }
+.seconddropdown{
+    position: absolute;
+    z-index:500;
+    top:10px;
+    left:40px;
+    width:50vw;
+}
+
 </style>

@@ -30,7 +30,6 @@
 
 <script>
 import VueTypes from "vue-types"
-import VisualSliderItem from "../VisualSliderItem/VisualSliderItem";
 import AppHeader from "../AppHeader/AppHeader";
 import VisualRating from "../../components/VisualRating/VisualRating";
 import Icon from "../Icon/Icon";
@@ -38,7 +37,6 @@ import Icon from "../Icon/Icon";
 export default {
   name: "visualCafeDetail",
   components: {
-    VisualSliderItem,
     AppHeader,
     VisualRating,
     Icon
