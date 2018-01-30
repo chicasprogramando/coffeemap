@@ -23,7 +23,7 @@ export default {
  @value purplecoffee, fontsize from colors; */
 
 .container{
-    padding: 10px;
+    padding:10px 0px;
     text-align: center;
     background-color: #5d57ad;
     color:white;
