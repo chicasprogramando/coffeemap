@@ -9,12 +9,12 @@
         />
        <visualSlider/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
-        <input-dropdown :class="$style.seconddropdown" :compact="true" location="belgrano"></input-dropdown>
+        <input-dropdown class="seconddropdown" :compact="true" location="belgrano"></input-dropdown>
     </div>
     
 </template>
 
-<style module>
+<style scoped>
 
 .swiper-container{
     position:absolute;
