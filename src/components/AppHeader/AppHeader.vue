@@ -1,16 +1,19 @@
 <template>
-    <header>
+    <header :class="[$style.container, inverse && $style.inverse]">
 
-        <div :class="$style.headerContainer" >
-            <h1 :class="$style.headerText">#CoffeeMap</h1>
-        </div>
+            <h1>#CoffeeMap</h1>
+        
 
     </header>
 </template>
 
 <script>
+import VueTypes from 'vue-types';
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    props:{
+        inverse: VueTypes.bool.def(true),
+    }
 }
 </script>
 
@@ -19,15 +22,19 @@ export default {
 /* @value colors: '../../styles/variables.css';
  @value purplecoffee, fontsize from colors; */
 
-.headerContainer{
-    padding: 35px 40px;
+.container{
+    padding: 10px;
     text-align: center;
-    background-color: rgb(93,87,173); 
-}
-.headerText{
-    font-weight: bold;
-    color: white;
-    font-size: fs-m;
+    background-color: #5d57ad;
+    color:white;
+    font-size: 10px;
     margin: 0;
+    font-family: "Roboto";
+    width:100%;
+}
+.inverse{
+    background-color: white;
+    color:#7971D9;
+    width:320px;
 }
 </style>

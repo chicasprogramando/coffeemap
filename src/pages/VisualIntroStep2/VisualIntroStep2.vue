@@ -1,7 +1,7 @@
 <template>
 <div :class="$style.wrapper">
   <div :class="$style.container">
-    <app-header></app-header>
+    <app-header :inverse="false"></app-header>
     <p :class="$style.title">Y te gustaría que tenga...</p>
     <div v-if="is320()" :class="$style.miniIcons">
       <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35"/>

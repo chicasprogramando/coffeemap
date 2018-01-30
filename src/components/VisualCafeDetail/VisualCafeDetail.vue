@@ -1,6 +1,6 @@
 <template>
 	<div :class="$style.mobile">
-    <app-header></app-header>
+    <app-header :inverse="true"></app-header>
     <div :class="$style.image"></div>
     <div :class="$style.wrapper">      
       <p :class="$style.coffeeName">{{coffee.name}}</p>

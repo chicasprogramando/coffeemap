@@ -39,7 +39,6 @@ export default {
 </script>
 
 <style module lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .container {
 	position: relative;
