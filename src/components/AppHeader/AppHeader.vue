@@ -23,7 +23,7 @@ export default {
  @value purplecoffee, fontsize from colors; */
 
 .container {
-  padding: 10px;
+  padding: 10px 0px;
   text-align: center;
   background-color: #5d57ad;
   color: white;
@@ -31,7 +31,6 @@ export default {
   margin: 0;
   font-family: "Roboto";
   width: 100%;
-  box-sizing: border-box;
 }
 .inverse {
   background-color: white;
