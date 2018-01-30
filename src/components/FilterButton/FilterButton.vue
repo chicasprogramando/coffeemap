@@ -62,7 +62,7 @@ export default {
 }
 .initial {
   cursor: pointer;
-  background-color: #7971D9;
+  background-color: transparent;
   margin: 5px;
   padding: 15px;
   border: 2px solid white;
