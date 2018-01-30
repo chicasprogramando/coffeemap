@@ -1,31 +1,36 @@
 <template>
-<div :class="$style.wrapper">
-  <div :class="$style.container">
-    <app-header :inverse="false"></app-header>
-    <p :class="$style.title">Y te gustaría que tenga...</p>
-    <div v-if="is320()" :class="$style.miniIcons">
-      <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35"/>
-      <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35"/>
-      <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35"/>
-      <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35"/>
+  <div :class="$style.wrapper">
+    <div :class="$style.container">
+      <div :class="$style.innerWrapper">
+        <app-header :inverse="false"></app-header>
+        <div :class="$style.titleNumberWrapper">
+          <span :class="$style.numberedpage">02/</span>
+          <p :class="$style.title">Y te gustaría que <br/>tenga...</p>
+        </div>
+        <div v-if="is320()" :class="$style.miniIcons">
+          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35"/>
+          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35"/>
+          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35"/>
+          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35"/>
+        </div>
+        <div v-else :class="$style.miniIcons">
+          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50"/>
+          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50"/>
+          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50"/>
+          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50"/>
+        </div>
+        <!-- <div :class="$style.wrapperCuantoPagar">
+          <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
+          <div :class="$style.wrapperRadio">
+            <InputRadio :class="$style.inputRadio" ></InputRadio>
+          </div>
+        </div>
+        <RangeSlider/> -->
+        <div :class="$style.button">
+          <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+        </div>
+      </div>
     </div>
-     <div v-else :class="$style.miniIcons">
-      <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50"/>
-      <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50"/>
-      <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50"/>
-      <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50"/>
-    </div>
-    <div :class="$style.wrapperCuantoPagar">
-      <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
-      <!--<div :class="$style.wrapperRadio">
-        <InputRadio :class="$style.inputRadio" ></InputRadio>
-      </div>-->
-    </div>
-    <RangeSlider/>
-    <div :class="$style.button">
-      <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -86,6 +91,8 @@ export default {
 
 <style module lang="postcss">
 @import "../../styles/variables.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
 html,
 body {
@@ -99,22 +106,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: type-font;
 }
 
 .container {
+  position: relative;
   width: 100%;
+  min-height: 100vh;
   max-width: 600px;
   text-align: center;
-  margin: 10vw 5vh;
+  // margin: 10vw 5vh;
   color: white;
+  background-image: url("../../assets/coffee-bg.png");
+  background-size: 100%;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7971d9;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.innerWrapper {
+  position: relative;
+  min-height: 100vh;
+  z-index: 10;
+}
+
+.titleNumberWrapper {
+  text-align: left;
+  padding-top: 50px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .title {
+  margin: 0;
   font-weight: bold;
   font-size: fs-l;
-  margin: 1vw;
+  text-transform: uppercase;
+  // margin: 0 auto;
+  // max-width: 300px;
   color: white;
-  text-align: center;
+  font-family: type-font;
 }
 
 .miniIcons {
@@ -143,19 +183,26 @@ body {
   min-width: 150px;
   margin: 0 auto;
   padding: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  // border-top: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
 .button {
   text-align: center;
   width: 100%;
+  background-color: #5d57ad;
+  position: absolute;
+  bottom: 0;
 }
 
 .buttonWidth {
   min-width: 300px;
   margin: 15px auto;
   font-size: fs-m;
+}
+
+.miniIcons {
+  padding-top: 50px;
 }
 
 @media (max-width: 320px) {
