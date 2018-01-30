@@ -98,7 +98,6 @@ html,
 body {
   min-height: 100%;
   width: 100%;
-  background-color: purplecoffee;
 }
 .wrapper {
   min-height: 100%;
