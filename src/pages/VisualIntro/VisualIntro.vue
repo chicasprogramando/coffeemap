@@ -12,9 +12,9 @@
         <div :class="$style.downbackground">
             <span :class="$style.number">01/</span><br/>
             <span :class="$style.chooseText">ELEGÍ LA ZONA QUE<br />TE QUEDE MÁS CERCA</span>
-            
+
             <div :class="$style.dropdown">
-                <input-dropdown :class="$style.dropdown" :location="state.location" @input="handleInput"></input-dropdown>
+                <input-dropdown :class="$style.dropdown" :location="neighborhood" @input="changeNeighborhood"></input-dropdown>
             </div>
             <div :class="$style.button">
                 <button-general :class="$style.button" button-text="Comenzar" size="large" @click="handleClick"></button-general>
@@ -40,6 +40,11 @@ export default {
         state: VueTypes.any.isRequired,
         allMethods: VueTypes.any.isRequired,
     },
+    computed: {
+        neighborhood(){
+            return this.$store.state.neighborhood;
+        }
+    },
     mounted(){
         console.log(this.allMethods());
     },
@@ -50,6 +55,10 @@ export default {
         handleInput(value){
             this.allMethods().changeLocation(value);
         },
+        changeNeighborhood(value) {
+            // console.log($event);
+            this.$store.commit('mutateNeighborhood', value);
+        }
     },
 
 };
@@ -62,19 +71,19 @@ export default {
 
 
 
-.wrapper {    
+.wrapper {
     min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('../../assets/visualintrobackground.jpg');
-    
+
 }
 .container{
-    width: 100%;   
+    width: 100%;
     max-width: 400px;
-    color:white; 
+    color:white;
     font-family: "Roboto";
 }
 .madeof{

@@ -2,16 +2,16 @@
 
 <template>
 	<div>
-        <MapWrapper 
-        :zoom="15" 
-        :center="{lat: -34.586347, lng: -58.431469}" 
+        <MapWrapper
+        :zoom="15"
+        :center="{lat: -34.586347, lng: -58.431469}"
         @coffeClick="handleCoffeClick"
         />
        <visualSlider/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
-        <input-dropdown class="seconddropdown" :compact="true" location="belgrano"></input-dropdown>
+        <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
     </div>
-    
+
 </template>
 
 <style scoped>

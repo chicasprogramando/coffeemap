@@ -20,7 +20,7 @@ export default {
       },
     };
   },
-  
+
   created() {
     console.log('APP CREATED');
 

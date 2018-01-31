@@ -23,5 +23,13 @@ export default {
 			this.coffee = coffee;
 			this.$router.push({name: 'coffee', params:{id: coffee.id}});
 		},
+        changeNeighborhood(value) {
+            this.$store.dispatch('actionTest', value);
+        }
+	},
+	computed: {
+		neighborhood(){
+			return this.$store.state.neighborhood;
+		},
 	},
 };
