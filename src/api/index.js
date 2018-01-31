@@ -8,19 +8,19 @@ const makeRequest = endpoint => {
 
   return new Promise((resolve, reject) => {
     fetch(endpoint, {
-      headers: customHeaders,
-      mode: 'cors',
-      method: 'GET'
-    })
-    .then(res => res.json())
-    .then(data => {
-      resolve(data)
-    })
-    .catch(error => reject(error))
+        headers: customHeaders,
+        mode: 'cors',
+        method: 'GET'
+      })
+      .then(res => res.json())
+      .then(data => {
+        resolve(data)
+      })
+      .catch(error => reject(error))
   })
 }
 
-const getPosts = () => {
+const getCoffees = () => {
   return makeRequest('../static/data/coffees.json')
 }
 const getNeighborhoods = () => {
@@ -28,9 +28,9 @@ const getNeighborhoods = () => {
 }
 
 const api = {
-  getPosts,
+  getCoffees,
   getNeighborhoods,
-  
+
 }
 
 export default api

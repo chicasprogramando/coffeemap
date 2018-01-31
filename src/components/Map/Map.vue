@@ -53,7 +53,7 @@ export default {
   },
   mounted() {
     api
-      .getPosts()
+      .getCoffees()
       .then(data => {
         this.$getCoffees = data; // Set globally
         this.coffees = data;
@@ -65,7 +65,7 @@ export default {
 
 <style module>
 .wrapperMap {
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
 }
 </style>

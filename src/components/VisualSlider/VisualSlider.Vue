@@ -24,13 +24,13 @@ export default {
   },
   data() {
     return {
-      coffees:null,
-      swiperOption: {        
+      coffees: null,
+      swiperOption: {
         slidesPerView: 5,
         spaceBetween: 10,
-        width:1700,
-        loop:true,
-        slidesOffsetBefore:10,
+        width: 1700,
+        loop: true,
+        slidesOffsetBefore: 10
       }
     };
   },
@@ -44,11 +44,11 @@ export default {
     this.swiper.slideTo(0, 1000, false);
 
     api
-      .getPosts()
+      .getCoffees()
       .then(data => {
         this.$getCoffees = data;
         this.coffees = data;
-        console.log(this.$getCoffees);        
+        console.log(this.$getCoffees);
       })
       .catch(e => console.error(e));
   }

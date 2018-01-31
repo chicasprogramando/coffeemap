@@ -5,42 +5,43 @@
 </template>
 
 <script>
-import api from '@/api'
+import api from "@/api";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
       coffees: null,
-      neighborhoods:null,
+      neighborhoods: null,
       state: {
-        location: 'nunez',
+        location: "nunez",
         filters: [],
-        cost: 0,
-      },
+        cost: 0
+      }
     };
   },
 
   created() {
-    console.log('APP CREATED');
+    console.log("APP CREATED");
 
-    api.getPosts()
-    .then(data => {
-      this.$getCoffees = data
-      console.log(this.$getCoffees)
-    })
-    .catch(e => console.error(e))
+    api
+      .getCoffees()
+      .then(data => {
+        this.$getCoffees = data;
+        console.log(this.$getCoffees);
+      })
+      .catch(e => console.error(e));
 
-  api.getNeighborhoods()
-    .then(data => {
-      this.$getNeighborhoods = data
-      console.log(this.$getNeighborhoods)
-    })
-    .catch(e => console.error(e))
+    api
+      .getNeighborhoods()
+      .then(data => {
+        this.$getNeighborhoods = data;
+        console.log(this.$getNeighborhoods);
+      })
+      .catch(e => console.error(e));
   },
 
-
-  methods:{
+  methods: {
     changeLocation(location) {
       this.state.location = location;
     },
@@ -54,30 +55,31 @@ export default {
       return {
         changeLocation: this.changeLocation,
         changeFilter: this.changeFilter,
-        changeCost: this.changeCost,
+        changeCost: this.changeCost
       };
-    },
+    }
   },
   mounted() {
-    console.log('APP MOUNTED')
+    console.log("APP MOUNTED");
   }
-}
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height:100%;
+  height: 100%;
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 </style>
