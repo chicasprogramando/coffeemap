@@ -12,7 +12,7 @@
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="rating"></visual-rating>
-                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff"></button-general>
+                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff" @click="handleClick"></button-general>
             </div>
         </div>    
     </div>
@@ -36,6 +36,16 @@
         address: VueTypes.string,
         id: VueTypes.number,
         /*businessHours: VueTypes.arrayOf(Number),*/
+    },
+    data() {
+        return {
+            
+        };
+    },
+    methods: {
+        handleClick(){
+            console.log('button works');
+        }
     },
 
     }

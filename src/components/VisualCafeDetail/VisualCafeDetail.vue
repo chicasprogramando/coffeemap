@@ -1,9 +1,10 @@
 <template>
 	<div :class="$style.mobile">
     <app-header :inverse="true"></app-header>
-    <div :class="$style.closebtn">
-      <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" />
-    </div>
+    <button :class="$style.closebtn" @click="closeTry">
+        <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
+        X
+    </button>
     <div :class="$style.image"></div>
     <div :class="$style.wrapper">      
       <p :class="$style.coffeeName">{{coffee.name}}</p>
@@ -60,7 +61,11 @@ export default {
       title: "VisualCafeDetail"
     };
   },
-  methods: {},
+  methods: {
+    closeTry(){
+      console.log("close button works")
+    }
+  },
   computed: {},
   mounted() {}
 };
@@ -80,11 +85,24 @@ export default {
 }
 
 .closebtn {
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 20px;
   top: 20px;
   z-index: 100;
+  border: 0px;
+  border-radius: 50%;
+  color:#7971D9;
+  background-color: #FFF;
+  font-weight: 600;
+  font-size: 18px;
 }
+
+.closebtn:focus {
+  outline: none;
+}
+
 
 .image {
   background-image: url("../../assets/cafevisualslideitem.jpg");

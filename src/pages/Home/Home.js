@@ -11,7 +11,7 @@ export default {
     computed: {
         isModalOpen() {
             return this.$route.name === 'cafe'
-            }
+        }
     },
     methods: {
         openModal() {

@@ -3,7 +3,7 @@
      <swiper-slide v-for="coffee in coffees" :key="coffee.id" >
        <VisualSliderItem :name="coffee.name"
           :web="coffee.website" :rating="coffee.rating"
-          :address="coffee.address" :businessHours="coffee.businessHours"/>
+          :address="coffee.address" :businessHours="coffee.businessHours" />
       </swiper-slide>
 
   </swiper>
@@ -38,6 +38,9 @@ export default {
     swiper() {
       return this.$refs.mySwiper.swiper;
     }
+  },
+  methods: {
+    
   },
   mounted() {
     //console.log("this is current swiper instance object", this.swiper);
