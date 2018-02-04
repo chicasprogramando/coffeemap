@@ -1,7 +1,7 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
      <swiper-slide v-for="coffee in coffees" :key="coffee.id" >
-       <VisualSliderItem  :coffee="coffee" />
+       <VisualSliderItem @coffeClick="handleCoffeClick" :coffee="coffee" />
       </swiper-slide>
   </swiper>
 </template>
@@ -37,7 +37,9 @@ export default {
     }
   },
   methods: {
-    
+    handleCoffeClick(coffee) {
+      this.$emit("coffeClick", coffee);
+    }
   },
   mounted() {
     //console.log("this is current swiper instance object", this.swiper);
