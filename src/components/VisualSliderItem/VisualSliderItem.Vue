@@ -12,7 +12,7 @@
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="coffee.rating"></visual-rating>
-                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff" @click="handleClick"></button-general>
+                <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff" @click="handleClick(coffee)"></button-general>
             </div>
         </div>    
     </div>
@@ -40,8 +40,9 @@
         };
     },
     methods: {
-        handleClick(){
-            console.log(`${this.coffee.id}: ${this.coffee.name}`);
+        handleClick(coffee){
+            console.log(`You clicked: ${coffee.name}`);
+            this.$emit("coffeClick", coffee);
         }
     },
 }

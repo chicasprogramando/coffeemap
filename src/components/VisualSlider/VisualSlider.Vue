@@ -37,7 +37,7 @@ export default {
     }
   },
   methods: {
-
+    
   },
   mounted() {
     //console.log("this is current swiper instance object", this.swiper);

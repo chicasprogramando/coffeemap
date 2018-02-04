@@ -8,6 +8,7 @@ import ButtonIcon from'../../components/ButtonIcon/ButtonIcon.vue';
 import InputRadio from'../../components/InputRadio/InputRadio.vue';
 import VisualSliderItem from '../../components/VisualSliderItem/VisualSliderItem.vue';
 import VisualSlider from '../../components/VisualSlider/VisualSlider.vue';
+import RangeSlider from '../../components/RangeSlider/RangeSlider.vue';
 
 export default {
   name: 'storybook',
@@ -22,6 +23,7 @@ export default {
 		InputRadio,
 		VisualSliderItem,
 		VisualSlider,
+		RangeSlider
   },
 	data() {
 		return {

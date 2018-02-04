@@ -2,7 +2,7 @@
     <div :class="$style.wrapperMap">
       <v-map :zoom="zoom" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in getCoffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="handlerMarker(coffee)"/>
+        <v-marker v-for="(coffee, index) in getCoffees" :key="index" :lat-lng="coffee.position" :icon="icon()" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
@@ -34,11 +34,7 @@ export default {
     };
   },
   methods: {
-    handlerMarker(coffee) {
-      console.log(`You clicked: ${coffee.name}`);
-      this.$emit("coffeClick", coffee);
-    },
-    icon() {
+      icon() {
       return L.icon({
         iconUrl: this.iconPath,
         iconSize: [32, 32],
