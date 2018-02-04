@@ -8,7 +8,7 @@
                 <p>
                 <!--<span :class="$style.time">{{businessHours[0]}}-{{businessHours[1]}}hs</span>-->
                 <span :class="$style.green">Abierto</span></p>
-                <p :class="$style.address">{{address}}<br /><span>{{web}}</span></p>
+                <p :class="$style.address">{{address}}<br/><span>{{web}}</span></p>
             </div>
             <div :class="$style['rating-button']">
                 <visual-rating :class="$style.rating" :value="rating"></visual-rating>
@@ -35,6 +35,7 @@
         rating: VueTypes.number,
         address: VueTypes.string,
         id: VueTypes.number,
+        
         /*businessHours: VueTypes.arrayOf(Number),*/
     },
     data() {
@@ -44,11 +45,10 @@
     },
     methods: {
         handleClick(){
-            console.log('button works');
+            console.log(`${this.id}: ${this.name}`);
         }
     },
-
-    }
+}
 
 
 </script>
@@ -72,7 +72,6 @@
     line-height: 17px;
     padding-left: 15px;
     width:220px;
-
 }
 
 .columns{

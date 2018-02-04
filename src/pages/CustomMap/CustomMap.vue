@@ -7,7 +7,7 @@
         :center="{lat: -34.586347, lng: -58.431469}"
         @coffeClick="handleCoffeClick"
         />
-       <visualSlider/>
+       <visualSlider @coffeClick="handleCoffeClick"/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
         <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
     </div>
