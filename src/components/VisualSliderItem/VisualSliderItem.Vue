@@ -4,14 +4,14 @@
         </div>
          <div :class="$style.columns">
             <div :class="$style.info">
-                <p :class="$style.nombre">{{name}}</p>
+                <p :class="$style.nombre">{{coffee.name}}</p>
                 <p>
                 <!--<span :class="$style.time">{{businessHours[0]}}-{{businessHours[1]}}hs</span>-->
                 <span :class="$style.green">Abierto</span></p>
-                <p :class="$style.address">{{address}}<br/><span>{{web}}</span></p>
+                <p :class="$style.address">{{coffee.address}}<br/><span>{{coffee.website}}</span></p>
             </div>
             <div :class="$style['rating-button']">
-                <visual-rating :class="$style.rating" :value="rating"></visual-rating>
+                <visual-rating :class="$style.rating" :value="coffee.rating"></visual-rating>
                 <button-general :class="$style.seemore" button-text="Ver más" bg-color="#7971d9" text-color="#fff" @click="handleClick"></button-general>
             </div>
         </div>    
@@ -30,11 +30,7 @@
         ButtonGeneral,
     },
     props:{
-        name: VueTypes.string,
-        web: VueTypes.string,
-        rating: VueTypes.number,
-        address: VueTypes.string,
-        id: VueTypes.number,
+        coffee: VueTypes.object,
         
         /*businessHours: VueTypes.arrayOf(Number),*/
     },
@@ -45,7 +41,7 @@
     },
     methods: {
         handleClick(){
-            console.log(`${this.id}: ${this.name}`);
+            console.log(`${this.coffee.id}: ${this.coffee.name}`);
         }
     },
 }

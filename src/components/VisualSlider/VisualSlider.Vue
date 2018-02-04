@@ -1,9 +1,7 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
      <swiper-slide v-for="coffee in coffees" :key="coffee.id" >
-       <VisualSliderItem :name="coffee.name"
-          :web="coffee.website" :rating="coffee.rating"
-          :address="coffee.address" :businessHours="coffee.businessHours" :id="coffee.id" />
+       <VisualSliderItem  :coffee="coffee" />
       </swiper-slide>
   </swiper>
 </template>
