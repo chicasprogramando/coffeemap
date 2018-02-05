@@ -29,6 +29,7 @@ export default {
   methods: {
     changeStatus: function() {
       this.isActive = !this.isActive;
+      this.$emit('click');
     }
   },
   computed: {

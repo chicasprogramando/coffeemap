@@ -63,6 +63,7 @@ export default {
     height: 60px;
     font-size: 20px;
 	border-bottom:2px solid white;
+	border-radius: 0;
 	font-family: "Roboto";
 }
 
@@ -88,7 +89,6 @@ option{
 	
 	.select {
 		color:rgb(121, 113, 217);
-		width: initial;
 		padding-right: 35px;
 		border-bottom: 0px;
 		
