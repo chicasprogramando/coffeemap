@@ -57,6 +57,7 @@
         <div class="component"><h2>InputRadio</h2><InputRadio /></div>
         <div class="component"><h2>VisualSliderItem</h2><VisualSliderItem /></div>
         <div class="component"><h2>VisualSlider</h2><VisualSlider /></div>
+        <div class="component"><h2>Range Slider</h2><RangeSlider /></div>
 
 	</div>
 </template>

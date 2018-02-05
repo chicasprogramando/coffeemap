@@ -35,6 +35,6 @@ export default {
 .inverse {
   background-color: white;
   color: #7971d9;
-  width: 320px;
+  width: 100%;
 }
 </style>

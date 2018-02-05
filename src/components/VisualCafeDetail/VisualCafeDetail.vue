@@ -1,6 +1,10 @@
 <template>
 	<div :class="$style.mobile">
     <app-header :inverse="true"></app-header>
+    <button :class="$style.closebtn" @click="closeTry">
+        <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
+        X
+    </button>
     <div :class="$style.image"></div>
     <div :class="$style.wrapper">      
       <p :class="$style.coffeeName">{{coffee.name}}</p>
@@ -28,7 +32,7 @@
         </p>
       </div>
       <div :class="$style.icon">
-        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50"/>
+        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
         <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
       </div>
     </div>
@@ -57,7 +61,11 @@ export default {
       title: "VisualCafeDetail"
     };
   },
-  methods: {},
+  methods: {
+    closeTry(){
+      console.log("close button works")
+    }
+  },
   computed: {},
   mounted() {}
 };
@@ -67,13 +75,35 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 .mobile {
-  width: 320px;
+  width: 100%;
+  position: relative;
 }
 .wrapper {
   padding: 30px;
   background-color: white;
   font-family: "Roboto";
 }
+
+.closebtn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+  border: 0px;
+  border-radius: 50%;
+  color:#7971D9;
+  background-color: #FFF;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.closebtn:focus {
+  outline: none;
+}
+
+
 .image {
   background-image: url("../../assets/cafevisualslideitem.jpg");
   height: 80px;
@@ -103,5 +133,9 @@ export default {
 
 .icon{
   display:flex;
+}
+
+.iconOne{
+  margin-right: 10px;
 }
 </style>

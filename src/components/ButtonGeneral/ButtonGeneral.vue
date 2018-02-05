@@ -55,6 +55,9 @@ export default {
         border-radius: 25px;
         cursor: pointer;
     }
+    .button:focus{
+        outline:none;
+    }
     .smallButton {
         padding: 5px 8px;
         font-size: fs-s;
