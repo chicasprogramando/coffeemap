@@ -127,7 +127,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #7971d9;
+  background-color: purpleStrong;
   opacity: 0.5;
   z-index: 1;
 }
@@ -189,7 +189,7 @@ body {
 .button {
   text-align: center;
   width: 100%;
-  background-color: #5d57ad;
+  background-color: purpleLight;
   position: absolute;
   bottom: 0;
 }
