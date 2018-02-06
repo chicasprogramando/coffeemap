@@ -1,11 +1,8 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
      <swiper-slide v-for="coffee in coffees" :key="coffee.id" >
-       <VisualSliderItem :name="coffee.name"
-          :web="coffee.website" :rating="coffee.rating"
-          :address="coffee.address" :businessHours="coffee.businessHours"/>
+       <VisualSliderItem @coffeClick="handleCoffeClick" :coffee="coffee" />
       </swiper-slide>
-
   </swiper>
 </template>
 
@@ -37,6 +34,11 @@ export default {
   computed: {
     swiper() {
       return this.$refs.mySwiper.swiper;
+    }
+  },
+  methods: {
+    handleCoffeClick(coffee) {
+      this.$emit("coffeClick", coffee);
     }
   },
   mounted() {
