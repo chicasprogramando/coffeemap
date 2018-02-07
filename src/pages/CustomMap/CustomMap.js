@@ -26,6 +26,9 @@ export default {
 		},
         changeNeighborhood(value) {
             this.$store.dispatch('actionTest', value);
+        },
+        handleCloseCoffee(coffee) {
+        	this.coffee = null;
         }
 	},
 	computed: {
