@@ -15,26 +15,23 @@ const store = new Vuex.Store({
         mutateNeighborhood(state, payload){
             state.neighborhood = payload;
         },
-        mutateWifi(state){
-            state.wifi=!state.wifi;
+        mutateFilter(state,filter){
+            state[filter]=!state[filter];
+            console.log(JSON.stringify(state));
         },
-        mutateCoworking(state){
-            state.coworking=!state.coworking;
-        },
-        mutateTakeAway(state){
-            state.takeaway=!state.takeaway;
-        },
-        mutateCocina(state){
-            state.cocina=!state.cocina;
-        }
+        
     },
     actions: {
         actionTest({commit}, payload) {
             setTimeout(()=>{
                 commit('mutateNeighborhood', payload)
             }, 2000);
+        },
+        actionFilter({commit}, filter) {
+            commit('mutateFilter',filter);
         }
-    },
-});
+
+     }    
+    });
 
 export default store;

@@ -8,16 +8,16 @@
           <p :class="$style.title">Y te gustaría que <br/>tenga...</p>
         </div>
         <div v-if="is320()" :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickWifi"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickCocina"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickTakeAway"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35" @click="handleClickCoworking"/>
+          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
+          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
+          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickFilter('takeaway')"/>
+          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35" @click="handleClickFilter('coworking')"/>
         </div>
         <div v-else :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50" @click="handleClickWifi"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50" @click="handleClickCocina"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50" @click="handleClickTakeAway"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50" @click="handleClickCoworking"/>
+          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50" @click="handleClickFilter('wifi')"/>
+          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50" @click="handleClickFilter('kitchen')"/>
+          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50" @click="handleClickFilter('takeaway')"/>
+          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50" @click="handleClickFilter('coworking')"/>
         </div>
         <!-- <div :class="$style.wrapperCuantoPagar">
           <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
@@ -69,18 +69,10 @@ export default {
     handleClick() {
       this.$router.push("/map");
     },
-    handleClickCoworking(){
-      this.$store.commit('mutateCoworking');
+    handleClickFilter(filter){
+      this.$store.dispatch('actionFilter',filter);
     },
-    handleClickTakeAway(){
-      this.$store.commit('mutateTakeAway');
-    },
-    handleClickWifi(){
-      this.$store.commit('mutateWifi');
-    },
-    handleClickCocina(){
-      this.$store.commit('mutateCocina');
-    },
+    
     getWindowWidth(event) {
       this.windowWidth = document.documentElement.clientWidth;
     },
