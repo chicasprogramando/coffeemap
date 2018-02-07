@@ -20,7 +20,8 @@ export default {
 	},
 	methods: {
 		handleCoffeClick(coffee) {
-		  this.coffee = coffee; // TODO: Hacer que se obtenga el café desde un getter
+			this.coffee = coffee; // TODO: Hacer que se obtenga el café desde un getter
+			console.log('Path click #2');
 		  this.$router.push({name: 'coffee', params:{id: coffee.id}});
 		},
 		changeNeighborhood(value) {

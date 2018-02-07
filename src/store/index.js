@@ -9,8 +9,7 @@ const store = new Vuex.Store({
         wifi:false,
         coworking:false,
         takeaway:false,
-        cocina: false,
-        dummyData: [1, 2, 50, 30, 55, 30, 8, 5, 100]
+        cocina: false
     },
     mutations:{
         // TODO: Usar mayúsculas a la hora de hacer mutaciones
