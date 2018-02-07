@@ -61,6 +61,7 @@ export default {
   },
   mounted() {
     console.log("APP MOUNTED");
+    console.log(this.$store.getters.getDummyDataLessTen)
   }
 };
 </script>

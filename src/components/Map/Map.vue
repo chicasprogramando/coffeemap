@@ -43,8 +43,7 @@ export default {
     }
   },
   computed: {
-    getCoffees() {
-      return this.coffees;
+    wifistatus() {
     }
   },
   mounted() {

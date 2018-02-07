@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.slider">
-        <div :class="$style.image">Imagen
+        <div :class="$style.image">
         </div>
          <div :class="$style.columns">
             <div :class="$style.info">

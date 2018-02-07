@@ -20,16 +20,15 @@ export default {
 	},
 	methods: {
 		handleCoffeClick(coffee) {
-		  this.coffee = coffee;
-		  console.log(coffee);
+		  this.coffee = coffee; // TODO: Hacer que se obtenga el café desde un getter
 		  this.$router.push({name: 'coffee', params:{id: coffee.id}});
 		},
-        changeNeighborhood(value) {
-            this.$store.dispatch('actionTest', value);
-        },
-        handleCloseCoffee(coffee) {
-        	this.coffee = null;
-        }
+		changeNeighborhood(value) {
+				this.$store.dispatch('actionTest', value);
+		},
+		handleCloseCoffee(coffee) {
+			this.coffee = null;
+		}
 	},
 	computed: {
 		neighborhood(){
