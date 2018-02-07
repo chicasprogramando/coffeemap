@@ -1,43 +1,45 @@
 <template>
-	<div :class="$style.mobile">
-    <app-header :inverse="true"></app-header>
-    <button :class="$style.closebtn" @click="closeTry">
-        <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
-        X
-    </button>
-    <div :class="$style.image"></div>
-    <div :class="$style.wrapper">      
-      <p :class="$style.coffeeName">{{coffee.name}}</p>
-      <visual-rating :value="coffee.rating"/>
-      <p :class="$style.subtitle">Información del lugar</p>
-      <div>
-        <p>
-          <span :class="$style.subtitleSmall">Dirección</span><br/>
-          <span :class="$style.information">{{coffee.address}}</span>
-        </p>
-        <p>
-          <span :class="$style.subtitleSmall">Lunes a viernes</span><br/>
-          <span :class="$style.information">8 a 20 hs</span>
-        </p>
+  <div :class="$style.modalCoffee">
+  	<div :class="$style.mobile">
+      <app-header :inverse="true"></app-header>
+      <button :class="$style.closebtn" @click="handleClose(coffee)">
+          <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
+          X
+      </button>
+      <div :class="$style.image"></div>
+      <div :class="$style.wrapper">      
+        <p :class="$style.coffeeName">{{coffee.name}}</p>
+        <visual-rating :value="coffee.rating"/>
+        <p :class="$style.subtitle">Información del lugar</p>
+        <div>
+          <p>
+            <span :class="$style.subtitleSmall">Dirección</span><br/>
+            <span :class="$style.information">{{coffee.address}}</span>
+          </p>
+          <p>
+            <span :class="$style.subtitleSmall">Lunes a viernes</span><br/>
+            <span :class="$style.information">8 a 20 hs</span>
+          </p>
+        </div>
+        <p :class="$style.subtitle">Información de contacto</p>
+        <div>
+          <p>
+          <span :class="$style.subtitleSmall">Teléfono</span><br/>
+          <span :class="$style.information">{{coffee.telephone}}</span>
+          </p>
+          <p>
+          <span :class="$style.subtitleSmall">Sitio web</span><br/>
+          <span :class="$style.information">{{coffee.website}}</span>
+          </p>
+        </div>
+        <div :class="$style.icon">
+          <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
+          <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
+        </div>
       </div>
-      <p :class="$style.subtitle">Información de contacto</p>
-      <div>
-        <p>
-        <span :class="$style.subtitleSmall">Teléfono</span><br/>
-        <span :class="$style.information">{{coffee.telephone}}</span>
-        </p>
-        <p>
-        <span :class="$style.subtitleSmall">Sitio web</span><br/>
-        <span :class="$style.information">{{coffee.website}}</span>
-        </p>
-      </div>
-      <div :class="$style.icon">
-        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
-        <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
-      </div>
-    </div>
-    
-	</div>
+      
+  	</div>
+  </div>
 </template>
 
 <script>
@@ -62,8 +64,9 @@ export default {
     };
   },
   methods: {
-    closeTry(){
-      console.log("close button works")
+    handleClose(coffee){
+      console.log("close button works");
+      this.$emit("closeCoffee", coffee);
     }
   },
   computed: {},
@@ -74,6 +77,14 @@ export default {
 <style module>
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+.modalCoffee {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0;
+  z-index: 10000;
+}
 .mobile {
   width: 100%;
   position: relative;

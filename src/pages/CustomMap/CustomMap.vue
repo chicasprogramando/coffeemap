@@ -5,9 +5,9 @@
         <MapWrapper
         :zoom="15"
         :center="{lat: -34.586347, lng: -58.431469}"
-         @coffeClick="handleCoffeClick"/>
+         @coffeClick="handleCoffeClick" @closeCoffee="handleCloseCoffee"/>
        <visualSlider @coffeClick="handleCoffeClick"/>
-        <VisualCafeDetail :coffee="coffee" v-if="coffee"/>
+        <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeCoffee="handleCloseCoffee"/>
         <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
     </div>
 
