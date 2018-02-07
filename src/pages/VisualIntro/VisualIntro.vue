@@ -72,7 +72,6 @@ export default {
 .wrapper {
   min-height: 100%;
   width: 100%;
-  
   background-image: url("../../assets/visualintrobackground.jpg");
 }
 .wrapper2{
@@ -82,7 +81,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:150px 0px;
+    padding:100px 0px;
 }
 .container{
     width: 100%;
