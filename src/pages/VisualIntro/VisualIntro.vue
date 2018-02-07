@@ -88,6 +88,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding:105px 0px;
 }
 .container{
     width: 100%;
@@ -107,7 +108,7 @@ export default {
     text-align: center;
 }
 .downbackground{
-    padding: 22px 7px 7px 7px;
+    padding: 25px 7px 7px 7px;
 }
 .number{
     text-align:left;
