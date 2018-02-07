@@ -81,7 +81,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:100px 0px;
+    padding:95px 0px;
 }
 .container{
     width: 100%;
