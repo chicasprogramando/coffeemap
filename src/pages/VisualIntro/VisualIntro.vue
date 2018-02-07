@@ -1,5 +1,6 @@
 <template>
   <div :class="$style.wrapper">
+      <div :class="$style.wrapper2">
     <div :class="$style.container">
 
         <div :class="$style.upbackground">
@@ -20,6 +21,7 @@
                 <button-general :class="$style.button" button-text="Comenzar" size="large" @click="handleClick"></button-general>
             </div>
         </div>
+     </div>
      </div>
   </div>
 </template>
@@ -80,6 +82,13 @@ export default {
     background-image: url('../../assets/visualintrobackground.jpg');
 
 }
+.wrapper2{
+    background-color: rgba(121,113,217,0.7);
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .container{
     width: 100%;
     max-width: 400px;
@@ -94,12 +103,11 @@ export default {
 }
 .upbackground{
     background-color: rgba(93,87,173,0.7);
-    padding: 8vw 7vw 5vw 5vw;;
+    padding: 12px 10px 5px 5px;
     text-align: center;
 }
 .downbackground{
-    background-color: rgba(121,113,217,0.7);
-    padding: 20vw 5vw 6vw 6vw;
+    padding: 22px 7px 7px 7px;
 }
 .number{
     text-align:left;
