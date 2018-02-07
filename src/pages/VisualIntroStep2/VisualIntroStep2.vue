@@ -70,7 +70,7 @@ export default {
       this.$router.push("/map");
     },
     handleClickFilter(filter){
-      this.$store.dispatch('actionFilter',filter);
+      this.$store.dispatch('Filter',filter);
     },
     
     getWindowWidth(event) {

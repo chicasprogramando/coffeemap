@@ -27,7 +27,7 @@ const store = new Vuex.Store({
                 commit('mutateNeighborhood', payload)
             }, 2000);
         },
-        actionFilter({commit}, filter) {
+        Filter({commit}, filter) {
             commit('mutateFilter',filter);
         }
 
