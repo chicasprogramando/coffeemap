@@ -7,7 +7,7 @@
           <span :class="$style.numberedpage">02/</span>
           <p :class="$style.title">Y te gustaría que <br/>tenga...</p>
         </div>
-        <div v-if="is320()" :class="$style.miniIcons">
+        <div v-if="is320" :class="$style.miniIcons">
           <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
           <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
           <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickFilter('takeaway')"/>
@@ -70,20 +70,20 @@ export default {
       this.$router.push("/map");
     },
     handleClickFilter(filter){
-      this.$store.dispatch('Filter',filter);
+      this.$store.dispatch('Filter', filter);
     },
-    
-    getWindowWidth(event) {
+
+    getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth;
     },
 
-    getWindowHeight(event) {
+    getWindowHeight() {
       this.windowHeight = document.documentElement.clientHeight;
     },
-    is320(windowWidth) {
-      if (this.windowWidth <= 320) {
-        return true;
-      }
+  },
+  computed: {
+    is320(){
+      return this.windowWidth <= 320;
     }
   },
   beforeDestroy() {

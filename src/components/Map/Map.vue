@@ -6,7 +6,7 @@
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
-    
+
 </template>
 
 <script>
@@ -46,15 +46,6 @@ export default {
     getCoffees() {
       return this.coffees
     }
-  },
-  mounted() {
-    api
-      .getCoffees()
-      .then(data => {
-        this.$getCoffees = data; // Set globally
-        this.coffees = data;
-      })
-      .catch(e => console.error(e));
   }
 };
 </script>

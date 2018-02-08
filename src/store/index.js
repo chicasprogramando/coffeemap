@@ -1,15 +1,21 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import api from "@/api";
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
-        neighborhood: 'palermo',
-        wifi:false,
-        coworking:false,
-        takeaway:false,
-        cocina: false
+        coffees: [],
+        neighborhood: 'Palermo',
+        neighborhoods: [],
+        wifi: false,
+        coworking: false,
+        takeaway: false,
+        kitchen: false
+    },
+    getters: {
+        getFilteredCoffes: state => state.coffees.filter(coffee => coffee.zone === state.neighborhood),
     },
     mutations:{
         // TODO: Usar mayúsculas a la hora de hacer mutaciones
@@ -19,7 +25,13 @@ const store = new Vuex.Store({
         mutateFilter(state,filter) {
             state[filter]=!state[filter];
             // console.log(JSON.stringify(state));
-        }
+        },
+        setCoffees(state, payload) {
+            state.coffees = payload;
+        },
+        setNeighborhoods(state, payload) {
+            state.neighborhoods = payload;
+        },
     },
     actions: {
         actionTest({commit}, payload) {
@@ -29,8 +41,20 @@ const store = new Vuex.Store({
         },
         Filter({commit}, filter) {
             commit('mutateFilter',filter);
+        },
+        fetchCoffees({commit}) {
+            api
+            .getCoffees()
+            .then(data => {commit('setCoffees', data)})
+            .catch(e => console.error(e));
+        },
+        fetchNeighborhoods({commit}){
+            api
+            .getNeighborhoods()
+            .then(data => {commit('setNeighborhoods', data)})
+            .catch(e => console.error(e));
         }
-     }    
+     }
     });
 
 export default store;

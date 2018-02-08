@@ -23,22 +23,8 @@ export default {
 
   created() {
     console.log("APP CREATED");
-
-    api
-      .getCoffees()
-      .then(data => {
-        this.$getCoffees = data;
-        console.log(this.$getCoffees);
-      })
-      .catch(e => console.error(e));
-
-    api
-      .getNeighborhoods()
-      .then(data => {
-        this.$getNeighborhoods = data;
-        console.log(this.$getNeighborhoods);
-      })
-      .catch(e => console.error(e));
+    this.$store.dispatch('fetchCoffees');
+    this.$store.dispatch('fetchNeighborhoods');
   },
 
   methods: {
