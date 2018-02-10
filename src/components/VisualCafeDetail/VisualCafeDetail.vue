@@ -2,7 +2,7 @@
   <div :class="$style.modalCoffee">
   	<div :class="$style.mobile">
       <app-header :inverse="true"></app-header>
-      <button :class="$style.closebtn" @click="handleClose(coffee)">
+      <button :class="$style.closebtn" @click="handleClose">
           <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
           X
       </button>
@@ -64,9 +64,9 @@ export default {
     };
   },
   methods: {
-    handleClose(coffee){
+    handleClose(){
       console.log("close button works");
-      this.$emit("closeCoffee", coffee);
+      this.$emit("closeDetail");
     }
   },
   computed: {},

@@ -1,13 +1,13 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper">
      <swiper-slide v-for="coffee in coffees" :key="coffee.id" >
-       <VisualSliderItem @coffeClick="handleCoffeClick" :coffee="coffee" />
+       <VisualSliderItem :coffee="coffee"  @itemClick="onItemClick" />
       </swiper-slide>
   </swiper>
 </template>
 
 <script>
-import api from "@/api";
+import VueTypes from "vue-types";
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import VisualSliderItem from "../VisualSliderItem/VisualSliderItem";
@@ -19,14 +19,16 @@ export default {
     swiper,
     swiperSlide
   },
+  props: {
+    coffees: VueTypes.array.isRequired
+  },
   data() {
     return {
-      coffees: null,
       swiperOption: {
         slidesPerView: 5,
         spaceBetween: 10,
         width: 1700,
-        loop: true,
+        loop: false,
         slidesOffsetBefore: 10
       }
     };
@@ -39,20 +41,17 @@ export default {
   methods: {
     handleCoffeClick(coffee) {
       this.$emit("coffeClick", coffee);
+    },
+    onItemClick : function(item){
+      this.$emit("itemClick",item)
+    },
+    slideTo(idx){
+      this.swiper.slideTo(idx, 1000, false);
     }
   },
   mounted() {
-    //console.log("this is current swiper instance object", this.swiper);
     this.swiper.slideTo(0, 1000, false);
 
-    api
-      .getCoffees()
-      .then(data => {
-        this.$getCoffees = data;
-        this.coffees = data;
-        console.log(this.$getCoffees);
-      })
-      .catch(e => console.error(e));
   }
 };
 </script>

@@ -2,7 +2,7 @@
     <div :class="$style.wrapperMap">
       <v-map :zoom="zoom" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in getCoffees" :key="index" :lat-lng="coffee.position" :icon="icon()" />
+        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="markerClick(coffee)" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
@@ -18,6 +18,7 @@ import Vue2Leaflet from "vue2-leaflet";
 export default {
   name: "mapWrapper",
   props: {
+    coffees: VueTypes.array.isRequired,
     center: VueTypes.object.isRequired,
     zoom: VueTypes.number.def(15)
   },
@@ -29,22 +30,19 @@ export default {
   },
   data() {
     return {
-      coffees: null,
       iconPath: "../src/assets/icons/coffeepurple.png"
     };
   },
   methods: {
-      icon() {
+    icon() {
       return L.icon({
         iconUrl: this.iconPath,
         iconSize: [32, 32],
         iconAnchor: [0, 0]
       });
-    }
-  },
-  computed: {
-    getCoffees() {
-      return this.coffees
+    },
+    markerClick(coffee){
+      this.$emit("markerClick",coffee)
     }
   }
 };

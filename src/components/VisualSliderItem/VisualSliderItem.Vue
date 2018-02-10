@@ -43,7 +43,7 @@
         handleClick(coffee){
             console.log(`You clicked: ${coffee.name}`);
             console.log('Path click #1');
-            this.$emit("coffeClick", coffee);
+            this.$emit("itemClick", coffee);
         }
     },
 }
