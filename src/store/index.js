@@ -15,7 +15,15 @@ const store = new Vuex.Store({
         kitchen: false
     },
     getters: {
-        getFilteredCoffes: state => state.coffees.filter(coffee => coffee.zone === state.neighborhood),
+        getFilteredCoffes: state => state.coffees.filter(
+            coffee => (
+                coffee.zone === state.neighborhood &&
+                (!state.wifi || coffee.wifi === state.wifi) &&
+                (!state.coworking || coffee.coworking === state.coworking) &&
+                (!state.kitchen || coffee.kitchen === state.kitchen) &&
+                (!state.takeaway || coffee.takeaway === state.takeaway)
+            )
+        ),
     },
     mutations:{
         // TODO: Usar mayúsculas a la hora de hacer mutaciones
