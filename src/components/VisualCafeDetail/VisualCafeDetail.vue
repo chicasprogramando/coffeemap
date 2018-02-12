@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.modalCoffee">
-  	<div :class="$style.mobile">
+  	<!--<div :class="$style.mobile">-->
       <app-header :inverse="true"></app-header>
       <button :class="$style.closebtn" @click="handleClose">
           <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
@@ -38,7 +38,7 @@
         </div>
       </div>
       
-  	</div>
+  	<!--</div>-->
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
     };
   },
   methods: {
-    handleClose(){
+    handleClose() {
       console.log("close button works");
       this.$emit("closeDetail");
     }
@@ -75,55 +75,63 @@ export default {
 </script>
 
 <style module>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+
 .modalCoffee {
   position: absolute;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   top: 0px;
-  left: 0;
+  left: 0px;
   z-index: 10000;
 }
-.mobile {
+/*.mobile {
   width: 100%;
   position: relative;
-}
+}*/
 .wrapper {
+  height: 65vh;
   padding: 30px;
-  background-color: white;
   font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .closebtn {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 20px;
+  left: 280px;
   top: 20px;
   z-index: 100;
   border: 0px;
   border-radius: 50%;
-  color:#7971D9;
-  background-color: #FFF;
+  color: #7971d9;
+  background-color: #fff;
   font-weight: 600;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .closebtn:focus {
   outline: none;
 }
 
-
 .image {
   background-image: url("../../assets/cafevisualslideitem.jpg");
-  height: 80px;
+  background-repeat: no-repeat;
+  min-height: 120px;
+  position: relative;
+  top: 20px;
 }
 
 .coffeeName {
   font-weight: bolder;
   font-size: 25px;
-  color:  rgb(90, 90, 90);
+  color: rgb(90, 90, 90);
 }
 
 .subtitle {
@@ -142,11 +150,11 @@ export default {
   color: rgb(90, 90, 90);
 }
 
-.icon{
-  display:flex;
+.icon {
+  display: flex;
 }
 
-.iconOne{
+.iconOne {
   margin-right: 10px;
 }
 </style>

@@ -18,32 +18,31 @@
 </template>
 
 <style scoped>
-
-.swiper-container{
-    position:absolute;
-    z-index:400;
-    bottom:20px;
-    max-width:100vw;
+.swiper-container {
+  position: absolute;
+  z-index: 400;
+  bottom: 20px;
+  max-width: 100vw;
 }
 
 .mapFilters {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index:500;
-    top:10px;
-    left:50px;
+  width: 80vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  top: 10px;
+  left: 50px;
 }
-.seconddropdown{
-    width:70vw;
+.seconddropdown {
+  width: 65vw;
 }
 
 .btnFilter {
-    width:60vw;
-    margin-top: -8px;
-    background-color:  #7971D9;
-    color: white;
+  width: 60vw;
+  margin-top: -8px;
+  background-color: #7971d9;
+  color: white;
 }
-
 </style>
