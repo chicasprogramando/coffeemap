@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.modalCoffee">
   	<!--<div :class="$style.mobile">-->
-      <app-header :inverse="true"></app-header>
+      <app-header :inverse="true" :class="$style.inverseHeader"></app-header>
       <button :class="$style.closebtn" @click="handleClose">
           <!-- <icon name="close" color="#7971D9" circle="#FFFFFF" :size="30" @click="closeTry"/>-->
           X
@@ -100,12 +100,16 @@ export default {
   justify-content: space-evenly;
 }
 
+.inverseHeader {
+  width: 100%;
+}
+
 .closebtn {
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 280px;
-  top: 20px;
+  right: 10px;
+  top: 21px;
   z-index: 100;
   border: 0px;
   border-radius: 50%;
@@ -123,6 +127,7 @@ export default {
 .image {
   background-image: url("../../assets/cafevisualslideitem.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 120px;
   position: relative;
   top: 20px;

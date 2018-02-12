@@ -36,7 +36,10 @@ export default {
 		handleMarkerClick : function(coffee) {			
 			let idx = this.coffees.indexOf(coffee);	
 			this.$refs.slider.slideTo(idx);		
-		}		
+		},
+		handleClickFilter(){
+			console.log("filter btn works");
+		}	
 	},
 	computed: {
 		neighborhood(){
