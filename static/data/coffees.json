@@ -76,7 +76,7 @@
       "lat": -34.584899,
       "lng": -58.439316
     },
-    "zone": "Caballito",
+    "zone": "Recoleta",
     "coworking": false,
     "telephone": 999999,
     "website": "www.tiendadecafe.com.ar",
@@ -416,6 +416,174 @@
     "coworking": false,
     "telephone": 999999,
     "website": "https://www.crisolweb.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 21,
+    "name": "Crisol Palermo",
+    "rating": 3,
+    "address": "Gral. Lucio Norberto Mansilla 3799",
+    "businessHours": [
+      8,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.585378,
+      "lng": -58.415582
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.crisolweb.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 22,
+    "name": "Santa Marta Café",
+    "rating": 3,
+    "address": "Soler 4499",
+    "businessHours": [
+      9,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.583019,
+      "lng": -58.423067
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/santamartacafe/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 23,
+    "name": "Crisol Palermo",
+    "rating": 3,
+    "address": "Gral. Lucio Norberto Mansilla 3799",
+    "businessHours": [
+      8,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.585378,
+      "lng": -58.415582
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.crisolweb.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 24,
+    "name": "Santa Marta Café",
+    "rating": 3,
+    "address": "Soler 4499",
+    "businessHours": [
+      9,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.583019,
+      "lng": -58.423067
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/santamartacafe/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 25,
+    "name": "Crisol Palermo",
+    "rating": 3,
+    "address": "Gral. Lucio Norberto Mansilla 3799",
+    "businessHours": [
+      8,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.585378,
+      "lng": -58.415582
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.crisolweb.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 26,
+    "name": "Santa Marta Café",
+    "rating": 3,
+    "address": "Soler 4499",
+    "businessHours": [
+      9,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.583019,
+      "lng": -58.423067
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/santamartacafe/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 27,
+    "name": "Crisol Palermo",
+    "rating": 3,
+    "address": "Gral. Lucio Norberto Mansilla 3799",
+    "businessHours": [
+      8,
+      21
+    ],
+    "wifi": true,
+    "pets": true,
+    "position": {
+      "lat": -34.585378,
+      "lng": -58.415582
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.crisolweb.com.ar/",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 28,
+    "name": "Santa Marta Café",
+    "rating": 3,
+    "address": "Soler 4499",
+    "businessHours": [
+      9,
+      21
+    ],
+    "wifi": true,
+    "pets": false,
+    "position": {
+      "lat": -34.583019,
+      "lng": -58.423067
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone": 999999,
+    "website": "https://www.facebook.com/santamartacafe/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   }
 ]

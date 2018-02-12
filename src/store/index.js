@@ -43,9 +43,7 @@ const store = new Vuex.Store({
     },
     actions: {
         actionTest({commit}, payload) {
-            setTimeout(()=>{
-                commit('mutateNeighborhood', payload)
-            }, 2000);
+                commit('mutateNeighborhood', payload);
         },
         Filter({commit}, filter) {
             commit('mutateFilter',filter);

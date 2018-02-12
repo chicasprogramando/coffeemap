@@ -55,8 +55,8 @@
 @import "../../styles/variables.css";
 .slider{
     background-color: white;
-    width: 300px;
-    height: 230px;
+    width: 250px;
+    height: 190px;
     border-radius: 30px;
     overflow: hidden;
     

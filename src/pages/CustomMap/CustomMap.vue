@@ -21,7 +21,6 @@
     z-index:400;
     bottom:20px;
     max-width:100vw;
-    cursor:grab;
 }
 .seconddropdown{
     position: absolute;

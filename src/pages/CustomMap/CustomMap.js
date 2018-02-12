@@ -31,7 +31,6 @@ export default {
 			this.coffee = null;
 		},
 		handleMarkerClick : function(coffee) {			
-			console.log('Marker Click', this.VisualSlider);
 			let idx = this.coffees.indexOf(coffee);	
 			this.$refs.slider.slideTo(idx);		
 		}		

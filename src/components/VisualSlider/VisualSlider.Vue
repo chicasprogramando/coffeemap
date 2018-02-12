@@ -25,11 +25,92 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        width: 1700,
-        loop: false,
-        slidesOffsetBefore: 10
+        slidesPerView: 6,
+        spaceBetween: 200,
+        //setWrapperSize: true,
+        slidesOffsetBefore: 10,
+        slidesOffsetAfter: 1650,
+        grabCursor: true,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1800: {
+            slidesPerView: 5,
+            slidesOffsetAfter: 1420
+          },
+          1740: {
+            slidesPerView: 5,
+            slidesOffsetAfter: 1250
+          },
+          1600: {
+            slidesPerView: 5,
+            slidesOffsetAfter: 1200
+          },
+          1500: {
+            slidesPerView: 5,
+            slidesOffsetAfter: 1110
+          },
+          1400: {
+            slidesPerView: 5,
+            slidesOffsetAfter: 1040
+          },
+          1300: {
+            slidesPerView: 4,
+            slidesOffsetAfter: 900
+          },
+          1200: {
+            slidesPerView: 4,
+            slidesOffsetAfter: 780
+          },
+          1050: {
+            slidesPerView: 4,
+            slidesOffsetAfter: 800
+          },
+          950: {
+            slidesPerView: 4,
+            slidesOffsetAfter: 850
+          },
+          900: {
+            slidesPerView: 3,
+            slidesOffsetAfter: 680
+          },
+          800: {
+            slidesPerView: 3,
+            slidesOffsetAfter: 600
+          },
+          760: {
+            slidesPerView: 3,
+            slidesOffsetAfter: 500
+          },
+          600: {
+            slidesPerView: 3,
+            slidesOffsetAfter: 550
+          },
+          550: {
+            slidesPerView: 2,
+            slidesOffsetAfter: 250
+          },
+          500: {
+            slidesPerView: 2,
+            slidesOffsetAfter: 250
+          },
+          420: {
+            slidesPerView: 2,
+            slidesOffsetAfter: 250
+          },
+          360: {
+            slidesPerView: 2,
+            slidesOffsetAfter: 250
+          },
+          320: {
+            slidesPerView: 2,
+            slidesOffsetAfter: 250
+          },
+          300: {
+            slidesPerView: 1,
+            slidesOffsetAfter: 0
+          }
+        }
       }
     };
   },
@@ -39,19 +120,15 @@ export default {
     }
   },
   methods: {
-    handleCoffeClick(coffee) {
-      this.$emit("coffeClick", coffee);
+    onItemClick: function(item) {
+      this.$emit("itemClick", item);
     },
-    onItemClick : function(item){
-      this.$emit("itemClick",item)
-    },
-    slideTo(idx){
+    slideTo(idx) {
       this.swiper.slideTo(idx, 1000, false);
     }
   },
   mounted() {
     this.swiper.slideTo(0, 1000, false);
-
   }
 };
 </script>
