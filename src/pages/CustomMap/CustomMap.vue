@@ -9,7 +9,10 @@
         @markerClick="handleMarkerClick"/>
        <visualSlider @itemClick="handleCoffeeClick" ref="slider" :coffees="coffees"/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail"/>
+        <div class="mapFilters">
         <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
+        <FilterButton name="filter3" :buttonSize="60" :iconSize="35" @click="handleClickFilter('wifi')" class="btnFilter"/>
+        </div>
     </div>
 
 </template>
@@ -23,12 +26,25 @@
     max-width:100vw;
     cursor:grab;
 }
-.seconddropdown{
+
+.mapFilters {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index:500;
     top:10px;
     left:50px;
-    width:80vw;
+}
+.seconddropdown{
+    width:70vw;
+}
+
+.btnFilter {
+    width:60vw;
+    margin-top: -8px;
+    background-color:  #7971D9;
+    color: white;
 }
 
 </style>
