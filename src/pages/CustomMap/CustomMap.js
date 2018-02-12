@@ -2,6 +2,8 @@ import Map from '../../components/Map/Map';
 import VisualSlider from '../../components/VisualSlider/VisualSlider';
 import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail';
 import InputDropdown from '../../components/InputDropdown/InputDropdown.vue';
+import FilterButton from "../../components/FilterButton/FilterButton";
+
 
 
 export default {
@@ -11,6 +13,7 @@ export default {
 		VisualCafeDetail,
 		VisualSlider,
 		InputDropdown,
+		FilterButton,
 	},
 	data() {
 		return {
