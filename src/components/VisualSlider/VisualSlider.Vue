@@ -25,14 +25,23 @@ export default {
   data() {
     return {
       swiperOption: {
+        on: {
+          init: function() {
+            initialSlide:0;
+          },
+          slideChange: function(){
+            console.log("active slide:", this.activeIndex)
+          }
+        },
         slidesPerView: 6,
         spaceBetween: 200,
-        //setWrapperSize: true,
         slidesOffsetBefore: 10,
         slidesOffsetAfter: 1650,
         grabCursor: true,
         observer: true,
         observeParents: true,
+        //preloadImages: true,
+        //updateOnImagesReady: true,
         breakpoints: {
           1800: {
             slidesPerView: 5,
@@ -124,7 +133,7 @@ export default {
       this.$emit("itemClick", item);
     },
     slideTo(idx) {
-      this.swiper.slideTo(idx, 1000, false);
+      this.swiper.slideTo(idx, 2500, false);
     }
   },
   mounted() {
