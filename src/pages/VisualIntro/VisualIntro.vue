@@ -104,7 +104,7 @@ export default {
 }
 .downbackground{
   justify-content: space-between;
-  padding: 25px 7px 7px 7px;
+  padding: 25px 20px 20px 20px;
   display:flex;
   flex-direction: column;
 
@@ -146,16 +146,21 @@ export default {
     background-color: rgba(93,87,173,0.7);
     width: 100%;
     box-sizing: border-box;
+    flex-grow: 0;
+    
   }
   .downbackground{
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
   }
   .wrapper2{
     justify-content: flex-start;
   }
   .container{
     height: 100%;
+    flex-grow: 1;
+    display:flex;
   } 
 }
 </style>
