@@ -11,7 +11,7 @@
         <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail" class="VisualDetail"/>
         <div class="mapFilters">
         <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
-        <FilterButton name="filter3" :buttonSize="60" :iconSize="35" @click="handleClickFilter()" class="btnFilter"/>
+        <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="OpenFilters()"/>
         </div>
     </div>
 
@@ -44,9 +44,8 @@
 }
 
 .btnFilter {
-  width: 60vw;
-  margin-top: -8px;
-  background-color: #7971D9;
+  margin-top: -30px;
+  
 }
 
 </style>

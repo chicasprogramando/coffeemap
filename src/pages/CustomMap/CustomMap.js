@@ -2,7 +2,7 @@ import Map from '../../components/Map/Map';
 import VisualSlider from '../../components/VisualSlider/VisualSlider';
 import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail';
 import InputDropdown from '../../components/InputDropdown/InputDropdown.vue';
-import FilterButton from "../../components/FilterButton/FilterButton";
+import ButtonIcon from "../../components/ButtonIcon/ButtonIcon.vue";
 
 
 
@@ -13,7 +13,7 @@ export default {
 		VisualCafeDetail,
 		VisualSlider,
 		InputDropdown,
-		FilterButton,
+		ButtonIcon,
 	},
 	data() {
 		return {
@@ -37,7 +37,7 @@ export default {
 			let idx = this.coffees.indexOf(coffee);	
 			this.$refs.slider.slideTo(idx);		
 		},
-		handleClickFilter(){
+		OpenFilters(){
 			console.log("filter btn works");
 		}	
 	},
