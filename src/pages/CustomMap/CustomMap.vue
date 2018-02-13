@@ -11,11 +11,11 @@
         <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail" class="VisualDetail"/>
         <div class="mapFilters">
           <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
-          <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="OpenFilters()"/>
+          <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="modalIn = true"/>
         </div>
-        <div class="wrapperFilter">
-          <AllFilters/>
-          <button-general button-text="Filtrar" size="large" @click="handleClick" class="buttonWidth"></button-general>
+        <div class="wrapperFilter" :class="{modalIn:modalIn}">
+          <AllFilters class="filterSpace"/>
+          <button-general button-text="Volver al mapa" size="large" @click="modalIn = false" class="buttonWidth"></button-general>
         </div>
     </div>
 
@@ -54,14 +54,19 @@
 }
 
 .wrapperFilter {
+  transform: scale(0);
   position: absolute;
   width: 100%;
   z-index: 1000;
   top:0;
   background-color: purpleStrong;
-  opacity: 0.8;
-  padding: 20px 0px;
+  opacity: 0.9;
+  padding: 10px 0px;
   text-align: center;
+}
+
+.filterSpace {
+  padding-top: 10px;
 }
 
 .buttonWidth {
@@ -70,5 +75,33 @@
   font-size: fs-m;
 }
 
+.modalIn {
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8) translateY(1000px);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+  }
+}
 
+/*
+.modalOut {
+  animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  transform: scale(0);
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+}
+*/
 </style>

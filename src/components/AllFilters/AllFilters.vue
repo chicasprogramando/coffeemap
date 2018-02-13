@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :class="$style.Iconwrap">
         <div v-if="is320" :class="$style.miniIcons">
           <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
           <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
@@ -78,6 +78,9 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
+.Iconwrap{
+  padding-top: 50px;
+}
 
 .miniIcons {
   width: 100%;
@@ -91,23 +94,6 @@ export default {
   color: white;
 }
 
-.likeTextCuantoPagar {
-  font-weight: bold;
-  font-size: fs-l;
-  margin: 0 auto;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-.wrapperCuantoPagar {
-  max-width: 400px;
-  min-width: 150px;
-  margin: 0 auto;
-  padding: 25px;
-  // border-top: 1px solid rgba(255, 255, 255, 0.3);
-  text-align: center;
-}
 
 .button {
   text-align: center;
@@ -121,10 +107,6 @@ export default {
   min-width: 300px;
   margin: 15px auto;
   font-size: fs-m;
-}
-
-.miniIcons {
-  padding-top: 50px;
 }
 
 @media (max-width: 320px) {

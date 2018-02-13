@@ -23,6 +23,8 @@ export default {
 		return {
 			title: 'CustomMap',
 			coffee: null,
+			modalIn: false,
+			modalOut: false
 		};
 	},
 	methods: {
@@ -41,12 +43,8 @@ export default {
 			let idx = this.coffees.indexOf(coffee);	
 			this.$refs.slider.slideTo(idx);		
 		},
-		OpenFilters(){
-			console.log("filter btn works");
-		},
-		handleClick() {
-		  this.$router.push("/map");
-		},
+
+	
 		handleClickFilter(filter){
 		  this.$store.dispatch('Filter', filter);
 		},
