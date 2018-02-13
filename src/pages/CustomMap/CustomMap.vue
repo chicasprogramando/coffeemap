@@ -7,17 +7,23 @@
         :center="{lat: -34.586347, lng: -58.431469}"
         :coffees="coffees"
         @markerClick="handleMarkerClick"/>
-       <visualSlider @itemClick="handleCoffeeClick" ref="slider" :coffees="coffees"/>
+        <visualSlider @itemClick="handleCoffeeClick" ref="slider" :coffees="coffees"/>
         <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail" class="VisualDetail"/>
         <div class="mapFilters">
-        <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
-        <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="OpenFilters()"/>
+          <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
+          <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="OpenFilters()"/>
+        </div>
+        <div class="wrapperFilter">
+          <AllFilters/>
+          <button-general button-text="Filtrar" size="large" @click="handleClick" class="buttonWidth"></button-general>
         </div>
     </div>
 
 </template>
 
 <style scoped>
+@import "../../styles/variables.css";
+
 .swiper-container {
   position: absolute;
   z-index: 400;
@@ -44,8 +50,25 @@
 }
 
 .btnFilter {
-  margin-top: -30px;
-  
+  margin-top: -30px;  
 }
+
+.wrapperFilter {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top:0;
+  background-color: purpleStrong;
+  opacity: 0.8;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.buttonWidth {
+  min-width: 300px;
+  margin: 15px auto;
+  font-size: fs-m;
+}
+
 
 </style>

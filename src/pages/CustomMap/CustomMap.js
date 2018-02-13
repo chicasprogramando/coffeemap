@@ -3,6 +3,8 @@ import VisualSlider from '../../components/VisualSlider/VisualSlider';
 import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail';
 import InputDropdown from '../../components/InputDropdown/InputDropdown.vue';
 import ButtonIcon from "../../components/ButtonIcon/ButtonIcon.vue";
+import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
+import AllFilters from "../../components/AllFilters/AllFilters.vue";
 
 
 
@@ -14,6 +16,8 @@ export default {
 		VisualSlider,
 		InputDropdown,
 		ButtonIcon,
+		ButtonGeneral,
+		AllFilters
 	},
 	data() {
 		return {
@@ -39,7 +43,13 @@ export default {
 		},
 		OpenFilters(){
 			console.log("filter btn works");
-		}	
+		},
+		handleClick() {
+		  this.$router.push("/map");
+		},
+		handleClickFilter(filter){
+		  this.$store.dispatch('Filter', filter);
+		},
 	},
 	computed: {
 		neighborhood(){

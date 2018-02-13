@@ -5,27 +5,9 @@
         <app-header :inverse="false"></app-header>
         <div :class="$style.titleNumberWrapper">
           <span :class="$style.numberedpage">02/</span>
-          <p :class="$style.title">Y te gustaría que <br/>tenga...</p>
+          <p :class="$style.title">Y te gustaría que tenga...</p>
         </div>
-        <div v-if="is320" :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickFilter('takeaway')"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35" @click="handleClickFilter('coworking')"/>
-        </div>
-        <div v-else :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50" @click="handleClickFilter('wifi')"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50" @click="handleClickFilter('kitchen')"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50" @click="handleClickFilter('takeaway')"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50" @click="handleClickFilter('coworking')"/>
-        </div>
-        <!-- <div :class="$style.wrapperCuantoPagar">
-          <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
-          <div :class="$style.wrapperRadio">
-            <InputRadio :class="$style.inputRadio" ></InputRadio>
-          </div>
-        </div>
-        <RangeSlider/> -->
+        <AllFilters/>
         <div :class="$style.button">
           <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
         </div>
@@ -37,33 +19,21 @@
 <script>
 import AppHeader from "../../components/AppHeader/AppHeader";
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
-import FilterButton from "../../components/FilterButton/FilterButton";
-import InputRadio from "../../components/InputRadio/InputRadio.vue";
-import RangeSlider from "../../components/RangeSlider/RangeSlider.vue";
+import AllFilters from "../../components/AllFilters/AllFilters.vue";
+
 
 export default {
   name: "VisualIntroStep2",
   components: {
     AppHeader,
     ButtonGeneral,
-    FilterButton,
-    InputRadio,
-    RangeSlider
+    AllFilters
   },
   data() {
     return {
       windowWidth: 0,
       windowHeight: 0
     };
-  },
-  mounted() {
-    this.$nextTick(function() {
-      window.addEventListener("resize", this.getWindowWidth);
-      window.addEventListener("resize", this.getWindowHeight);
-
-      this.getWindowWidth();
-      this.getWindowHeight();
-    });
   },
   methods: {
     handleClick() {
@@ -72,24 +42,11 @@ export default {
     handleClickFilter(filter){
       this.$store.dispatch('Filter', filter);
     },
-
-    getWindowWidth() {
-      this.windowWidth = document.documentElement.clientWidth;
-    },
-
-    getWindowHeight() {
-      this.windowHeight = document.documentElement.clientHeight;
-    },
   },
   computed: {
-    is320(){
-      return this.windowWidth <= 320;
-    }
+
   },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.getWindowWidth);
-    window.removeEventListener("resize", this.getWindowHeight);
-  }
+
 };
 </script>
 
@@ -149,45 +106,15 @@ body {
   margin: 0 auto;
 }
 
+
 .title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: fs-l;
   text-transform: uppercase;
-  // margin: 0 auto;
-  // max-width: 300px;
+  text-align: left;
   color: white;
   font-family: type-font;
-}
-
-.miniIcons {
-  width: 100%;
-  max-width: 600px;
-  margin: 2vw auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: white;
-}
-
-.likeTextCuantoPagar {
-  font-weight: bold;
-  font-size: fs-l;
-  margin: 0 auto;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-.wrapperCuantoPagar {
-  max-width: 400px;
-  min-width: 150px;
-  margin: 0 auto;
-  padding: 25px;
-  // border-top: 1px solid rgba(255, 255, 255, 0.3);
-  text-align: center;
 }
 
 .button {
