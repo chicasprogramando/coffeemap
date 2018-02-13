@@ -23,19 +23,26 @@ export default {
  @value purplecoffee, fontsize from colors; */
 
 .container {
-  padding: 10px 0px;
-  text-align: center;
-  background-color: #5d57ad;
-  color: white;
-  font-size: 10px;
-  margin: 0;
-  font-family: "Roboto";
+  flex-grow: 0;
   width: 100%;
+  padding: 10px 0px;
+  margin: 0;
+  background-color: #5d57ad;
+  font-family: "Roboto";
+  font-size: 10px;
+  color: white;
+  text-align: center;
 }
 .inverse {
   background-color: white;
   color: #7971d9;
   width: 100%;
   height: 5vh;
+}
+
+@media (min-width: 700px) {
+  .container {
+    background-color: transparent;
+  }
 }
 </style>

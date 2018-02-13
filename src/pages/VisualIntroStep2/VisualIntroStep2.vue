@@ -3,13 +3,15 @@
     <div :class="$style.container">
       <div :class="$style.innerWrapper">
         <app-header :inverse="false"></app-header>
-        <div :class="$style.titleNumberWrapper">
-          <span :class="$style.numberedpage">02/</span>
-          <p :class="$style.title">Y te gustaría que tenga...</p>
-        </div>
-        <AllFilters/>
-        <div :class="$style.button">
-          <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+        <div :class="$style.contentWrapper">
+          <div :class="$style.titleNumberWrapper">
+            <span :class="$style.numberedpage">02/</span>
+            <p :class="$style.title">Y te gustaría que tenga...</p>
+          </div>
+          <AllFilters/>
+          <div :class="$style.button">
+            <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+          </div>
         </div>
       </div>
     </div>
@@ -20,7 +22,6 @@
 import AppHeader from "../../components/AppHeader/AppHeader";
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
 import AllFilters from "../../components/AllFilters/AllFilters.vue";
-
 
 export default {
   name: "VisualIntroStep2",
@@ -39,14 +40,11 @@ export default {
     handleClick() {
       this.$router.push("/map");
     },
-    handleClickFilter(filter){
-      this.$store.dispatch('Filter', filter);
-    },
+    handleClickFilter(filter) {
+      this.$store.dispatch("Filter", filter);
+    }
   },
-  computed: {
-
-  },
-
+  computed: {}
 };
 </script>
 
@@ -73,30 +71,25 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  max-width: 600px;
+  // max-width: 600px;
   text-align: center;
   // margin: 10vw 5vh;
   color: white;
-  background-image: url("../../assets/coffee-bg.png");
-  background-size: 100%;
-}
-
-.container:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: purpleStrong;
-  opacity: 0.5;
-  z-index: 1;
+  background-image: url("../../assets/visualintrobackground.jpg");
+  background-repeat: no-repeat;
 }
 
 .innerWrapper {
-  position: relative;
-  min-height: 100vh;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(121, 113, 217, 0.7);
+}
+
+.contentWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .titleNumberWrapper {
@@ -105,7 +98,6 @@ body {
   max-width: 300px;
   margin: 0 auto;
 }
-
 
 .title {
   margin: 0 auto;
@@ -121,8 +113,7 @@ body {
   text-align: center;
   width: 100%;
   background-color: purpleLight;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
 }
 
 .buttonWidth {
@@ -132,18 +123,17 @@ body {
 }
 
 .miniIcons {
+  max-width: 300px;
   padding-top: 50px;
 }
 
-@media (max-width: 320px) {
-  .container {
-    margin: 10vw 1vh;
-  }
-}
-
-@media (max-width: 615px) {
+@media (min-width: 700px) {
   .miniIcons {
-    max-width: 300px;
+    max-width: 400px;
+  }
+
+  .button {
+    background-color: transparent;
   }
 }
 </style>

@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       windowWidth: 0,
-      windowHeight: 0,
+      windowHeight: 0
     };
   },
   mounted() {
@@ -51,18 +51,18 @@ export default {
     handleClick() {
       this.$router.push("/map");
     },
-    handleClickFilter(filter){
-      this.$store.dispatch('Filter', filter);
+    handleClickFilter(filter) {
+      this.$store.dispatch("Filter", filter);
     },
     getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth;
     },
     getWindowHeight() {
       this.windowHeight = document.documentElement.clientHeight;
-    },
+    }
   },
   computed: {
-    is320(){
+    is320() {
       return this.windowWidth <= 320;
     }
   },
@@ -78,7 +78,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
-.Iconwrap{
+.Iconwrap {
   padding-top: 50px;
 }
 
@@ -94,7 +94,6 @@ export default {
   color: white;
 }
 
-
 .button {
   text-align: center;
   width: 100%;
@@ -107,6 +106,13 @@ export default {
   min-width: 300px;
   margin: 15px auto;
   font-size: fs-m;
+}
+
+@media (min-width: 700px) {
+  .miniIcons {
+    max-width: 380px;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 320px) {

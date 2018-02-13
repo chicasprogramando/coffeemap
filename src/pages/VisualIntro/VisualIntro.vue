@@ -74,21 +74,20 @@ export default {
   width: 100%;
   background-image: url("../../assets/visualintrobackground.jpg");
 }
-.wrapper2{
-    background-color: rgba(121,113,217,0.7);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.wrapper2 {
+  background-color: rgba(121, 113, 217, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container{
-    width: 100%;
-    max-width: 400px;
-    color:white;
-    font-family: "Roboto";
-    
+.container {
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  font-family: "Roboto";
 }
 .madeof {
   font-size: 12px;
@@ -96,18 +95,17 @@ export default {
 .madeofgirls {
   font-weight: bolder;
 }
-.upbackground{
-    /* background-color: rgba(93,87,173,0.7); */
-    padding: 15px 10px 5px 5px;
-    text-align: center;
-    color:white;
+.upbackground {
+  /* background-color: rgba(93,87,173,0.7); */
+  padding: 15px 10px 5px 5px;
+  text-align: center;
+  color: white;
 }
-.downbackground{
+.downbackground {
   justify-content: space-between;
   padding: 25px 20px 20px 20px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-
 }
 
 .number {
@@ -129,7 +127,6 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 18px;
-  
 }
 
 .button {
@@ -138,30 +135,28 @@ export default {
 .dropdown {
   width: 100%;
   margin-top: 15px;
-  
 }
 
-@media (max-width: 700px) { 
-  .upbackground{
-    background-color: rgba(93,87,173,0.7);
+@media (max-width: 700px) {
+  .upbackground {
+    background-color: rgba(93, 87, 173, 0.7);
     width: 100%;
     box-sizing: border-box;
     flex-grow: 0;
-    
   }
-  .downbackground{
+  .downbackground {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
   }
-  .wrapper2{
+  .wrapper2 {
     justify-content: flex-start;
   }
-  .container{
+  .container {
     height: 100%;
     flex-grow: 1;
-    display:flex;
-  } 
+    display: flex;
+  }
 }
 </style>
 
