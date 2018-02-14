@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.wrapperMap">
-      <v-map :zoom="zoom" :center="center">
+      <v-map ref="map" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
         <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="markerClick(coffee)" />
       </v-map>
@@ -33,6 +33,9 @@ export default {
       iconPath: "../src/assets/icons/coffeepurple.png"
     };
   },
+  mounted(){
+    this.setBounds(this.coffees);
+  },
   methods: {
     icon() {
       return L.icon({
@@ -43,6 +46,15 @@ export default {
     },
     markerClick(coffee){
       this.$emit("markerClick",coffee)
+    },
+    setBounds(value){
+      this.$refs.map.mapObject.fitBounds(value ? value.map(coffee=>coffee.position) : [],
+        { paddingTopLeft:[50,100],paddingBottomRight:[50,100]/*,padding:[100,100]*/ });
+    }
+  },
+  watch:{
+    coffees(value){
+      this.setBounds(value);
     }
   }
 };
