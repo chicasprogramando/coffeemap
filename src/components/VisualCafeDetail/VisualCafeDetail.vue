@@ -7,7 +7,7 @@
           X
       </button>
       <div :class="$style.image"></div>
-      <div :class="$style.wrapper">      
+      <div :class="$style.wrapper">
         <p :class="$style.coffeeName">{{coffee.name}}</p>
         <visual-rating :value="coffee.rating"/>
         <p :class="$style.subtitle">Información del lugar</p>
@@ -37,7 +37,7 @@
           <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
         </div>
       </div>
-      
+
   	<!--</div>-->
   </div>
 </template>

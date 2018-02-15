@@ -8,7 +8,9 @@
         :coffees="coffees"
         @markerClick="handleMarkerClick"/>
         <visualSlider @itemClick="handleCoffeeClick" ref="slider" :coffees="coffees"/>
-        <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail" class="VisualDetail"/>
+        <transition @enter="onEnter" @leave="onLeave">
+          <VisualCafeDetail :coffee="coffee" v-if="coffee" @closeDetail="closeDetail" class="VisualDetail"/>
+        </transition>
         <div class="mapFilters">
           <input-dropdown @input="changeNeighborhood" class="seconddropdown" :compact="true" :location="neighborhood"></input-dropdown>
           <ButtonIcon name="filter3" :iconSize="30" class="btnFilter" @click="modalIn = true"/>
@@ -31,10 +33,6 @@
   max-width: 100vw;
 }
 
-.VisualDetail {
-  width: 100%;
-}
-
 .mapFilters {
   width: 86vw;
   position: absolute;
@@ -50,7 +48,7 @@
 }
 
 .btnFilter {
-  margin-top: -30px;  
+  margin-top: -30px;
 }
 
 .wrapperFilter {

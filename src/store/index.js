@@ -24,6 +24,7 @@ const store = new Vuex.Store({
                 (!state.takeaway || coffee.takeaway === state.takeaway)
             )
         ),
+        getCoffeeById: state => id => state.coffees.find(value => value.id === id),
     },
     mutations:{
         // TODO: Usar mayúsculas a la hora de hacer mutaciones

@@ -1,3 +1,4 @@
+import { TweenMax, Expo } from 'gsap';
 import Map from '../../components/Map/Map';
 import VisualSlider from '../../components/VisualSlider/VisualSlider';
 import VisualCafeDetail from '../../components/VisualCafeDetail/VisualCafeDetail';
@@ -38,15 +39,36 @@ export default {
 		},
 		closeDetail() {
 			this.coffee = null;
+			this.$router.push({name: 'map'});
 		},
-		handleMarkerClick : function(coffee) {			
-			let idx = this.coffees.indexOf(coffee);	
-			this.$refs.slider.slideTo(idx);		
+		handleMarkerClick : function(coffee) {
+			let idx = this.coffees.indexOf(coffee);
+			this.$refs.slider.slideTo(idx);
 		},
 
-	
+
 		handleClickFilter(filter){
 		  this.$store.dispatch('Filter', filter);
+		},
+		onEnter(el, done) {
+			TweenMax.from(el, 0.5, {
+			  autoAlpha: 0,
+			  scale: 0.8,
+			  ease: Expo.easeInOut,
+			  onComplete: () => {
+				done();
+			  },
+			});
+		},
+		  onLeave(el, done) {
+			TweenMax.to(el, 0.5, {
+			  autoAlpha: 0,
+			  scale: 0.8,
+			  ease: Expo.easeInOut,
+			  onComplete: () => {
+				done();
+			  },
+			});
 		},
 	},
 	computed: {

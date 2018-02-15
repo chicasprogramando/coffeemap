@@ -31,7 +31,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.567993, 
+      "lat": -34.567993,
       "lng": -58.448482
     },
     "zone": "Palermo",
@@ -430,7 +430,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.589210, 
+      "lat":-34.589210,
       "lng": -58.410061
     },
     "zone": "Palermo",
@@ -451,7 +451,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.589943, 
+      "lat":-34.589943,
       "lng": -58.431894
     },
     "zone": "Palermo",
@@ -493,7 +493,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.589231,  
+      "lat":-34.589231,
       "lng":-58.427282
     },
     "zone": "Palermo",
@@ -514,7 +514,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.586176, 
+      "lat": -34.586176,
       "lng":-58.428085
     },
     "zone": "Palermo",
@@ -535,7 +535,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.580421, 
+      "lat": -34.580421,
       "lng":-58.413221
     },
     "zone": "Palermo",
@@ -556,7 +556,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.582223, 
+      "lat": -34.582223,
       "lng":-58.436642
     },
     "zone": "Palermo",
@@ -577,7 +577,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.580657, 
+      "lat": -34.580657,
       "lng":-58.404600
     },
     "zone": "Palermo",
@@ -598,7 +598,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.581745, 
+      "lat": -34.581745,
       "lng":-58.436010
     },
     "zone": "Palermo",
@@ -619,7 +619,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.580064, 
+      "lat": -34.580064,
       "lng":-58.412980
     },
     "zone": "Palermo",
@@ -661,7 +661,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.582358, 
+      "lat":-34.582358,
       "lng":-58.420257
     },
     "zone": "Palermo",
@@ -682,7 +682,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.586698,  
+      "lat":-34.586698,
       "lng":-58.412653
     },
     "zone": "Palermo",
@@ -703,7 +703,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.588267,   
+      "lat":-34.588267,
       "lng":-58.423068
     },
     "zone": "Palermo",
@@ -724,7 +724,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.588267,   
+      "lat":-34.588267,
       "lng":-58.423068
     },
     "zone": "Palermo",
@@ -745,7 +745,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.581908,     
+      "lat":-34.581908,
       "lng":-58.441362
     },
     "zone": "Palermo",
@@ -766,7 +766,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.583849,    
+      "lat":-34.583849,
       "lng":-58.412526
     },
     "zone": "Palermo",
@@ -787,7 +787,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.581156,    
+      "lat":-34.581156,
       "lng":-58.406234
     },
     "zone": "Palermo",
@@ -808,7 +808,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.590332,    
+      "lat": -34.590332,
       "lng":-58.425826
     },
     "zone": "Palermo",
@@ -829,8 +829,8 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":  -34.592294,   
-      "lng":-58.412878 
+      "lat":  -34.592294,
+      "lng":-58.412878
     },
     "zone": "Palermo",
     "coworking": false,
@@ -850,8 +850,8 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.591209,  
-      "lng":-58.428525 
+      "lat":-34.591209,
+      "lng":-58.428525
     },
     "zone": "Palermo",
     "coworking": false,
@@ -871,7 +871,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.587975,   
+      "lat":-34.587975,
       "lng":-58.390811
     },
     "zone": "Recoleta",
@@ -892,8 +892,8 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.592414, 
-      "lng":-58.394781 
+      "lat":-34.592414,
+      "lng":-58.394781
     },
     "zone": "Recoleta",
     "coworking": false,
@@ -934,7 +934,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.593506, 
+      "lat":-34.593506,
       "lng":-58.404209
     },
     "zone": "Recoleta",
@@ -955,7 +955,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.597006,  
+      "lat":-34.597006,
       "lng":-58.387121
     },
     "zone": "Recoleta",
@@ -976,7 +976,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.598704,  
+      "lat":-34.598704,
       "lng":-58.384024
     },
     "zone": "Recoleta",
@@ -997,8 +997,8 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.591309,  
-      "lng":-58.391209 
+      "lat":-34.591309,
+      "lng":-58.391209
     },
     "zone": "Recoleta",
     "coworking": false,
@@ -1018,7 +1018,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.590446,   
+      "lat":-34.590446,
       "lng":-58.400618
     },
     "zone": "Recoleta",
@@ -1039,7 +1039,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.587387,  
+      "lat":-34.587387,
       "lng":-58.396727
     },
     "zone": "Recoleta",
@@ -1060,7 +1060,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.593446,  
+      "lat":-34.593446,
       "lng":-58.395770
     },
     "zone": "Recoleta",
@@ -1081,7 +1081,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.586204, 
+      "lat":-34.586204,
       "lng":-58.398466
     },
     "zone": "Recoleta",
@@ -1102,7 +1102,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat": -34.599050, 
+      "lat": -34.599050,
       "lng":-58.393292
     },
     "zone": "Recoleta",
@@ -1123,8 +1123,8 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.595968,  
-      "lng":-58.393413 
+      "lat":-34.595968,
+      "lng":-58.393413
     },
     "zone": "Recoleta",
     "coworking": false,
@@ -1144,7 +1144,7 @@
     "wifi": true,
     "pets": false,
     "position": {
-      "lat":-34.592724,   
+      "lat":-34.592724,
       "lng":-58.401195
     },
     "zone": "Recoleta",

@@ -48,8 +48,10 @@ export default {
       this.$emit("markerClick",coffee)
     },
     setBounds(value){
-      this.$refs.map.mapObject.fitBounds(value ? value.map(coffee=>coffee.position) : [],
-        { paddingTopLeft:[50,100],paddingBottomRight:[50,100]/*,padding:[100,100]*/ });
+      if(value && value.length>0){
+        this.$refs.map.mapObject.fitBounds(value.map(coffee=>coffee.position),
+        { paddingTopLeft:[50,100],paddingBottomRight:[50,100] });
+      }
     }
   },
   watch:{
