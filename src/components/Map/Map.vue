@@ -2,11 +2,10 @@
     <div :class="$style.wrapperMap">
       <v-map ref="map" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="markerClick(coffee)" />
+        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" :isActive="False" @l-click="markerClick(coffee)" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
-
 </template>
 
 <script>
@@ -31,9 +30,10 @@ export default {
   data() {
     return {
       iconPath: "../src/assets/icons/coffeepurple.png"
+      // iconPathOff: "../src/assets/icons/coffeepurpleoff.png"
     };
   },
-  mounted(){
+  mounted() {
     this.setBounds(this.coffees);
   },
   methods: {
@@ -44,18 +44,20 @@ export default {
         iconAnchor: [0, 0]
       });
     },
-    markerClick(coffee){
-      this.$emit("markerClick",coffee)
+    markerClick(coffee) {
+      this.$emit("markerClick", coffee);
     },
-    setBounds(value){
-      if(value && value.length>0){
-        this.$refs.map.mapObject.fitBounds(value.map(coffee=>coffee.position),
-        { paddingTopLeft:[50,100],paddingBottomRight:[50,100] });
+    setBounds(value) {
+      if (value && value.length > 0) {
+        this.$refs.map.mapObject.fitBounds(
+          value.map(coffee => coffee.position),
+          { paddingTopLeft: [50, 100], paddingBottomRight: [50, 100] }
+        );
       }
     }
   },
-  watch:{
-    coffees(value){
+  watch: {
+    coffees(value) {
       this.setBounds(value);
     }
   }
