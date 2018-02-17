@@ -113,7 +113,6 @@ body {
   text-align: center;
   width: 100%;
   background-color: purpleLight;
-  margin-top: auto;
 }
 
 .buttonWidth {
