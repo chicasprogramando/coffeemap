@@ -8,29 +8,21 @@
       </button>
       <div :class="$style.image"></div>
       <div :class="$style.wrapper">
-        <p :class="$style.coffeeName">{{coffee.name}}</p>
+        <span :class="$style.coffeeName">{{coffee.name}}</span>
         <visual-rating :value="coffee.rating"/>
-        <p :class="$style.subtitle">Información del lugar</p>
+        <span :class="$style.subtitle">Información del lugar</span>
         <div>
-          <p>
             <span :class="$style.subtitleSmall">Dirección</span><br/>
             <span :class="$style.information">{{coffee.address}}</span>
-          </p>
-          <p>
             <span :class="$style.subtitleSmall">Lunes a viernes</span><br/>
             <span :class="$style.information">8 a 20 hs</span>
-          </p>
         </div>
-        <p :class="$style.subtitle">Información de contacto</p>
+        <span :class="$style.subtitle">Información de contacto</span>
         <div>
-          <p>
           <span :class="$style.subtitleSmall">Teléfono</span><br/>
           <span :class="$style.information">{{coffee.telephone}}</span>
-          </p>
-          <p>
           <span :class="$style.subtitleSmall">Sitio web</span><br/>
           <span :class="$style.information">{{coffee.website}}</span>
-          </p>
         </div>
         <div :class="$style.icon">
           <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
@@ -79,25 +71,35 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
 .modalCoffee {
-  position: absolute;
+  position: fixed;
   background-color: white;
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
+  width: 400px;
+  height: 65vh;
+  min-height: 300px;
+  top: 90px;
+  right: 10px;
   z-index: 10000;
+  border-radius: 20px;
+  overflow: auto;
 }
 /*.mobile {
   width: 100%;
   position: relative;
 }*/
 .wrapper {
-  height: 65vh;
-  padding: 30px;
+  margin-top: 20px;
+  height: 65%;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.wrapper > span {
+  padding-top: 5px;
+  padding-bottom:5px;
 }
 
 .closebtn {
@@ -157,5 +159,45 @@ export default {
 
 .iconOne {
   margin-right: 10px;
+}
+
+.modalCoffee::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.modalCoffee::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.modalCoffee::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(121, 113, 217);
+}
+
+@media (max-height: 700px) {
+  .wrapper{
+    margin-top: 40px;
+  }
+  .wrapper > span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modalCoffee {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .wrapper {
+    height: 60%;
+  }
 }
 </style>

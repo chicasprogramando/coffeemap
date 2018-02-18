@@ -52,8 +52,9 @@ export default {
 		},
 		onEnter(el, done) {
 			TweenMax.from(el, 0.5, {
+				right:-150,
 			  autoAlpha: 0,
-			  scale: 0.8,
+			  //scale: 0.8,
 			  ease: Expo.easeInOut,
 			  onComplete: () => {
 				done();
@@ -61,9 +62,10 @@ export default {
 			});
 		},
 		  onLeave(el, done) {
-			TweenMax.to(el, 0.5, {
-			  autoAlpha: 0,
-			  scale: 0.8,
+			TweenMax.to(el, 0.7, {
+				right:-150,
+				autoAlpha: 0,
+			  //scale: 0.8,
 			  ease: Expo.easeInOut,
 			  onComplete: () => {
 				done();

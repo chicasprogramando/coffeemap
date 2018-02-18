@@ -37,7 +37,7 @@ export default {
   background-color: white;
   color: #7971d9;
   width: 100%;
-  height: 5vh;
+  height: 3vh;
 }
 
 @media (min-width: 700px) {
