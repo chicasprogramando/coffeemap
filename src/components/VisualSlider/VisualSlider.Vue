@@ -27,97 +27,98 @@ export default {
       swiperOption: {
         on: {
           init: function() {
-            initialSlide:0;
+            initialSlide: 0;
           },
-          slideChange: function(){
-            console.log("active slide:", this.activeIndex)
+          slideChange: function() {
+            console.log("active slide:", this.activeIndex);
+          },
+          click: function() {
+            if (this.clickedIndex < this.slides.length - 6) {
+              this.slideTo(this.clickedIndex, 1500, false);
+            } else {
+              this.slideTo(this.clickedIndex, 2500, false);
+              this.slides[this.activeIndex].classList.remove(
+                "swiper-slide-active"
+              );
+              this.slides[this.clickedIndex].classList.add(
+                "swiper-slide-active"
+              );
+            }
           }
         },
+
         slidesPerView: 6,
+        slidesPerGroup: 1,
         spaceBetween: 200,
         slidesOffsetBefore: 10,
-        slidesOffsetAfter: 1650,
+        //setWrapperSize: true,
         grabCursor: true,
         observer: true,
         observeParents: true,
+        slidesOffsetAfter: 100,
         //preloadImages: true,
         //updateOnImagesReady: true,
         breakpoints: {
           1800: {
             slidesPerView: 5,
-            slidesOffsetAfter: 1420
           },
           1740: {
             slidesPerView: 5,
-            slidesOffsetAfter: 1250
           },
           1600: {
             slidesPerView: 5,
-            slidesOffsetAfter: 1200
           },
           1500: {
             slidesPerView: 5,
-            slidesOffsetAfter: 1110
           },
           1400: {
             slidesPerView: 5,
-            slidesOffsetAfter: 1040
           },
           1300: {
             slidesPerView: 4,
-            slidesOffsetAfter: 900
           },
           1200: {
             slidesPerView: 4,
-            slidesOffsetAfter: 780
           },
           1050: {
             slidesPerView: 4,
-            slidesOffsetAfter: 800
           },
           950: {
             slidesPerView: 4,
-            slidesOffsetAfter: 850
+            slidesOffsetAfter: 250,
           },
           900: {
             slidesPerView: 3,
-            slidesOffsetAfter: 680
+            slidesOffsetAfter: 250,
           },
           800: {
             slidesPerView: 3,
-            slidesOffsetAfter: 600
+            slidesOffsetAfter: 350,
           },
           760: {
             slidesPerView: 3,
-            slidesOffsetAfter: 500
+            slidesOffsetAfter: 250,
           },
           600: {
             slidesPerView: 3,
-            slidesOffsetAfter: 550
+            slidesOffsetAfter: 250,
           },
           550: {
             slidesPerView: 2,
-            slidesOffsetAfter: 250
-          },
-          500: {
-            slidesPerView: 2,
-            slidesOffsetAfter: 250
+            slidesOffsetAfter: 350,
           },
           420: {
             slidesPerView: 2,
-            slidesOffsetAfter: 250
+            slidesOffsetAfter: 450,
           },
           360: {
             slidesPerView: 2,
-            slidesOffsetAfter: 250
           },
           320: {
             slidesPerView: 2,
-            slidesOffsetAfter: 250
           },
           300: {
             slidesPerView: 1,
-            slidesOffsetAfter: 0
           }
         }
       }
@@ -133,7 +134,15 @@ export default {
       this.$emit("itemClick", item);
     },
     slideTo(idx) {
-      this.swiper.slideTo(idx, 2500, false);
+      if (idx < this.swiper.slides.length - 6) {
+        this.swiper.slideTo(idx, 2500, false);
+      } else {
+        this.swiper.slideTo(idx, 2500, false);
+        this.swiper.slides[this.swiper.activeIndex].classList.remove(
+          "swiper-slide-active"
+        );
+        this.swiper.slides[idx].classList.add("swiper-slide-active");
+      }
     }
   },
   mounted() {
@@ -142,6 +151,13 @@ export default {
 };
 </script>
 
-<style module>
+<style scoped>
+.swiper-slide {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.swiper-slide-active > div {
+  box-shadow: 0px 0px 20px 0px rgba(137, 43, 226, 0.801);
+}
 
 </style>

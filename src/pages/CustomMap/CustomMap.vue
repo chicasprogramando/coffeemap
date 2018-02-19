@@ -29,7 +29,7 @@
 .swiper-container {
   position: absolute;
   z-index: 400;
-  bottom: 20px;
+  bottom: 10px;
   max-width: 100vw;
 }
 
