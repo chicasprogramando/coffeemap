@@ -33,10 +33,8 @@ export default {
             console.log("active slide:", this.activeIndex);
           },
           click: function() {
-            if (this.clickedIndex < this.slides.length - 6) {
-              this.slideTo(this.clickedIndex, 1500, false);
-            } else {
-              this.slideTo(this.clickedIndex, 2500, false);
+            this.slideTo(this.clickedIndex, 1500, false);
+            if (this.clickedIndex > this.slides.length - 6) {
               this.slides[this.activeIndex].classList.remove(
                 "swiper-slide-active"
               );
@@ -60,65 +58,65 @@ export default {
         //updateOnImagesReady: true,
         breakpoints: {
           1800: {
-            slidesPerView: 5,
+            slidesPerView: 5
           },
           1740: {
-            slidesPerView: 5,
+            slidesPerView: 5
           },
           1600: {
-            slidesPerView: 5,
+            slidesPerView: 5
           },
           1500: {
-            slidesPerView: 5,
+            slidesPerView: 5
           },
           1400: {
-            slidesPerView: 5,
+            slidesPerView: 5
           },
           1300: {
-            slidesPerView: 4,
+            slidesPerView: 4
           },
           1200: {
-            slidesPerView: 4,
+            slidesPerView: 4
           },
           1050: {
-            slidesPerView: 4,
+            slidesPerView: 4
           },
           950: {
             slidesPerView: 4,
-            slidesOffsetAfter: 250,
+            slidesOffsetAfter: 250
           },
           900: {
             slidesPerView: 3,
-            slidesOffsetAfter: 250,
+            slidesOffsetAfter: 250
           },
           800: {
             slidesPerView: 3,
-            slidesOffsetAfter: 350,
+            slidesOffsetAfter: 350
           },
           760: {
             slidesPerView: 3,
-            slidesOffsetAfter: 250,
+            slidesOffsetAfter: 250
           },
           600: {
             slidesPerView: 3,
-            slidesOffsetAfter: 250,
+            slidesOffsetAfter: 250
           },
           550: {
             slidesPerView: 2,
-            slidesOffsetAfter: 350,
+            slidesOffsetAfter: 350
           },
           420: {
             slidesPerView: 2,
-            slidesOffsetAfter: 450,
+            slidesOffsetAfter: 450
           },
           360: {
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           320: {
-            slidesPerView: 2,
+            slidesPerView: 2
           },
           300: {
-            slidesPerView: 1,
+            slidesPerView: 1
           }
         }
       }
@@ -134,10 +132,8 @@ export default {
       this.$emit("itemClick", item);
     },
     slideTo(idx) {
-      if (idx < this.swiper.slides.length - 6) {
-        this.swiper.slideTo(idx, 2500, false);
-      } else {
-        this.swiper.slideTo(idx, 2500, false);
+      this.swiper.slideTo(idx, 2500, false);
+      if (idx > this.swiper.slides.length - 6) {
         this.swiper.slides[this.swiper.activeIndex].classList.remove(
           "swiper-slide-active"
         );
@@ -159,5 +155,4 @@ export default {
 .swiper-slide-active > div {
   box-shadow: 0px 0px 20px 0px rgba(137, 43, 226, 0.801);
 }
-
 </style>
