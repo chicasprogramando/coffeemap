@@ -2,7 +2,7 @@
     <div :class="$style.wrapperMap">
       <v-map ref="map" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" :isActive="False" @l-click="markerClick(coffee)" />
+        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" :isActive="false" @l-click="markerClick(coffee)" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
