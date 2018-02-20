@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <router-view :state="state" :all-methods="allMethods"/>
+    <transition @enter="onEnter" @leave="onLeave">
+      <router-view :state="state" :all-methods="allMethods"/>
+    </transition>
   </div>
 </template>
 
 <script>
 import api from "@/api";
+import { TweenMax, Expo } from 'gsap';
 
 export default {
   name: "app",
@@ -23,22 +26,8 @@ export default {
 
   created() {
     console.log("APP CREATED");
-
-    api
-      .getCoffees()
-      .then(data => {
-        this.$getCoffees = data;
-        console.log(this.$getCoffees);
-      })
-      .catch(e => console.error(e));
-
-    api
-      .getNeighborhoods()
-      .then(data => {
-        this.$getNeighborhoods = data;
-        console.log(this.$getNeighborhoods);
-      })
-      .catch(e => console.error(e));
+    this.$store.dispatch('fetchCoffees');
+    this.$store.dispatch('fetchNeighborhoods');
   },
 
   methods: {
@@ -57,7 +46,30 @@ export default {
         changeFilter: this.changeFilter,
         changeCost: this.changeCost
       };
-    }
+    },
+    onEnter(el, done) {
+      el.style.position = 'absolute';
+      TweenMax.from(el, 0.5, {
+        autoAlpha: 0,
+        scale: 0.8,
+        ease: Expo.easeInOut,
+        onComplete: () => {
+          el.style.position = 'relative';
+          done();
+        },
+      });
+    },
+    onLeave(el, done) {
+      el.style.position = 'absolute';
+      TweenMax.to(el, 0.5, {
+        autoAlpha: 0,
+        scale: 0.8,
+        ease: Expo.easeInOut,
+        onComplete: () => {
+          done();
+        },
+      });
+    },
   },
   mounted() {
     console.log("APP MOUNTED");

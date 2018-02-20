@@ -31,12 +31,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.567993, 
+=======
+      "lat": -34.567993,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng": -58.448482
     },
     "zone": "Palermo",
     "coworking": true,
+<<<<<<< HEAD
     "telephone":011 4786-0508,
+=======
+    "telephone":"011 4786-0508",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "https://www.cafemartinez.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -430,7 +438,11 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.589210, 
+=======
+      "lat":-34.589210,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng": -58.410061
     },
     "zone": "Palermo",
@@ -451,12 +463,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.589943, 
+=======
+      "lat":-34.589943,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng": -58.431894
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":,
+=======
+    "telephone":9999999,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "https://www.facebook.com/FelixFelicisCoffee",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -477,7 +497,11 @@
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4831-4606,
+=======
+    "telephone":"011 4831-4606",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://establecimientocafe.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -493,12 +517,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.589231,  
+=======
+      "lat":-34.589231,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.427282
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4832-6244,
+=======
+    "telephone":"011 4832-6244",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://www.markspalermo.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -514,12 +546,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.586176, 
+=======
+      "lat": -34.586176,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.428085
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4833-1676,
+=======
+    "telephone":"011 4833-1676",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://www.cafelattente.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -535,12 +575,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.580421, 
+=======
+      "lat": -34.580421,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.413221
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4843-7470,
+=======
+    "telephone":"011 4843-7470",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "https://www.facebook.com/birkincafe/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -556,12 +604,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.582223, 
+=======
+      "lat": -34.582223,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.436642
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone": 011 4772-0182,
+=======
+    "telephone": "011 4772-0182",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://www.moremore.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -572,17 +628,29 @@
     "address": "Av. del Libertador 2300",
     "businessHours": [
       7.15,
+<<<<<<< HEAD
       01
+=======
+      1
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     ],
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.580657, 
+=======
+      "lat": -34.580657,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.404600
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4802-1191,
+=======
+    "telephone":"011 4802-1191",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "https://www.facebook.com/pages/Cafe-Tabac/150991761630355",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -598,12 +666,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.581745, 
+=======
+      "lat": -34.581745,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.436010
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4774-5461,
+=======
+    "telephone":"011 4774-5461",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "https://www.facebook.com/ViveCafeTienda/?fref=ts",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -619,12 +695,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.580064, 
+=======
+      "lat": -34.580064,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.412980
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4843-7491,
+=======
+    "telephone":"011 4843-7491",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://www.cococafe.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -645,7 +729,11 @@
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4831-5709,
+=======
+    "telephone":"011 4831-5709",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "http://www.lepainquotidien.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -661,12 +749,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.582358, 
+=======
+      "lat":-34.582358,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.420257
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4831-0544,
+=======
+    "telephone":"011 4831-0544",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "www.restobarelgaleon.com.ar",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -682,12 +778,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.586698,  
+=======
+      "lat":-34.586698,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.412653
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4823-3003,
+=======
+    "telephone":"011 4823-3003",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website": "",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -703,12 +807,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.588267,   
+=======
+      "lat":-34.588267,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.423068
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":,
+=======
+    "telephone":99999,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -724,12 +836,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.588267,   
+=======
+      "lat":-34.588267,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.423068
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4807-5120,
+=======
+    "telephone":"011 4807-5120",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -745,12 +865,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.581908,     
+=======
+      "lat":-34.581908,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.441362
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4776-5484,
+=======
+    "telephone":"011 4776-5484",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.crisolweb.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -766,12 +894,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.583849,    
+=======
+      "lat":-34.583849,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.412526
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4807-9396,
+=======
+    "telephone":"011 4807-9396",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -787,12 +923,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.581156,    
+=======
+      "lat":-34.581156,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.406234
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4807-7866,
+=======
+    "telephone":"011 4807-7866",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://thecoffeestore.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -808,12 +952,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.590332,    
+=======
+      "lat": -34.590332,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.425826
     },
     "zone": "Palermo",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4149-7509,
+=======
+    "telephone":"011 4149-7509",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.facebook.com/cuervocafeBA/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -829,12 +981,21 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":  -34.592294,   
       "lng":-58.412878 
     },
     "zone": "Palermo",
     "coworking": false,
     "telephone":0800-122-0129,
+=======
+      "lat":  -34.592294,
+      "lng":-58.412878
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone":"0800-122-0129",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.starbucks.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -850,12 +1011,21 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.591209,  
       "lng":-58.428525 
     },
     "zone": "Palermo",
     "coworking": false,
     "telephone":011 4832-0070,
+=======
+      "lat":-34.591209,
+      "lng":-58.428525
+    },
+    "zone": "Palermo",
+    "coworking": false,
+    "telephone":"011 4832-0070",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://ninina.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -871,12 +1041,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.587975,   
+=======
+      "lat":-34.587975,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.390811
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4804-0449,
+=======
+    "telephone":"011 4804-0449",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.labiela.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -892,12 +1070,21 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.592414, 
       "lng":-58.394781 
     },
     "zone": "Recoleta",
     "coworking": false,
     "telephone":011 4805-2253,
+=======
+      "lat":-34.592414,
+      "lng":-58.394781
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone":"011 4805-2253",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.lubacoffeestore.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -918,7 +1105,11 @@
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4812-2673,
+=======
+    "telephone":"011 4812-2673",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.cafemartinez.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -934,12 +1125,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.593506, 
+=======
+      "lat":-34.593506,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.404209
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4826-6682,
+=======
+    "telephone":"011 4826-6682",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.facebook.com/cafedelbosco/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -955,12 +1154,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.597006,  
+=======
+      "lat":-34.597006,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.387121
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4811-0445,
+=======
+    "telephone":"011 4811-0445",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.tiendadecafe.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -976,12 +1183,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.598704,  
+=======
+      "lat":-34.598704,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.384024
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4815-3892,
+=======
+    "telephone":"011 4815-3892",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.lasmeninascafe.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -992,17 +1207,30 @@
     "address": "Av. Callao 1569",
     "businessHours": [
      8,
+<<<<<<< HEAD
      00
+=======
+     0
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     ],
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.591309,  
       "lng":-58.391209 
     },
     "zone": "Recoleta",
     "coworking": false,
     "telephone":011 4812-0777,
+=======
+      "lat":-34.591309,
+      "lng":-58.391209
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone":"011 4812-0777",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.croquemadame.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1018,12 +1246,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.590446,   
+=======
+      "lat":-34.590446,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.400618
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4821-9841,
+=======
+    "telephone":"011 4821-9841",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://harperjuice.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1039,12 +1275,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.587387,  
+=======
+      "lat":-34.587387,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.396727
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4803-9555,
+=======
+    "telephone":"011 4803-9555",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.cafemartinez.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1060,12 +1304,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.593446,  
+=======
+      "lat":-34.593446,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.395770
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4826-4272,
+=======
+    "telephone":"011 4826-4272",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.facebook.com/pages/Stazione-Cafe-Gourmet/164012763648279?ref=br_rs",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1081,12 +1333,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.586204, 
+=======
+      "lat":-34.586204,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.398466
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4807-4244,
+=======
+    "telephone":"011 4807-4244",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.facebook.com/429cafebar",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1102,12 +1362,20 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat": -34.599050, 
+=======
+      "lat": -34.599050,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.393292
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4815-1808,
+=======
+    "telephone":"011 4815-1808",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"https://www.cafemartinez.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1123,12 +1391,21 @@
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.595968,  
       "lng":-58.393413 
     },
     "zone": "Recoleta",
     "coworking": false,
     "telephone":011 4816-6088,
+=======
+      "lat":-34.595968,
+      "lng":-58.393413
+    },
+    "zone": "Recoleta",
+    "coworking": false,
+    "telephone":"011 4816-6088",
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     "website":"http://www.tiendadecafe.com.ar/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   },
@@ -1139,16 +1416,25 @@
     "address": "Av. Pueyrredón 1599",
     "businessHours": [
      7,
+<<<<<<< HEAD
      00
+=======
+     0
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
     ],
     "wifi": true,
     "pets": false,
     "position": {
+<<<<<<< HEAD
       "lat":-34.592724,   
+=======
+      "lat":-34.592724,
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80
       "lng":-58.401195
     },
     "zone": "Recoleta",
     "coworking": false,
+<<<<<<< HEAD
     "telephone":011 4822-0777,
     "website":"",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
@@ -2143,3 +2429,10 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     "photo":"",
   },
+=======
+    "telephone":"011 4822-0777",
+    "website":"",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  }
+]
+>>>>>>> 479ad74991a00709ea4f6dedc525005cb7a09d80

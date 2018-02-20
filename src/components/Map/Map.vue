@@ -1,12 +1,11 @@
 <template>
     <div :class="$style.wrapperMap">
-      <v-map :zoom="zoom" :center="center">
+      <v-map ref="map" :center="center">
         <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in getCoffees" :key="index" :lat-lng="coffee.position" :icon="icon()" @l-click="handlerMarker(coffee)"/>
+        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" :isActive="false" @l-click="markerClick(coffee)" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
-    
 </template>
 
 <script>
@@ -18,6 +17,7 @@ import Vue2Leaflet from "vue2-leaflet";
 export default {
   name: "mapWrapper",
   props: {
+    coffees: VueTypes.array.isRequired,
     center: VueTypes.object.isRequired,
     zoom: VueTypes.number.def(15)
   },
@@ -29,36 +29,37 @@ export default {
   },
   data() {
     return {
-      coffees: null,
       iconPath: "../src/assets/icons/coffeepurple.png"
+      // iconPathOff: "../src/assets/icons/coffeepurpleoff.png"
     };
   },
+  mounted() {
+    this.setBounds(this.coffees);
+  },
   methods: {
-    handlerMarker(coffee) {
-      console.log(`You clicked: ${coffee.name}`);
-      this.$emit("coffeClick", coffee);
-    },
     icon() {
       return L.icon({
         iconUrl: this.iconPath,
         iconSize: [32, 32],
         iconAnchor: [0, 0]
       });
+    },
+    markerClick(coffee) {
+      this.$emit("markerClick", coffee);
+    },
+    setBounds(value) {
+      if (value && value.length > 0) {
+        this.$refs.map.mapObject.fitBounds(
+          value.map(coffee => coffee.position),
+          { paddingTopLeft: [50, 100], paddingBottomRight: [50, 100] }
+        );
+      }
     }
   },
-  computed: {
-    getCoffees() {
-      return this.coffees;
+  watch: {
+    coffees(value) {
+      this.setBounds(value);
     }
-  },
-  mounted() {
-    api
-      .getCoffees()
-      .then(data => {
-        this.$getCoffees = data; // Set globally
-        this.coffees = data;
-      })
-      .catch(e => console.error(e));
   }
 };
 </script>

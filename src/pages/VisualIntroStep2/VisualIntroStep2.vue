@@ -3,31 +3,15 @@
     <div :class="$style.container">
       <div :class="$style.innerWrapper">
         <app-header :inverse="false"></app-header>
-        <div :class="$style.titleNumberWrapper">
-          <span :class="$style.numberedpage">02/</span>
-          <p :class="$style.title">Y te gustaría que <br/>tenga...</p>
-        </div>
-        <div v-if="is320()" :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35"/>
-        </div>
-        <div v-else :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50"/>
-        </div>
-        <!-- <div :class="$style.wrapperCuantoPagar">
-          <p :class="$style.likeTextCuantoPagar">¿Cuánto querés gastar?</p>
-          <div :class="$style.wrapperRadio">
-            <InputRadio :class="$style.inputRadio" ></InputRadio>
+        <div :class="$style.contentWrapper">
+          <div :class="$style.titleNumberWrapper">
+            <span :class="$style.numberedpage">02/</span>
+            <p :class="$style.title">Y te gustaría que tenga...</p>
           </div>
-        </div>
-        <RangeSlider/> -->
-        <div :class="$style.button">
-          <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+          <AllFilters/>
+          <div :class="$style.button">
+            <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
+          </div>
         </div>
       </div>
     </div>
@@ -37,18 +21,14 @@
 <script>
 import AppHeader from "../../components/AppHeader/AppHeader";
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
-import FilterButton from "../../components/FilterButton/FilterButton";
-import InputRadio from "../../components/InputRadio/InputRadio.vue";
-import RangeSlider from "../../components/RangeSlider/RangeSlider.vue";
+import AllFilters from "../../components/AllFilters/AllFilters.vue";
 
 export default {
   name: "VisualIntroStep2",
   components: {
     AppHeader,
     ButtonGeneral,
-    FilterButton,
-    InputRadio,
-    RangeSlider
+    AllFilters
   },
   data() {
     return {
@@ -56,36 +36,15 @@ export default {
       windowHeight: 0
     };
   },
-  mounted() {
-    this.$nextTick(function() {
-      window.addEventListener("resize", this.getWindowWidth);
-      window.addEventListener("resize", this.getWindowHeight);
-
-      this.getWindowWidth();
-      this.getWindowHeight();
-    });
-  },
   methods: {
     handleClick() {
       this.$router.push("/map");
     },
-    getWindowWidth(event) {
-      this.windowWidth = document.documentElement.clientWidth;
-    },
-
-    getWindowHeight(event) {
-      this.windowHeight = document.documentElement.clientHeight;
-    },
-    is320(windowWidth) {
-      if (this.windowWidth <= 320) {
-        return true;
-      }
+    handleClickFilter(filter) {
+      this.$store.dispatch("Filter", filter);
     }
   },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.getWindowWidth);
-    window.removeEventListener("resize", this.getWindowHeight);
-  }
+  computed: {}
 };
 </script>
 
@@ -112,30 +71,25 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  max-width: 600px;
+  // max-width: 600px;
   text-align: center;
   // margin: 10vw 5vh;
   color: white;
-  background-image: url("../../assets/coffee-bg.png");
-  background-size: 100%;
-}
-
-.container:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #7971d9;
-  opacity: 0.5;
-  z-index: 1;
+  background-image: url("../../assets/visualintrobackground.jpg");
+  background-repeat: no-repeat;
 }
 
 .innerWrapper {
-  position: relative;
-  min-height: 100vh;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(121, 113, 217, 0.7);
+}
+
+.contentWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .titleNumberWrapper {
@@ -146,52 +100,19 @@ body {
 }
 
 .title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: fs-l;
   text-transform: uppercase;
-  // margin: 0 auto;
-  // max-width: 300px;
+  text-align: left;
   color: white;
   font-family: type-font;
-}
-
-.miniIcons {
-  width: 100%;
-  max-width: 600px;
-  margin: 2vw auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: white;
-}
-
-.likeTextCuantoPagar {
-  font-weight: bold;
-  font-size: fs-l;
-  margin: 0 auto;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-.wrapperCuantoPagar {
-  max-width: 400px;
-  min-width: 150px;
-  margin: 0 auto;
-  padding: 25px;
-  // border-top: 1px solid rgba(255, 255, 255, 0.3);
-  text-align: center;
 }
 
 .button {
   text-align: center;
   width: 100%;
-  background-color: #5d57ad;
-  position: absolute;
-  bottom: 0;
+  background-color: purpleLight;
 }
 
 .buttonWidth {
@@ -201,18 +122,17 @@ body {
 }
 
 .miniIcons {
+  max-width: 300px;
   padding-top: 50px;
 }
 
-@media (max-width: 320px) {
-  .container {
-    margin: 10vw 1vh;
-  }
-}
-
-@media (max-width: 615px) {
+@media (min-width: 700px) {
   .miniIcons {
-    max-width: 300px;
+    max-width: 400px;
+  }
+
+  .button {
+    background-color: transparent;
   }
 }
 </style>

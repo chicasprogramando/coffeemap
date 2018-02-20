@@ -1,10 +1,10 @@
 <template>
     <div :class="[$style.container, compact && $style.compact]">
         <select :value="location" :class="$style.select" @input="handleInput($event.target.value)">
-            <option 
-				v-for="neighborhood in neighborhoods" 
-				:key="neighborhood.value"
-				:value="neighborhood.value">{{ neighborhood.label }}
+            <option
+				v-for="neighborhood in neighborhoods"
+				:key="neighborhood.name"
+				:value="neighborhood.name">{{ neighborhood.name }}
 			</option>
         </select>
         <div :class="$style.select__arrow"></div>
@@ -20,14 +20,9 @@ export default {
 		compact: VueTypes.bool.def(false),
 		location : VueTypes.string.isRequired,
 	},
-	data(){
-		return {
-			neighborhoods: [
-				{value: 'palermo', label: 'Palermo'},
-				{value: 'belgrano', label: 'Belgrano'},
-				{value: 'nunez', label: 'Nuñez'},
-				{value: 'recoleta', label: 'Recoleta'},
-			],
+	computed:{
+		neighborhoods(){
+			return this.$store.state.neighborhoods;
 		}
 	},
 	methods:{
@@ -44,7 +39,7 @@ export default {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 15px;
-	
+
 }
 
 
@@ -63,6 +58,7 @@ export default {
     height: 60px;
     font-size: 20px;
 	border-bottom:2px solid white;
+	border-radius: 0;
 	font-family: "Roboto";
 }
 
@@ -85,17 +81,16 @@ option{
 	background:white;
 	width: initial;
 	border-radius:30px;
-	
+
 	.select {
 		color:rgb(121, 113, 217);
-		width: initial;
 		padding-right: 35px;
 		border-bottom: 0px;
-		
+
 	}
 	.select__arrow {
 		border-color:rgb(121, 113, 217) transparent transparent transparent;
 	}
 }
-    
+
 </style>

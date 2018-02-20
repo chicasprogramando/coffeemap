@@ -14,7 +14,7 @@ export default {
   name: "FilterButton",
   props: {
     name: VueTypes.string.isRequired,
-    buttonText: VueTypes.string.isRequired,
+    buttonText: VueTypes.string,
     iconSize: VueTypes.number.def(100),
     buttonSize: VueTypes.number.def(120)
   },
@@ -29,6 +29,7 @@ export default {
   methods: {
     changeStatus: function() {
       this.isActive = !this.isActive;
+      this.$emit('click');
     }
   },
   computed: {
