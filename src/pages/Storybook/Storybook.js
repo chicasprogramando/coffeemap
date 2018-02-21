@@ -9,6 +9,9 @@ import InputRadio from'../../components/InputRadio/InputRadio.vue';
 import VisualSliderItem from '../../components/VisualSliderItem/VisualSliderItem.vue';
 import VisualSlider from '../../components/VisualSlider/VisualSlider.vue';
 import RangeSlider from '../../components/RangeSlider/RangeSlider.vue';
+import Loader1 from '../../components/Loader/Loader1.vue'
+import Loader2 from '../../components/Loader/Loader2.vue'
+import Loader3 from '../../components/Loader/Loader3.vue'
 
 export default {
   name: 'storybook',
@@ -23,7 +26,10 @@ export default {
 		InputRadio,
 		VisualSliderItem,
 		VisualSlider,
-		RangeSlider
+		RangeSlider,
+		Loader1,
+		Loader2,
+		Loader3
   },
 	data() {
 		return {
