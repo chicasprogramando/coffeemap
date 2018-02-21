@@ -61,6 +61,8 @@
         <div class="component"><h2>Loader1</h2><Loader1 /></div>
         <div class="component"><h2>Loader2</h2><Loader2 /></div>
         <div class="component"><h2>Loader3</h2><Loader3 /></div>
+        <div class="component"><h2>Loader4</h2><Loader4 /></div>
+
 
 
 	</div>

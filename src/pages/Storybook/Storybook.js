@@ -12,6 +12,7 @@ import RangeSlider from '../../components/RangeSlider/RangeSlider.vue';
 import Loader1 from '../../components/Loader/Loader1.vue'
 import Loader2 from '../../components/Loader/Loader2.vue'
 import Loader3 from '../../components/Loader/Loader3.vue'
+import Loader4 from '../../components/Loader/Loader4.vue'
 
 export default {
   name: 'storybook',
@@ -29,7 +30,8 @@ export default {
 		RangeSlider,
 		Loader1,
 		Loader2,
-		Loader3
+		Loader3,
+		Loader4
   },
 	data() {
 		return {
