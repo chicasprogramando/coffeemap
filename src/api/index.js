@@ -24,7 +24,7 @@ const getCoffees = () => {
   return makeRequest('../static/data/coffees.json')
 }
 const getNeighborhoods = () => {
-  return makeRequest('../static/data/bla.json')
+  return makeRequest('../static/data/neighborhood.json')
 }
 
 const api = {
