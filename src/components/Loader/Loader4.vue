@@ -146,7 +146,7 @@ export default {
     top:50%;
     left:50%;
     margin-left:-25px;
-    margin-top:-20px;
+    margin-top:-25px;
 
 }
 .contailerloader4{
