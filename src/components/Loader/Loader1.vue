@@ -2,7 +2,7 @@
 <div :class="$style.containerloader">
 <svg :class="$style.rings" width="300" height="300" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fill-rule="evenodd">
-        <g transform="translate(2 1)" stroke="#FFF" stroke-width="0.3">
+        <g transform="translate(2 1)" stroke="#7971D9" stroke-width="0.3">
             <circle cx="42.601" cy="11.462" r="5" fill-opacity="1" fill="#7971D9">
                 <animate attributeName="fill-opacity"
                      begin="0s" dur="1.3s"
