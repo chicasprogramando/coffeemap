@@ -62,6 +62,11 @@
         <div class="component"><h2>Loader2</h2><Loader2 /></div>
         <div class="component"><h2>Loader3</h2><Loader3 /></div>
         <div class="component"><h2>Loader4</h2><Loader4 /></div>
+        <div class="component"><h2>All Loaders</h2>
+        <div class="loaders"><Loader1 /><Loader2/></div>
+        <div class="loaders"><Loader3/><Loader4/></div>
+
+        </div>
 
 
 
@@ -82,5 +87,8 @@ span {
     display: block;
     font-size: 15px;
     font-weight: bold;
+}
+.loaders{
+    float: left;
 }
 </style>
