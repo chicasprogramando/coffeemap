@@ -37,8 +37,10 @@ export default {
     };
   },
   methods: {
-    handleClick() {
-      this.$router.push("/map");
+    handleClick() { 
+      this.$router.push("/loader");
+      setTimeout(()=>{this.$router.push("/map")},2000);
+      
     },
     handleClickFilter(filter) {
       this.$store.dispatch("Filter", filter);
