@@ -39,7 +39,7 @@ export default {
   methods: {
     handleClick() { 
       this.$router.push("/loader");
-      setTimeout(()=>{this.$router.push("/map")},2000);
+      setTimeout(()=>{this.$router.push("/map")},1500);
       
     },
     handleClickFilter(filter) {

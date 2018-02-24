@@ -1,4 +1,5 @@
 <template>
+  <div :class="$style.wrap">
    <div :class="$style.aligner">
         <div :class="$style.coffee_container">
           <div :class="$style.steam_container">
@@ -95,7 +96,7 @@
           </div>
         </div><!-- end coffee_container -->
       </div> <!-- end aligner -->
-
+     </div>
 
 
   
@@ -107,9 +108,18 @@ export default {
 </script>
 
 <style module>
+.wrap{
+    width:300px;
+    height:300px;
+    
+}
 .aligner {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
 
 .steam_container {
   width: 60px;

@@ -1,21 +1,21 @@
 <template>
-  <div :class="$style.loader2"><Loader2/></div>
+  <div :class="$style.loader5"><Loader5/></div>
 
   
 </template>
 <script>
-import Loader2 from '../../components/Loader/Loader2.vue'
+import Loader5 from '../../components/Loader/Loader5.vue'
 
 export default {
     name:'Loader',
     components: {
-        Loader2,
+        Loader5,
     }
   
 }
 </script>
 <style module>
-.loader2{
+.loader5{
     width:100%;
     height:100%;
     display:flex;
