@@ -62,14 +62,17 @@
         <div class="component"><h2>Loader2</h2><Loader2 /></div>
         <div class="component"><h2>Loader3</h2><Loader3 /></div>
         <div class="component"><h2>Loader4</h2><Loader4 /></div>
-        <div class="component"><h2>All Loaders</h2>
-        <div class="loaders"><Loader1 /><Loader2/></div>
-        <div class="loaders"><Loader3/><Loader4/></div>
-         <div class="component"><h2>Loader5</h2><Loader5 /></div>
+        <div class="component">
+            <h2>All Loaders</h2>
+            <div class="loaders"><Loader1 /><Loader2/></div>
+            <div class="loaders"><Loader3/><Loader4/></div>
+        </div>
+        
+        <div class="component"><h2>Loader5</h2><Loader5 /></div>
        
         
 
-        </div>
+       
 
 
 
@@ -85,6 +88,7 @@ h2 {
 }
 .component {
     padding: 16px;
+    clear:both;
 }
 span {
     display: block;
@@ -94,4 +98,5 @@ span {
 .loaders{
     float: left;
 }
+
 </style>
