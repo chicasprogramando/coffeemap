@@ -13,6 +13,7 @@ import Loader1 from '../../components/Loader/Loader1.vue'
 import Loader2 from '../../components/Loader/Loader2.vue'
 import Loader3 from '../../components/Loader/Loader3.vue'
 import Loader4 from '../../components/Loader/Loader4.vue'
+import Loader5 from '../../components/Loader/Loader5.vue'
 
 export default {
   name: 'storybook',
@@ -31,7 +32,9 @@ export default {
 		Loader1,
 		Loader2,
 		Loader3,
-		Loader4
+		Loader4,
+		Loader5
+		
   },
 	data() {
 		return {

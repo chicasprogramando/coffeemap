@@ -65,6 +65,9 @@
         <div class="component"><h2>All Loaders</h2>
         <div class="loaders"><Loader1 /><Loader2/></div>
         <div class="loaders"><Loader3/><Loader4/></div>
+         <div class="component"><h2>Loader5</h2><Loader5 /></div>
+       
+        
 
         </div>
 
