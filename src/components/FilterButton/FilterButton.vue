@@ -16,19 +16,14 @@ export default {
     name: VueTypes.string.isRequired,
     buttonText: VueTypes.string,
     iconSize: VueTypes.number.def(100),
-    buttonSize: VueTypes.number.def(120)
+    buttonSize: VueTypes.number.def(120),
+    isActive: VueTypes.bool.isRequired.def(false),
   },
   components: {
     Icon
   },
-  data() {
-    return {
-      isActive: false,
-    };
-  },
   methods: {
     changeStatus: function() {
-      this.isActive = !this.isActive;
       this.$emit('click');
     }
   },

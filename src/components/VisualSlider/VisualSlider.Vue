@@ -153,6 +153,6 @@ export default {
   padding-bottom: 10px;
 }
 .swiper-slide-active > div {
-  box-shadow: 0px 0px 20px 0px rgba(137, 43, 226, 0.801);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
     <div :class="$style.Iconwrap">
         <div v-if="is320" :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickFilter('takeaway')"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35" @click="handleClickFilter('coworking')"/>
+          <FilterButton :isActive="wifi" name="wifi" button-text="Wifi" :buttonSize="100" :iconSize="35" @click="handleClickFilter('wifi')"/>
+          <FilterButton :isActive="kitchen" name="food" button-text="Cocina" :buttonSize="100" :iconSize="35" @click="handleClickFilter('kitchen')"/>
+          <FilterButton :isActive="takeaway" name="bag" button-text="Take away" :buttonSize="100" :iconSize="35" @click="handleClickFilter('takeaway')"/>
+          <FilterButton :isActive="coworking" name="laptop" button-text="Coworking" :buttonSize="100" :iconSize="35" @click="handleClickFilter('coworking')"/>
         </div>
         <div v-else :class="$style.miniIcons">
-          <FilterButton name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50" @click="handleClickFilter('wifi')"/>
-          <FilterButton name="food" button-text="Cocina" :buttonSize="120" :iconSize="50" @click="handleClickFilter('kitchen')"/>
-          <FilterButton name="bag" button-text="Take away" :buttonSize="120" :iconSize="50" @click="handleClickFilter('takeaway')"/>
-          <FilterButton name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50" @click="handleClickFilter('coworking')"/>
+          <FilterButton :isActive="wifi" name="wifi" button-text="Wifi" :buttonSize="120" :iconSize="50" @click="handleClickFilter('wifi')"/>
+          <FilterButton :isActive="kitchen" name="food" button-text="Cocina" :buttonSize="120" :iconSize="50" @click="handleClickFilter('kitchen')"/>
+          <FilterButton :isActive="takeaway" name="bag" button-text="Take away" :buttonSize="120" :iconSize="50" @click="handleClickFilter('takeaway')"/>
+          <FilterButton :isActive="coworking" name="laptop" button-text="Coworking" :buttonSize="120" :iconSize="50" @click="handleClickFilter('coworking')"/>
         </div>
     </div>
 </template>
@@ -53,6 +53,7 @@ export default {
     },
     handleClickFilter(filter) {
       this.$store.dispatch("Filter", filter);
+      console.log(filter);
     },
     getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth;
@@ -64,7 +65,19 @@ export default {
   computed: {
     is320() {
       return this.windowWidth <= 320;
-    }
+    },
+    wifi() {
+      return this.$store.state.wifi;
+    },
+    kitchen() {
+      return this.$store.state.kitchen;
+    },
+    takeaway() {
+      return this.$store.state.takeaway;
+    },
+    coworking() {
+      return this.$store.state.coworking;
+    },
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.getWindowWidth);
