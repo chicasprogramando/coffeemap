@@ -53,7 +53,6 @@ export default {
     },
     handleClickFilter(filter) {
       this.$store.dispatch("updateFilter", filter);
-      console.log(filter);
     },
     getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth;

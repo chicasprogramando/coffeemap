@@ -15,6 +15,12 @@ const store = new Vuex.Store({
     kitchen: false
   },
   getters: {
+    getCurrentNeighborhood: state => {
+      return state.neighborhood;
+    },
+    getNeighborhoods: state => {
+      return state.neighborhoods;
+    },
     getFilteredCoffes: state =>
       state.coffees.filter(
         coffee =>
@@ -27,13 +33,11 @@ const store = new Vuex.Store({
     getCoffeeById: state => id => state.coffees.find(value => value.id === id)
   },
   mutations: {
-    // TODO: Usar mayúsculas a la hora de hacer mutaciones
     UPDATE_NEIGHBORHOOD(state, payload) {
       state.neighborhood = payload;
     },
     UPDATE_FILTER(state, filter) {
       state[filter] = !state[filter];
-      // console.log(JSON.stringify(state));
     },
     SET_COFFEES(state, payload) {
       state.coffees = payload;

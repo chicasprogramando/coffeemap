@@ -71,7 +71,7 @@ export default {
   },
   computed: {
     neighborhood() {
-      return this.$store.state.neighborhood;
+      return this.$store.getters.getCurrentNeighborhood;
     },
     coffees() {
       return this.$store.getters.getFilteredCoffes;
