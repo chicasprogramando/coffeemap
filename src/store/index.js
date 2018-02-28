@@ -33,7 +33,7 @@ const store = new Vuex.Store({
     kitchenSelected: state => {
       return state.kitchen;
     },
-    getFilteredCoffes: state =>
+    getFilteredCoffes: state => {
       state.coffees.filter(
         coffee =>
           coffee.zone === state.neighborhood &&
@@ -41,7 +41,19 @@ const store = new Vuex.Store({
           (!state.coworking || coffee.coworking === state.coworking) &&
           (!state.kitchen || coffee.kitchen === state.kitchen) &&
           (!state.takeaway || coffee.takeaway === state.takeaway)
-      ),
+      );
+
+      console.log(
+        state.coffees.filter(
+          coffee =>
+            coffee.zone === state.neighborhood &&
+            (!state.wifi || coffee.wifi === state.wifi) &&
+            (!state.coworking || coffee.coworking === state.coworking) &&
+            (!state.kitchen || coffee.kitchen === state.kitchen) &&
+            (!state.takeaway || coffee.takeaway === state.takeaway)
+        )
+      );
+    },
     getCoffeeById: state => id => state.coffees.find(value => value.id === id)
   },
   mutations: {

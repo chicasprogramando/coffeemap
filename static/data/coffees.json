@@ -9,7 +9,8 @@
       20
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.586347,
       "lng": -58.431469
@@ -31,7 +32,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.567993,
       "lng": -58.448482
@@ -53,7 +55,8 @@
       20
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.588202,
       "lng": -58.423308
@@ -75,7 +78,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.584899,
       "lng": -58.439316
@@ -97,7 +101,8 @@
       21
     ],
     "wifi": false,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.592859,
       "lng": -58.436687
@@ -119,7 +124,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.594201,
       "lng": -58.421323
@@ -141,7 +147,8 @@
       20
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.580016,
       "lng": -58.437747
@@ -163,7 +170,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.587624,
       "lng": -58.44258
@@ -185,7 +193,8 @@
       21
     ],
     "wifi": false,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.580506,
       "lng": -58.442063
@@ -207,7 +216,8 @@
       21
     ],
     "wifi": false,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.57945,
       "lng": -58.436142
@@ -229,7 +239,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.578804,
       "lng": -58.412157
@@ -251,7 +262,8 @@
       22
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.582569,
       "lng": -58.409585
@@ -273,7 +285,8 @@
       1
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.574707,
       "lng": -58.402712
@@ -295,7 +308,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.576161,
       "lng": -58.408870
@@ -317,7 +331,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.585586,
       "lng": -58.426760
@@ -339,7 +354,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.584703,
       "lng": -58.426372
@@ -361,7 +377,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.581990,
       "lng": -58.428425
@@ -383,7 +400,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.588219,
       "lng": -58.413974
@@ -405,7 +423,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.583019,
       "lng": -58.423067
@@ -427,7 +446,8 @@
       21
     ],
     "wifi": true,
-    "pets": true,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.585378,
       "lng": -58.415582
@@ -449,7 +469,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.589210,
       "lng": -58.410061
@@ -471,7 +492,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.589943,
       "lng": -58.431894
@@ -493,7 +515,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.583940,
       "lng": -58.412648
@@ -515,7 +538,8 @@
       21.30
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.589231,
       "lng": -58.427282
@@ -537,7 +561,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.586176,
       "lng": -58.428085
@@ -559,7 +584,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.580421,
       "lng": -58.413221
@@ -581,7 +607,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.582223,
       "lng": -58.436642
@@ -603,7 +630,8 @@
       1
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.580657,
       "lng": -58.404600
@@ -625,7 +653,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.581745,
       "lng": -58.436010
@@ -647,7 +676,8 @@
       0
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.580064,
       "lng": -58.412980
@@ -669,7 +699,8 @@
       20.30
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.589804,
       "lng": -58.427736
@@ -691,7 +722,8 @@
       1
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.582358,
       "lng": -58.420257
@@ -713,7 +745,8 @@
       0
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": false,
+    "takeaway": true,
     "position": {
       "lat": -34.586698,
       "lng": -58.412653
@@ -735,7 +768,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.588267,
       "lng": -58.423068
@@ -757,7 +791,8 @@
       1
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.588267,
       "lng": -58.423068
@@ -779,7 +814,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.581908,
       "lng": -58.441362
@@ -801,7 +837,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.583849,
       "lng": -58.412526
@@ -823,7 +860,8 @@
       20.30
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.581156,
       "lng": -58.406234
@@ -845,7 +883,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.590332,
       "lng": -58.425826
@@ -867,7 +906,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.592294,
       "lng": -58.412878
@@ -889,7 +929,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.591209,
       "lng": -58.428525
@@ -911,7 +952,8 @@
       2
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.587975,
       "lng": -58.390811
@@ -933,7 +975,8 @@
       0
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.592414,
       "lng": -58.394781
@@ -955,7 +998,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.592403,
       "lng": -58.389032
@@ -977,7 +1021,8 @@
       19
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.593506,
       "lng": -58.404209
@@ -999,7 +1044,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.597006,
       "lng": -58.387121
@@ -1021,7 +1067,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.598704,
       "lng": -58.384024
@@ -1043,7 +1090,8 @@
       0
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.591309,
       "lng": -58.391209
@@ -1065,7 +1113,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.590446,
       "lng": -58.400618
@@ -1087,7 +1136,8 @@
       20
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.587387,
       "lng": -58.396727
@@ -1109,7 +1159,8 @@
       20.30
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.593446,
       "lng": -58.395770
@@ -1131,7 +1182,8 @@
       20.30
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.586204,
       "lng": -58.398466
@@ -1153,7 +1205,8 @@
       21
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.599050,
       "lng": -58.393292
@@ -1175,7 +1228,8 @@
       22
     ],
     "wifi": true,
-    "pets": false,
+    "kitchen": true,
+    "takeaway": true,
     "position": {
       "lat": -34.595968,
       "lng": -58.393413
