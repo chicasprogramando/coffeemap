@@ -30,7 +30,7 @@ export default {
             initialSlide: 0;
           },
           slideChange: function() {
-            console.log("active slide:", this.activeIndex);
+            // console.log("active slide:", this.activeIndex);
           },
           click: function() {
             this.slideTo(this.clickedIndex, 1500, false);

@@ -21,6 +21,18 @@ const store = new Vuex.Store({
     getNeighborhoods: state => {
       return state.neighborhoods;
     },
+    wifiSelected: state => {
+      return state.wifi;
+    },
+    coworkingSelected: state => {
+      return state.coworking;
+    },
+    takeawaySelected: state => {
+      return state.takeaway;
+    },
+    kitchenSelected: state => {
+      return state.kitchen;
+    },
     getFilteredCoffes: state =>
       state.coffees.filter(
         coffee =>

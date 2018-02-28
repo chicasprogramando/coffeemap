@@ -66,16 +66,16 @@ export default {
       return this.windowWidth <= 320;
     },
     wifi() {
-      return this.$store.state.wifi;
+      return this.$store.getters.wifiSelected;
     },
     kitchen() {
-      return this.$store.state.kitchen;
+      return this.$store.getters.kitchenSelected;
     },
     takeaway() {
-      return this.$store.state.takeaway;
+      return this.$store.getters.takeawaySelected;
     },
     coworking() {
-      return this.$store.state.coworking;
+      return this.$store.getters.coworkingSelected;
     }
   },
   beforeDestroy() {
