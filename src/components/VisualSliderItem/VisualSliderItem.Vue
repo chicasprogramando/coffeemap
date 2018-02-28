@@ -39,8 +39,7 @@ export default {
   },
   methods: {
     handleClick(coffee) {
-      console.log(`You clicked: ${coffee.name}`);
-      console.log("Path click #1");
+      this.$store.dispatch("updateCoffeesVisited", coffee.id);
       this.$emit("itemClick", coffee);
     }
   }
@@ -79,9 +78,9 @@ export default {
 }
 .status {
   color: green;
-  position:absolute;
-  bottom:15px;
-  left:20px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
 }
 .address {
   color: grey;
