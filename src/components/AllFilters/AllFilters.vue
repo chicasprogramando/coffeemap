@@ -52,7 +52,7 @@ export default {
       this.$router.push("/map");
     },
     handleClickFilter(filter) {
-      this.$store.dispatch("Filter", filter);
+      this.$store.dispatch("updateFilter", filter);
       console.log(filter);
     },
     getWindowWidth() {
@@ -77,7 +77,7 @@ export default {
     },
     coworking() {
       return this.$store.state.coworking;
-    },
+    }
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.getWindowWidth);

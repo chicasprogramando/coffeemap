@@ -44,7 +44,7 @@ export default {
     },
 
     handleClickFilter(filter) {
-      this.$store.dispatch("Filter", filter);
+      this.$store.dispatch("updateFilter", filter);
     },
     onEnter(el, done) {
       TweenMax.from(el, 0.5, {

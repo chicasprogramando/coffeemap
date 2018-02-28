@@ -37,13 +37,14 @@ export default {
     };
   },
   methods: {
-    handleClick() { 
+    handleClick() {
       this.$router.push("/loader");
-      setTimeout(()=>{this.$router.push("/map")},1500);
-      
+      setTimeout(() => {
+        this.$router.push("/map");
+      }, 1500);
     },
     handleClickFilter(filter) {
-      this.$store.dispatch("Filter", filter);
+      this.$store.dispatch("updateFilter", filter);
     }
   },
   computed: {}
