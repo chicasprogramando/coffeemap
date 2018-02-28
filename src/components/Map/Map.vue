@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      iconPath: "../src/assets/icons/coffeepurple.png"
+      // iconPath: "../src/assets/icons/coffeepurple.png"
       // iconPathOff: "../src/assets/icons/coffeepurpleoff.png"
     };
   },
@@ -39,7 +39,7 @@ export default {
   methods: {
     icon() {
       return L.icon({
-        iconUrl: this.iconPath,
+        iconUrl: "./static/image/icons/coffeepurple.png",
         iconSize: [32, 32],
         iconAnchor: [0, 0]
       });
