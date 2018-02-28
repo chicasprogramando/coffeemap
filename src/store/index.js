@@ -28,20 +28,20 @@ const store = new Vuex.Store({
   },
   mutations: {
     // TODO: Usar mayúsculas a la hora de hacer mutaciones
-    updateNeighborhood(state, payload) {
+    UPDATE_NEIGHBORHOOD(state, payload) {
       state.neighborhood = payload;
     },
-    updateFilter(state, filter) {
+    UPDATE_FILTER(state, filter) {
       state[filter] = !state[filter];
       // console.log(JSON.stringify(state));
     },
-    setCoffees(state, payload) {
+    SET_COFFEES(state, payload) {
       state.coffees = payload;
     },
-    setNeighborhoods(state, payload) {
+    SET_NEIGHBORHOOD(state, payload) {
       state.neighborhoods = payload;
     },
-    coffeeVisited(state, payload) {
+    COFFEE_VISITED(state, payload) {
       const updatedCoffees = state.coffees.map(coffee => {
         if (coffee.id === payload) {
           coffee.visited = true;
@@ -55,19 +55,19 @@ const store = new Vuex.Store({
   },
   actions: {
     updateCoffeesVisited({ commit }, payload) {
-      commit("coffeeVisited", payload);
+      commit("COFFEE_VISITED", payload);
     },
     selectNeighborhood({ commit }, payload) {
-      commit("updateNeighborhood", payload);
+      commit("UPDATE_NEIGHBORHOOD", payload);
     },
-    Filter({ commit }, filter) {
-      commit("updateFilter", filter);
+    updateFilter({ commit }, filter) {
+      commit("UPDATE_FILTER", filter);
     },
     fetchCoffees({ commit }) {
       api
         .getCoffees()
         .then(data => {
-          commit("setCoffees", data);
+          commit("SET_COFFEES", data);
         })
         .catch(e => console.error(e));
     },
@@ -75,7 +75,7 @@ const store = new Vuex.Store({
       api
         .getNeighborhoods()
         .then(data => {
-          commit("setNeighborhoods", data);
+          commit("SET_NEIGHBORHOOD", data);
         })
         .catch(e => console.error(e));
     }
