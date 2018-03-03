@@ -1,7 +1,10 @@
 <script src="./CustomMap.js"></script>
 
 <template>
+     
 	<div>
+        
+        <div class="customMap">
         <MapWrapper
         :zoom="15"
         :center="{lat: -34.586347, lng: -58.431469}"
@@ -18,6 +21,7 @@
         <div class="wrapperFilter" :class="{modalIn:modalIn}">
           <AllFilters class="filterSpace"/>
           <button-general button-text="Volver al mapa" size="large" @click="modalIn = false" class="buttonWidth"></button-general>
+        </div>
         </div>
     </div>
 

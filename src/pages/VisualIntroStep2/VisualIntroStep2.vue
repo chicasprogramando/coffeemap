@@ -1,5 +1,6 @@
 <template>
   <div :class="$style.wrapper">
+    <div :class="$style.loader5" v-if="loader==true"><Loader5/></div>
     <div :class="$style.container">
       <div :class="$style.innerWrapper">
         <app-header :inverse="false"></app-header>
@@ -22,24 +23,29 @@
 import AppHeader from "../../components/AppHeader/AppHeader";
 import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
 import AllFilters from "../../components/AllFilters/AllFilters.vue";
-
+import Loader5 from "../../components/Loader/Loader5";
 export default {
   name: "VisualIntroStep2",
   components: {
     AppHeader,
     ButtonGeneral,
-    AllFilters
+    AllFilters,
+    Loader5
   },
   data() {
     return {
       windowWidth: 0,
-      windowHeight: 0
+      windowHeight: 0,
+      loader:false,
     };
   },
   methods: {
     handleClick() { 
-      this.$router.push("/loader");
-      setTimeout(()=>{this.$router.push("/map")},1500);
+      this.loader=true;
+      setTimeout(()=>{
+        this.$router.push("/map");
+        this.loader=false;
+      },1500);
       
     },
     handleClickFilter(filter) {
@@ -86,6 +92,18 @@ body {
   flex-direction: column;
   height: 100vh;
   background-color: rgba(121, 113, 217, 0.7);
+}
+.loader5{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5000;
+  background-color: white;
+  
 }
 
 .contentWrapper {

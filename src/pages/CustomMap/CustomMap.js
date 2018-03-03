@@ -8,7 +8,6 @@ import ButtonGeneral from "../../components/ButtonGeneral/ButtonGeneral";
 import AllFilters from "../../components/AllFilters/AllFilters.vue";
 
 
-
 export default {
 	name: 'customMap',
 	components: {
@@ -18,7 +17,8 @@ export default {
 		InputDropdown,
 		ButtonIcon,
 		ButtonGeneral,
-		AllFilters
+		AllFilters,
+	
 	},
 	data() {
 		return {
