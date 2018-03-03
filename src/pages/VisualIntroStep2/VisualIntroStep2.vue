@@ -52,7 +52,7 @@ export default {
       
     },
     handleClickFilter(filter) {
-      this.$store.dispatch("Filter", filter);
+      this.$store.dispatch("updateFilter", filter);
     }
   },
   computed: {}

@@ -1,8 +1,8 @@
 <template>
     <div :class="$style.wrapperMap">
       <v-map ref="map" :center="center">
-        <v-tilelayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon()" :isActive="false" @l-click="markerClick(coffee)" />
+        <v-tilelayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+        <v-marker v-for="(coffee, index) in coffees" :key="index" :lat-lng="coffee.position" :icon="icon(coffee.visited)" :isActive="false" @l-click="markerClick(coffee)" />
       </v-map>
       <router-view :key="$route.fullPath"/>
     </div>
@@ -27,19 +27,19 @@ export default {
     "v-marker": Vue2Leaflet.Marker,
     "v-icondefault": Vue2Leaflet.IconDefault
   },
-  data() {
-    return {
-      iconPath: "../src/assets/icons/coffeepurple.png"
-      // iconPathOff: "../src/assets/icons/coffeepurpleoff.png"
-    };
-  },
   mounted() {
     this.setBounds(this.coffees);
   },
   methods: {
-    icon() {
+    icon(visited) {
+      let icon = "./static/image/icons/coffeepurple.png";
+
+      if (visited) {
+        icon = "./static/image/icons/coffeepurpleoff.png";
+      }
+
       return L.icon({
-        iconUrl: this.iconPath,
+        iconUrl: icon,
         iconSize: [32, 32],
         iconAnchor: [0, 0]
       });

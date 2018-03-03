@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     handleClose() {
-      console.log("close button works");
       this.$emit("closeDetail");
     }
   },
@@ -99,7 +98,7 @@ export default {
 
 .wrapper > span {
   padding-top: 5px;
-  padding-bottom:5px;
+  padding-bottom: 5px;
 }
 
 .closebtn {
@@ -179,7 +178,7 @@ export default {
 }
 
 @media (max-height: 700px) {
-  .wrapper{
+  .wrapper {
     margin-top: 40px;
   }
   .wrapper > span {

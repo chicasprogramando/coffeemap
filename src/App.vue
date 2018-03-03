@@ -8,7 +8,7 @@
 
 <script>
 import api from "@/api";
-import { TweenMax, Expo } from 'gsap';
+import { TweenMax, Expo } from "gsap";
 
 export default {
   name: "app",
@@ -23,13 +23,10 @@ export default {
       }
     };
   },
-
   created() {
-    console.log("APP CREATED");
-    this.$store.dispatch('fetchCoffees');
-    this.$store.dispatch('fetchNeighborhoods');
+    this.$store.dispatch("fetchCoffees");
+    this.$store.dispatch("fetchNeighborhoods");
   },
-
   methods: {
     changeLocation(location) {
       this.state.location = location;
@@ -48,31 +45,28 @@ export default {
       };
     },
     onEnter(el, done) {
-      el.style.position = 'absolute';
+      el.style.position = "absolute";
       TweenMax.from(el, 0.5, {
         autoAlpha: 0,
         scale: 0.8,
         ease: Expo.easeInOut,
         onComplete: () => {
-          el.style.position = 'relative';
+          el.style.position = "relative";
           done();
-        },
+        }
       });
     },
     onLeave(el, done) {
-      el.style.position = 'absolute';
+      el.style.position = "absolute";
       TweenMax.to(el, 0.5, {
         autoAlpha: 0,
         scale: 0.8,
         ease: Expo.easeInOut,
         onComplete: () => {
           done();
-        },
+        }
       });
-    },
-  },
-  mounted() {
-    console.log("APP MOUNTED");
+    }
   }
 };
 </script>

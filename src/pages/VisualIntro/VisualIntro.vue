@@ -43,7 +43,7 @@ export default {
   },
   computed: {
     neighborhood() {
-      return this.$store.state.neighborhood;
+      return this.$store.getters.getCurrentNeighborhood;
     }
   },
   mounted() {
@@ -57,7 +57,6 @@ export default {
       this.allMethods().changeLocation(value);
     },
     changeNeighborhood(value) {
-      // console.log($event);
       this.$store.commit("mutateNeighborhood", value);
     }
   }

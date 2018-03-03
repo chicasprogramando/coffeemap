@@ -1,68 +1,103 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 import api from "@/api";
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
-    state: {
-        coffees: [],
-        neighborhood: 'Palermo',
-        neighborhoods: [],
-        wifi: false,
-        coworking: false,
-        takeaway: false,
-        kitchen: false
+  state: {
+    coffees: [],
+    neighborhood: "Palermo",
+    neighborhoods: [],
+    wifi: false,
+    coworking: false,
+    takeaway: false,
+    kitchen: false
+  },
+  getters: {
+    getCurrentNeighborhood: state => {
+      return state.neighborhood;
     },
-    getters: {
-        getFilteredCoffes: state => state.coffees.filter(
-            coffee => (
-                coffee.zone === state.neighborhood &&
-                (!state.wifi || coffee.wifi === state.wifi) &&
-                (!state.coworking || coffee.coworking === state.coworking) &&
-                (!state.kitchen || coffee.kitchen === state.kitchen) &&
-                (!state.takeaway || coffee.takeaway === state.takeaway)
-            )
-        ),
-        getCoffeeById: state => id => state.coffees.find(value => value.id === id),
+    getNeighborhoods: state => {
+      return state.neighborhoods;
     },
-    mutations:{
-        // TODO: Usar mayúsculas a la hora de hacer mutaciones
-        mutateNeighborhood(state, payload) {
-            state.neighborhood = payload;
-        },
-        mutateFilter(state,filter) {
-            state[filter]=!state[filter];
-            // console.log(JSON.stringify(state));
-        },
-        setCoffees(state, payload) {
-            state.coffees = payload;
-        },
-        setNeighborhoods(state, payload) {
-            state.neighborhoods = payload;
-        },
+    wifiSelected: state => {
+      return state.wifi;
     },
-    actions: {
-        actionTest({commit}, payload) {
-                commit('mutateNeighborhood', payload);
-        },
-        Filter({commit}, filter) {
-            commit('mutateFilter',filter);
-        },
-        fetchCoffees({commit}) {
-            api
-            .getCoffees()
-            .then(data => {commit('setCoffees', data)})
-            .catch(e => console.error(e));
-        },
-        fetchNeighborhoods({commit}){
-            api
-            .getNeighborhoods()
-            .then(data => {commit('setNeighborhoods', data)})
-            .catch(e => console.error(e));
+    coworkingSelected: state => {
+      return state.coworking;
+    },
+    takeawaySelected: state => {
+      return state.takeaway;
+    },
+    kitchenSelected: state => {
+      return state.kitchen;
+    },
+    getFilteredCoffes: state => {
+      return state.coffees.filter(
+        coffee =>
+          coffee.zone === state.neighborhood &&
+          (!state.wifi || coffee.wifi === state.wifi) &&
+          (!state.coworking || coffee.coworking === state.coworking) &&
+          (!state.kitchen || coffee.kitchen === state.kitchen) &&
+          (!state.takeaway || coffee.takeaway === state.takeaway)
+      );
+    },
+    getCoffeeById: state => id => state.coffees.find(value => value.id === id)
+  },
+  mutations: {
+    UPDATE_NEIGHBORHOOD(state, payload) {
+      state.neighborhood = payload;
+    },
+    UPDATE_FILTER(state, filter) {
+      state[filter] = !state[filter];
+    },
+    SET_COFFEES(state, payload) {
+      state.coffees = payload;
+    },
+    SET_NEIGHBORHOOD(state, payload) {
+      state.neighborhoods = payload;
+    },
+    COFFEE_VISITED(state, payload) {
+      const updatedCoffees = state.coffees.map(coffee => {
+        if (coffee.id === payload) {
+          coffee.visited = true;
         }
-     }
-    });
+
+        return coffee;
+      });
+
+      state.coffees = updatedCoffees;
+    }
+  },
+  actions: {
+    updateCoffeesVisited({ commit }, payload) {
+      commit("COFFEE_VISITED", payload);
+    },
+    selectNeighborhood({ commit }, payload) {
+      commit("UPDATE_NEIGHBORHOOD", payload);
+    },
+    updateFilter({ commit }, filter) {
+      commit("UPDATE_FILTER", filter);
+    },
+    fetchCoffees({ commit }) {
+      api
+        .getCoffees()
+        .then(data => {
+          commit("SET_COFFEES", data);
+        })
+        .catch(e => console.error(e));
+    },
+    fetchNeighborhoods({ commit }) {
+      api
+        .getNeighborhoods()
+        .then(data => {
+          commit("SET_NEIGHBORHOOD", data);
+        })
+        .catch(e => console.error(e));
+    }
+  }
+});
 
 export default store;
 
