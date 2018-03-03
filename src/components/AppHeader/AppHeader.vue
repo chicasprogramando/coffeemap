@@ -27,7 +27,6 @@ export default {
   width: 100%;
   padding: 10px 0px;
   margin: 0;
-  background-color: #5d57ad;
   font-family: "Roboto";
   font-size: 10px;
   color: white;
@@ -40,9 +39,5 @@ export default {
   height: 3vh;
 }
 
-@media (min-width: 700px) {
-  .container {
-    background-color: transparent;
-  }
-}
+
 </style>

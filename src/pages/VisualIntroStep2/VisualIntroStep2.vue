@@ -1,20 +1,23 @@
 <template>
   <div :class="$style.wrapper">
-    <div :class="$style.loader5" v-if="loader==true"><Loader5/></div>
-    <div :class="$style.container">
-      <div :class="$style.innerWrapper">
+     <div :class="$style.wrapper2">
+           <div :class="$style.loader5" v-if="loader==true"><Loader5/></div>
+
+       <div :class="$style.header">
         <app-header :inverse="false"></app-header>
+       </div>
+
         <div :class="$style.contentWrapper">
-          <div :class="$style.titleNumberWrapper">
-            <span :class="$style.numberedpage">02/</span>
-            <p :class="$style.title">Y te gustaría que tenga...</p>
-          </div>
-          <AllFilters/>
-          <div :class="$style.button">
-            <button-general :class="$style.buttonWidth" button-text="Continuar" size="large" @click="handleClick"></button-general>
-          </div>
-        </div>
-      </div>
+              <div>
+              <span :class="$style.number">02/</span><br/>
+              <span :class="$style.title">Y TE GUSTARÍA QUE<br/>TENGA...</span>
+              </div>
+              <all-filters/>
+            
+              <div :class="$style.buttonwrapper">
+                  <button-general :class="$style.button" button-text="Continuar" size="large" @click="handleClick"></button-general>
+              </div>
+       </div>
     </div>
   </div>
 </template>
@@ -67,15 +70,29 @@ body {
   width: 100%;
 }
 .wrapper {
-  min-height: 100%;
+  /*min-height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: type-font;
+  font-family: type-font;*/
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/visualintrobackground.jpg");
+}
+.wrapper2 {
+  background-color: rgba(121, 113, 217, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
+
+
+/*.container {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -85,14 +102,14 @@ body {
   color: white;
   background-image: url("../../assets/visualintrobackground.jpg");
   background-repeat: no-repeat;
-}
+}*/
 
-.innerWrapper {
+/*.innerWrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: rgba(121, 113, 217, 0.7);
-}
+}*/
 .loader5{
   width:100%;
   height:100%;
@@ -107,52 +124,66 @@ body {
 }
 
 .contentWrapper {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  font-family: "Roboto";
 }
 
-.titleNumberWrapper {
+.number {
   text-align: left;
-  padding-top: 50px;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
 .title {
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: fs-l;
-  text-transform: uppercase;
+  font-size: 25px;
   text-align: left;
-  color: white;
-  font-family: type-font;
+  font-weight: bolder;
+}
+
+.buttonwrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
 }
 
 .button {
-  text-align: center;
   width: 100%;
-  background-color: purpleLight;
 }
 
-.buttonWidth {
-  min-width: 300px;
-  margin: 15px auto;
-  font-size: fs-m;
-}
-
-.miniIcons {
+/*.miniIcons {
   max-width: 300px;
   padding-top: 50px;
-}
+}*/
 
-@media (min-width: 700px) {
-  .miniIcons {
+@media (max-width: 700px) {
+  /*.miniIcons {
     max-width: 400px;
-  }
+  }*/
 
   .button {
     background-color: transparent;
+  }
+ .wrapper2 {
+    justify-content: flex-start;
+  }
+  .header {
+    background-color: rgba(93, 87, 173, 0.7);
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 0;
+  }
+  .contentWrapper{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px 20px 5px 20px;
+  }
+  .buttonwrapper{
+    box-sizing: border-box;
+    margin-top: 20px;
   }
 }
 </style>

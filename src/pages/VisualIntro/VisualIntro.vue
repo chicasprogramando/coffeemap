@@ -127,6 +127,7 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 18px;
+  margin-top:60px;
 }
 
 .button {
@@ -156,6 +157,7 @@ export default {
     height: 100%;
     flex-grow: 1;
     display: flex;
+    
   }
 }
 </style>

@@ -78,9 +78,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
 
-.Iconwrap {
-  padding-top: 50px;
-}
+
 
 .miniIcons {
   width: 100%;
@@ -111,7 +109,7 @@ export default {
 @media (min-width: 700px) {
   .miniIcons {
     max-width: 380px;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 
