@@ -179,7 +179,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 25px 20px 5px 20px;
+    padding: 25px 20px 20px 20px;
   }
   .buttonwrapper{
     box-sizing: border-box;
