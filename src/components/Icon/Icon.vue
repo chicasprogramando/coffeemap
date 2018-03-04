@@ -167,7 +167,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1px;
+  margin: 3px;
 }
 .svg {
   width: 100%;
