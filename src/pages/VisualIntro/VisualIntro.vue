@@ -57,7 +57,7 @@ export default {
       this.allMethods().changeLocation(value);
     },
     changeNeighborhood(value) {
-      this.$store.commit("mutateNeighborhood", value);
+      this.$store.dispatch("selectNeighborhood", value);
     }
   }
 };

@@ -9,12 +9,16 @@ const store = new Vuex.Store({
     coffees: [],
     neighborhood: "Palermo",
     neighborhoods: [],
-    wifi: false,
-    coworking: false,
-    takeaway: false,
-    kitchen: false
+    wifi: true,
+    coworking: true,
+    takeaway: true,
+    kitchen: true
   },
   getters: {
+    getActiveNeighborhoods: state => {
+      let getCoffeesForNeighborhood = neighborhood => state.coffees.filter(coffee => coffee.zone === neighborhood)
+      return state.neighborhoods.filter(neighborhood => getCoffeesForNeighborhood(neighborhood.name).length > 0)
+    },
     getCurrentNeighborhood: state => {
       return state.neighborhood;
     },

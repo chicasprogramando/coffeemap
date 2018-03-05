@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     neighborhoods() {
-      return this.$store.getters.getNeighborhoods;
+      return this.$store.getters.getActiveNeighborhoods;
     }
   },
   methods: {

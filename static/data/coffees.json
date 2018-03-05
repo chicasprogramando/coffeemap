@@ -1240,5 +1240,166 @@
     "website": "http://www.tiendadecafe.com.ar/",
     "visited": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+    "id": 55,
+    "name": "All Saints Cafe",
+    "rating": 4,
+    "address": "Cdad. de La Paz 2300",
+    "businessHours": [
+      8,
+      22
+    ],
+    "wifi": true,
+    "kitchen": true,
+    "takeaway": true,
+    "position": {
+      "lat": -34.560809,
+      "lng": -58.459314
+    },
+    "zone": "Belgrano",
+    "coworking": false,
+    "telephone": "011 4706-0016",
+    "website": "https://allsaintscafe.com.ar/",
+    "visited": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 56,
+  "name": "Jolie Bistro",
+  "rating": 4,
+  "address": "Conde 2036",
+  "businessHours": [
+    8,
+    12
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": false,
+  "position": {
+    "lat": -34.56803,
+    "lng": -58.464976
+  },
+  "zone": "Belgrano",
+  "coworking": false,
+  "telephone": "011 4551-0766",
+  "website": "http://www.joliebistro.com.ar/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 57,
+  "name": "Havanna",
+  "rating": 4,
+  "address": "Av. del Libertador 5880",
+  "businessHours": [
+    8,
+    20
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": true,
+  "position": {
+    "lat": -34.5579811,
+    "lng": -58.4490832
+  },
+  "zone": "Belgrano",
+  "coworking": false,
+  "telephone": "011 4787-3206",
+  "website": "http://www.havanna.com.ar/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 58,
+  "name": "Tienda de Café",
+  "rating": 4,
+  "address": "Mendoza 2299",
+  "businessHours": [
+    8,
+    22
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": true,
+  "position": {
+    "lat": -34.5604757,
+    "lng": -58.5265634
+  },
+  "zone": "Belgrano",
+  "coworking": false,
+  "telephone": "011 4896-1754",
+  "website": "http://www.tiendadecafe.com.ar/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 59,
+  "name": "Catoti cafe",
+  "rating": 4.5,
+  "address": "Blanco Encalada 2457",
+  "businessHours": [
+    8,
+    20
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": true,
+  "position": {
+    "lat": -34.5595327,
+    "lng": -58.4619004
+  },
+  "zone": "Belgrano",
+  "coworking": true,
+  "telephone": "011 2128-9539",
+  "website": "http://www.catoti.com/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 60,
+  "name": "Coffee Town",
+  "rating": 4,
+  "address": "Juramento 1717",
+  "businessHours": [
+    8.30,
+    20.30
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": true,
+  "position": {
+    "lat": -34.5582199,
+    "lng": -58.452668
+  },
+  "zone": "Belgrano",
+  "coworking": false,
+  "telephone": "011 4786-6463",
+  "website": "http://www.coffeetowncompany.com/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  {
+  "id": 61,
+  "name": "Café de la Esquina",
+  "rating": 4,
+  "address": "Av. del Libertador 6196",
+  "businessHours": [
+    8,
+    24
+  ],
+  "wifi": true,
+  "kitchen": true,
+  "takeaway": true,
+  "position": {
+    "lat": -34.555023,
+    "lng": -58.4515217
+  },
+  "zone": "Belgrano",
+  "coworking": false,
+  "telephone": "011 4782-9038",
+  "website": "http://cafedelaesquinabelgrano.blogspot.com.ar/",
+  "visited": false,
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
   }
 ]
