@@ -24,9 +24,9 @@
           <span :class="$style.subtitleSmall">Sitio web</span><br/>
           <span :class="$style.information">{{coffee.website}}</span>
         </div>
-        <div :class="$style.icon">
-          <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
-          <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
+        <div>
+        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
+        <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
         </div>
       </div>
 

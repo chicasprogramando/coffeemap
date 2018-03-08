@@ -11,7 +11,6 @@
         <div :class="$style.container">
           <div :class="$style.downbackground">
               <div>
-                <span :class="$style.number">01/</span><br/>
                 <span :class="$style.chooseText">ELEGÍ LA ZONA QUE<br />TE QUEDE MÁS CERCA</span>
               </div>
               <div :class="$style.dropdown">
@@ -111,8 +110,9 @@ export default {
   text-align: left;
 }
 .chooseText {
-  font-size: 25px;
-  text-align: left;
+  font-size: 30px;
+  display: block;
+  text-align: center;
   font-weight: bolder;
 }
 .welcome {
