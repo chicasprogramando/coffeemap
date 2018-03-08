@@ -25,8 +25,8 @@
           <span :class="$style.information">{{coffee.website}}</span>
         </div>
         <div>
-        <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
-        <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
+          <icon name="twitter" color="#FFF" circle="#7971D9" :size="50" :class="$style.iconOne"/>
+          <icon name="facebook" color="#FFF" circle="#7971D9" :size="50"/>
         </div>
       </div>
 

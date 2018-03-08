@@ -9,7 +9,6 @@
 
         <div :class="$style.contentWrapper">
               <div>
-              <span :class="$style.number">02/</span><br/>
               <span :class="$style.title">Y TE GUSTARÍA QUE<br/>TENGA...</span>
               </div>
               <all-filters/>
@@ -135,8 +134,9 @@ body {
 }
 
 .title {
-  font-size: 25px;
-  text-align: left;
+  font-size: 30px;
+  text-align: center;
+  display: block;
   font-weight: bolder;
 }
 
